@@ -11,7 +11,21 @@
             {
                 "name": "ccl.templates.branches",
                 "path": "/sitecore/templates/Branches/Project/click-click-launch",
-                "allowedPushOperations": "CreateUpdateAndDelete"
+                "allowedPushOperations": "CreateUpdateAndDelete",
+                "rules": [
+                    {
+                        "path": "/Solterra and Co/Add Sample Images/$name/Color Bomb",
+                        "scope": "Ignored"
+                    },
+                    {
+                        "path": "/Solterra and Co/Add Sample Images/$name/Italy",
+                        "scope": "Ignored"
+                    },
+                    {
+                        "path": "/Solterra and Co/Add Sample Images/$name/SampleVideo_640x360_1mb",
+                        "scope": "Ignored"
+                    }
+                ]
             },
             {
                 "name": "ccl.modules",
@@ -41,7 +55,21 @@
             {
                 "name": "ccl.media.ms",
                 "path": "/sitecore/media library/Feature/Solterra",
-                "allowedPushOperations": "CreateUpdateAndDelete"
+                "allowedPushOperations": "CreateUpdateAndDelete",
+                "rules": [
+                    {
+                        "path": "/images/Color Bomb",
+                        "scope": "Ignored"
+                    },
+                    {
+                        "path": "/images/Italy",
+                        "scope": "Ignored"
+                    },
+                    {
+                        "path": "/images/SampleVideo_640x360_1mb",
+                        "scope": "Ignored"
+                    }
+                ]
             },
             {
                 "name": "ccl.media.bp",
