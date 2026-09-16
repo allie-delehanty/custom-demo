@@ -318,3 +318,143 @@ export const WithThumbnails = ({ fields, params, page }: HeroBannerCarouselProps
     </div>
   );
 };
+
+/* ────────────────────────────────────────────
+   Allegro — left-aligned navy overlay, outlined CTA
+   ──────────────────────────────────────────── */
+export const Allegro = ({ fields, params, page }: HeroBannerCarouselProps): JSX.Element => {
+  const { styles, RenderingIdentifier } = params;
+  const isEditing = page?.mode?.isEditing;
+  const datasource = fields?.data?.datasource;
+  const slides = datasource?.children?.results || [];
+
+  const [activeIndex, setActiveIndex] = useState(0);
+  const [isPaused, setIsPaused] = useState(false);
+
+  const goTo = useCallback(
+    (index: number) => {
+      if (slides.length === 0) return;
+      setActiveIndex(((index % slides.length) + slides.length) % slides.length);
+    },
+    [slides.length]
+  );
+
+  useEffect(() => {
+    if (isPaused || isEditing || slides.length <= 1) return;
+    const timer = setInterval(() => goTo(activeIndex + 1), 6000);
+    return () => clearInterval(timer);
+  }, [activeIndex, isPaused, isEditing, slides.length, goTo]);
+
+  if (!datasource || slides.length === 0) return <HeroBannerCarouselDefaultComponent />;
+
+  const ariaLabel = datasource.title?.jsonValue?.value || 'Hero carousel';
+
+  return (
+    <div className={cn('component hero-banner-carousel', styles)} id={RenderingIdentifier}>
+      <section
+        className="relative w-full overflow-hidden"
+        aria-label={ariaLabel}
+        onMouseEnter={() => setIsPaused(true)}
+        onMouseLeave={() => setIsPaused(false)}
+      >
+        <div
+          className="flex transition-transform duration-700 ease-in-out"
+          style={{ transform: `translateX(-${activeIndex * 100}%)` }}
+        >
+          {slides.map((slide) => (
+            <div
+              key={slide.id}
+              className="relative flex min-h-[420px] w-full flex-shrink-0 items-center overflow-hidden md:min-h-[480px]"
+            >
+              {(slide.slideImage?.jsonValue?.value?.src || isEditing) && (
+                <div className="absolute inset-0">
+                  <SmartMedia
+                    field={slide.slideImage?.jsonValue}
+                    fill
+                    sizes="100vw"
+                    className="object-cover object-right"
+                  />
+                </div>
+              )}
+              <div
+                className="absolute inset-0"
+                style={{
+                  background:
+                    'linear-gradient(90deg, var(--brand-dark, #0A2F6B) 0%, color-mix(in srgb, var(--brand-dark, #0A2F6B) 88%, transparent) 42%, transparent 78%)',
+                }}
+              />
+              <div className="relative z-10 mx-auto w-full max-w-7xl px-6 py-16 sm:px-10 md:py-20">
+                <div className="max-w-xl space-y-5 text-left text-white">
+                  {(slide.slideTitle?.jsonValue?.value || isEditing) && (
+                    <Text
+                      field={slide.slideTitle?.jsonValue}
+                      tag="h2"
+                      className="text-3xl font-semibold leading-tight tracking-tight sm:text-4xl md:text-[2.75rem] font-[var(--brand-heading-font,inherit)]"
+                    />
+                  )}
+                  {(slide.slideSubtitle?.jsonValue?.value || isEditing) && (
+                    <ContentSdkRichText
+                      field={slide.slideSubtitle?.jsonValue}
+                      className="max-w-lg text-base leading-relaxed opacity-90 font-[var(--brand-body-font,inherit)]"
+                    />
+                  )}
+                  <div className="flex flex-wrap items-center gap-4 pt-2">
+                    {(slide.primaryLink?.jsonValue?.value?.href || isEditing) && (
+                      <ContentSdkLink
+                        field={slide.primaryLink?.jsonValue}
+                        className="inline-flex items-center justify-center rounded-[var(--brand-button-radius,0.375rem)] border border-white px-6 py-2.5 text-sm font-medium text-white transition hover:bg-white hover:text-[var(--brand-dark,#0A2F6B)]"
+                      />
+                    )}
+                    <SecondaryButton field={slide.secondaryLink?.jsonValue} isEditing={isEditing} />
+                  </div>
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+
+        {slides.length > 1 && !isEditing && (
+          <>
+            <button
+              type="button"
+              onClick={() => goTo(activeIndex - 1)}
+              className="absolute left-3 top-1/2 z-20 -translate-y-1/2 rounded-full p-2 text-white/90 transition hover:text-white md:left-4"
+              aria-label="Previous slide"
+            >
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                <polyline points="15 18 9 12 15 6" />
+              </svg>
+            </button>
+            <button
+              type="button"
+              onClick={() => goTo(activeIndex + 1)}
+              className="absolute right-3 top-1/2 z-20 -translate-y-1/2 rounded-full p-2 text-white/90 transition hover:text-white md:right-4"
+              aria-label="Next slide"
+            >
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                <polyline points="9 6 15 12 9 18" />
+              </svg>
+            </button>
+          </>
+        )}
+
+        {slides.length > 1 && (
+          <div className="absolute bottom-5 left-1/2 z-20 flex -translate-x-1/2 gap-2">
+            {slides.map((slide, i) => (
+              <button
+                key={slide.id}
+                type="button"
+                onClick={() => goTo(i)}
+                className={cn(
+                  'h-2 w-2 rounded-full transition-all',
+                  i === activeIndex ? 'bg-white' : 'bg-white/45 hover:bg-white/70'
+                )}
+                aria-label={`Go to slide ${i + 1}`}
+              />
+            ))}
+          </div>
+        )}
+      </section>
+    </div>
+  );
+};

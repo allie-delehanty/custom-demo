@@ -356,3 +356,48 @@ export const Minimal = ({ fields, params }: NavigationHeaderProps): JSX.Element 
     </div>
   );
 };
+
+/* ────────────────────────────────────────────
+   Allegro — solid white bar, nav links, no CTA
+   ──────────────────────────────────────────── */
+export const Allegro = ({ fields, params, page, rendering }: NavigationHeaderProps): JSX.Element => {
+  const { styles, RenderingIdentifier } = params;
+  const isEditing = page?.mode?.isEditing;
+  const [menuOpen, setMenuOpen] = useState(false);
+
+  const datasource = fields?.data?.datasource;
+  if (!datasource) return <NavigationHeaderDefaultComponent />;
+
+  const links = datasource.children?.results || [];
+  const brandLogo = datasource.brandLogo?.jsonValue;
+
+  return (
+    <div className={cn('component navigation-header', styles)} id={RenderingIdentifier}>
+      <header
+        className="w-full border-b"
+        style={{
+          backgroundColor: 'var(--brand-header-bg, #ffffff)',
+          borderColor: 'var(--brand-border, #E5E7EB)',
+        }}
+      >
+        <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-3 sm:px-6">
+          <Logo brandLogo={brandLogo} />
+          <NavLinks items={links} className="gap-7" />
+          <div className="flex items-center gap-3">
+            <HeaderSearch datasource={datasource} page={page} rendering={rendering} />
+            <CtaButton
+              label={datasource.ctaLabel?.jsonValue}
+              link={datasource.ctaLink?.jsonValue}
+              isEditing={isEditing}
+            />
+            <span className="hidden items-center gap-3 text-sm md:flex" style={{ color: 'var(--brand-header-fg)' }}>
+              <span className="opacity-80">EN</span>
+            </span>
+            <MenuButton open={menuOpen} onClick={() => setMenuOpen(!menuOpen)} />
+          </div>
+        </div>
+        <MobileMenu items={links} open={menuOpen} onClose={() => setMenuOpen(false)} />
+      </header>
+    </div>
+  );
+};

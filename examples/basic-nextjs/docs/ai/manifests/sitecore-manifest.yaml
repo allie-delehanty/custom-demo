@@ -1496,7 +1496,7 @@ components:
     category: "Navigation"
     status: "complete"
     createdAt: "2026-03-25T20:00:00Z"
-    updatedAt: "2026-05-05T13:00:00Z"
+    updatedAt: "2026-09-16T14:50:00Z"
 
     react:
       filePath: "src/components/uiim/navigation/SiteFooter.tsx"
@@ -1506,6 +1506,7 @@ components:
         - "Default"
         - "Minimal"
         - "MegaFooter"
+        - "Allegro"
 
     templates:
       datasource:
@@ -1563,6 +1564,7 @@ components:
         - { name: "Default", itemId: "{143CFE84-1E77-4961-975C-38564DC43DB9}" }
         - { name: "Minimal", itemId: "{AF87D61B-F6A8-4036-9BF8-FDB586268D24}" }
         - { name: "MegaFooter", itemId: "{DA131066-F9A2-47F0-A099-F614E61817AA}" }
+        - { name: "Allegro", itemId: "{8EEF7B47-2A95-49DF-A9F8-CFBBD17290C9}" }
 
     verification:
       checkedAt: "2026-03-25T20:00:00Z"
@@ -1578,7 +1580,8 @@ components:
       pendingManual:
         - "Renderings on Available Renderings (silent-write, appended with user-provided value)"
 
-    notes: []
+    notes:
+      - "2026-09-16: Default footer now renders the Allegro layout (color logo, live-site columns) because the footer partial still uses FieldNames=Default. Removed invert on that layout so BrandLogo stays readable on light gray."
 
   - name: "NewsletterSignup"
     kind: "simple"
