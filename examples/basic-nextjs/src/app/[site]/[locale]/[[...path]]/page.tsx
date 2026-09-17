@@ -6,7 +6,7 @@ import scConfig from "sitecore.config";
 import { getSites } from "src/lib/sites";
 import client from "src/lib/sitecore-client";
 import Layout, { RouteFields } from "src/Layout";
-import components from ".sitecore/component-map";
+import components from "src/lib/sitecore-component-map";
 import Providers from "src/Providers";
 import { NextIntlClientProvider } from "next-intl";
 import { setRequestLocale } from "next-intl/server";

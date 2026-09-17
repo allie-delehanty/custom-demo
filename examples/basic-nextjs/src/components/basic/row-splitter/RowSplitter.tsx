@@ -1,7 +1,7 @@
 import React, { JSX } from 'react';
 import { ComponentRendering } from '@sitecore-content-sdk/nextjs';
 import { ComponentProps } from 'lib/component-props';
-import componentMap from '.sitecore/component-map';
+import componentMap from 'src/lib/sitecore-component-map';
 import { AppPlaceholder } from "@sitecore-content-sdk/nextjs";
 
 /**
