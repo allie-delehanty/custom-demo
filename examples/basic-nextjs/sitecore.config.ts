@@ -5,7 +5,5 @@ import { defineConfig } from '@sitecore-content-sdk/nextjs/config';
  * https://doc.sitecore.com/xmc/en/developers/content-sdk/the-sitecore-configuration-file.html
  */
 export default defineConfig({
-  // Allegro content lives on main-website-1. main-website still resolves to the
-  // starter Home, and XM Cloud env vars often still send that name.
-  defaultSite: 'main-website-1',
+  defaultSite: 'main-website',
 });

@@ -13,8 +13,8 @@ import * as LandingFAQ from 'src/components/uiim/landing/LandingFAQ';
 import * as NewsletterSignup from 'src/components/uiim/forms/NewsletterSignup';
 import * as IdentityEventDevForm from 'src/components/uiim/forms/IdentityEventDevForm';
 import * as IdentityCaptureForm from 'src/components/uiim/forms/IdentityCaptureForm';
-import * as FeatureCardsGrid from 'src/components/uiim/cards/FeatureCardsGrid';
-import * as HeroBannerCarousel from 'src/components/uiim/banners/HeroBannerCarousel';
+import * as FeatureCardsGridclient from 'src/components/uiim/cards/FeatureCardsGrid.client';
+import * as HeroBannerCarouselclient from 'src/components/uiim/banners/HeroBannerCarousel.client';
 import * as ArticleHero from 'src/components/uiim/article/ArticleHero';
 import * as SearchExperienceLoadMore from 'src/components/search-experience/SearchExperience.LoadMore';
 import * as SearchExperience from 'src/components/search-experience/SearchExperience';
@@ -56,8 +56,8 @@ export const componentMap = new Map<string, NextjsContentSdkComponent>([
   ['NewsletterSignup', { ...NewsletterSignup }],
   ['IdentityEventDevForm', { ...IdentityEventDevForm }],
   ['IdentityCaptureForm', { ...IdentityCaptureForm }],
-  ['FeatureCardsGrid', { ...FeatureCardsGrid }],
-  ['HeroBannerCarousel', { ...HeroBannerCarousel }],
+  ['FeatureCardsGrid', { ...FeatureCardsGridclient }],
+  ['HeroBannerCarousel', { ...HeroBannerCarouselclient }],
   ['ArticleHero', { ...ArticleHero }],
   ['SearchExperience', { ...SearchExperienceLoadMore, ...SearchExperience }],
   ['useSearchField', { ...useSearchField }],

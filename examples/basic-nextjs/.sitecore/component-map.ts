@@ -32,7 +32,9 @@ import * as LegalComplianceBanner from 'src/components/uiim/content/LegalComplia
 import * as FeatureHighlight from 'src/components/uiim/content/FeatureHighlight';
 import * as FAQAccordion from 'src/components/uiim/content/FAQAccordion';
 import * as ProductPricingCards from 'src/components/uiim/cards/ProductPricingCards';
+import * as FeatureCardsGridclient from 'src/components/uiim/cards/FeatureCardsGrid.client';
 import * as FeatureCardsGrid from 'src/components/uiim/cards/FeatureCardsGrid';
+import * as HeroBannerCarouselclient from 'src/components/uiim/banners/HeroBannerCarousel.client';
 import * as HeroBannerCarousel from 'src/components/uiim/banners/HeroBannerCarousel';
 import * as HeroBanner from 'src/components/uiim/banners/HeroBanner';
 import * as CTABanner from 'src/components/uiim/banners/CTABanner';
@@ -112,8 +114,8 @@ export const componentMap = new Map<string, NextjsContentSdkComponent>([
   ['FeatureHighlight', { ...FeatureHighlight }],
   ['FAQAccordion', { ...FAQAccordion }],
   ['ProductPricingCards', { ...ProductPricingCards }],
-  ['FeatureCardsGrid', { ...FeatureCardsGrid, componentType: 'client' }],
-  ['HeroBannerCarousel', { ...HeroBannerCarousel, componentType: 'client' }],
+  ['FeatureCardsGrid', { ...FeatureCardsGridclient, ...FeatureCardsGrid }],
+  ['HeroBannerCarousel', { ...HeroBannerCarouselclient, ...HeroBannerCarousel }],
   ['HeroBanner', { ...HeroBanner }],
   ['CTABanner', { ...CTABanner }],
   ['ArticleHero', { ...ArticleHero, componentType: 'client' }],
