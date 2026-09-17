@@ -609,3 +609,7 @@ export const AllegroStoryMosaic = ({ fields, params, page }: FeatureCardsGridPro
     </div>
   );
 };
+
+// Pages stores the Headless Variant item ID in FieldNames, not the export name.
+export { AllegroFeaturedProducts as '{2733D5A8-DF25-4048-B640-3E5B20DD6B5E}' };
+export { AllegroStoryMosaic as '{A2988BBA-ABF8-4E91-AABC-711FEF43FD77}' };

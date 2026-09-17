@@ -458,3 +458,6 @@ export const Allegro = ({ fields, params, page }: HeroBannerCarouselProps): JSX.
     </div>
   );
 };
+
+// Pages stores the Headless Variant item ID in FieldNames, not the export name.
+export { Allegro as '{4CD693EF-4892-4E06-8916-922292789945}' };
