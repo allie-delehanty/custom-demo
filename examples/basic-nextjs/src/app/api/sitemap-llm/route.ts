@@ -3,7 +3,9 @@ import { SiteResolver } from '@sitecore-content-sdk/content/site';
 import type { SitemapXmlOptions } from '@sitecore-content-sdk/content/client';
 import type { SiteInfo } from '@sitecore-content-sdk/nextjs';
 import client from 'lib/sitecore-client';
-import sites from '.sitecore/sites.json';
+import { getSites } from 'src/lib/sites';
+
+const sites = getSites();
 
 export const dynamic = 'force-dynamic';
 

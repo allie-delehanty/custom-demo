@@ -1,13 +1,7 @@
 import { type NextRequest, NextResponse } from 'next/server';
-import sitesData from '.sitecore/sites.json';
+import { getSites } from 'src/lib/sites';
 
-interface SiteInfo {
-  name?: string;
-  hostName?: string;
-  language?: string;
-}
-
-const sites = sitesData as SiteInfo[];
+const sites = getSites();
 
 export const dynamic = 'force-dynamic';
 

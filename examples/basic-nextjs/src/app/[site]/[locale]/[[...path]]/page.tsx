@@ -1,10 +1,9 @@
 import { isDesignLibraryPreviewData } from "@sitecore-content-sdk/nextjs/editing";
 import { notFound } from "next/navigation";
 import { draftMode, headers as nextHeaders } from "next/headers";
-import { SiteInfo } from "@sitecore-content-sdk/nextjs";
-import sites from ".sitecore/sites.json";
 import { routing } from "src/i18n/routing";
 import scConfig from "sitecore.config";
+import { getSites } from "src/lib/sites";
 import client from "src/lib/sitecore-client";
 import Layout, { RouteFields } from "src/Layout";
 import components from ".sitecore/component-map";
@@ -70,12 +69,7 @@ export const generateStaticParams = async () => {
   if (process.env.NODE_ENV !== "development" && scConfig.generateStaticPaths) {
     // Filter sites to only include the sites this starter is designed to serve.
     // This prevents cross-site build errors when multiple starters share the same XM Cloud instance.
-    const defaultSite = scConfig.defaultSite;
-    const allowedSites = defaultSite
-      ? sites
-          .filter((site: SiteInfo) => site.name === defaultSite)
-          .map((site: SiteInfo) => site.name)
-      : sites.map((site: SiteInfo) => site.name);
+    const allowedSites = getSites().map((site) => site.name);
     return await client.getAppRouterStaticParams(
       allowedSites,
       routing.locales.slice(),

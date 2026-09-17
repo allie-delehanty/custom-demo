@@ -1,6 +1,8 @@
 import { createSitemapRouteHandler } from '@sitecore-content-sdk/nextjs/route-handler';
-import sites from '.sitecore/sites.json';
 import client from 'lib/sitecore-client';
+import { getSites } from 'src/lib/sites';
+
+const sites = getSites();
 
 export const dynamic = 'force-dynamic';
 

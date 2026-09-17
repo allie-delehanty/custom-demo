@@ -7,10 +7,12 @@ import {
   RedirectsProxy,
   LocaleProxy,
 } from '@sitecore-content-sdk/nextjs/proxy';
-import sites from '.sitecore/sites.json';
 import scConfig from 'sitecore.config';
 import { routing } from './i18n/routing';
 import client from './lib/sitecore-client';
+import { getSites } from './lib/sites';
+
+const sites = getSites();
 
 const preview = new PreviewProxy({
     client,
