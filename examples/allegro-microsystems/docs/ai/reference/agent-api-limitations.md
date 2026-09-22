@@ -293,6 +293,79 @@ Keyphrase matching is loose (OR-like across words): a multi-word query matches d
 
 ---
 
+## 7. `get_components_on_page` / `add_component_on_page` fail on allegro-microsystems pages
+
+**Date discovered:** 2026-09-21
+**Severity:** High — blocks automated page assembly for this site
+**Status:** Still unexplained as of 2026-09-22. A related duplicate-site-definition bug was found and fixed (see below), but it did **not** clear the 500. Two further hypotheses were tested and disproven. Assemble in Pages until this is understood.
+
+### The Problem
+
+Layout write/read tools that go through `[presentation_details]` return:
+
+- HTTP 500 getting page layout data, or
+- HTTP 404 `ARGUMENT_NULL` / `Error trying to resolve item`
+
+The same tools succeed on `main-website` Home `{E2124310-F817-4644-8671-BFF8E72B66D7}`. `get_content_item_by_id`, `update_fields_on_item` (page fields), and `create_content_item` still work on Allegro items.
+
+`__Final Renderings` writes via `update_fields_on_item` are silent-ignored (not returned in `updatedFields`).
+
+### Publishing is NOT related
+
+The Agent API reads the **authoring (master) database**, not Experience Edge — `get_components_on_page` on `main-website` returns `layoutEditingKind: FINAL` with master-db datasource paths. Publish state therefore has no bearing on these tools. Publishing matters only for `localhost`, which renders from Edge. Do not chase the 500 by publishing.
+
+### A real, separate bug found and fixed: duplicate site identity
+
+The Allegro site was cloned from `main-website` and its **Site Grouping definition was never renamed**. Both sites shipped a definition claiming the same site name on the same wildcard hostname:
+
+| Site Grouping item | `SiteName` | `HostName` | `StartItem` |
+|---|---|---|---|
+| `…/allegro-microsystems/Settings/Site Grouping/main-website` | `main-website` | `*` | `{AF788656…}` Allegro Home |
+| `…/main-website/Settings/Site Grouping/main-website` | `main-website` | `*` | `{E2124310…}` main-website Home |
+
+No definition anywhere declared `SiteName = allegro-microsystems`. Corroborating evidence:
+
+- `get_site_information` mapping was crossed — the id `list_sites` labels `main-website` returned `name: allegro-microsystems` with Allegro's root path; the id labelled `allegro-microsystems` returned HTTP 400.
+- Experience Edge listed `main-website`, **`main-website-1`**, and `website`. `main-website-1` was the Allegro definition auto-deduplicated at deploy because its declared name collided.
+- The editing-render preview reported `"site":{"name":"main-website"}` even when called with `sc_site=allegro-microsystems`.
+
+### Fix applied
+
+On `{75031465-B421-4867-B037-B826DE6C7972}` via `update_fields_on_item`:
+
+- `SiteName`: `main-website` → `allegro-microsystems`
+- `POS`: `en=main-website` → `en=allegro-microsystems`
+
+Verified: the Edge site collection now lists `allegro-microsystems` in place of `main-website-1`, and `main-website` still resolves with all three components and datasources intact. **This fixed Edge registration but did not clear the 500.**
+
+### Hypotheses tested and disproven
+
+Do not re-test these:
+
+| Hypothesis | Test | Result |
+|---|---|---|
+| Page Design override on Home is invalid | Cleared `Page Design` on `{af788656…}`, retried, restored | Still 500 |
+| `PartialDesigns` GUIDs missing braces | Compared to main-website's Landing design, which is also unbraced | Not a defect — main-website works unbraced |
+| Site is unpublished | Agent API reads master, not Edge | Irrelevant by design |
+
+### Remaining untested lead
+
+The clone left site identity duplicated in **three** places, only one of which is fixed:
+
+1. ~~Site Grouping `SiteName` field~~ — fixed
+2. Site Grouping **item name** is still `main-website` (no MCP rename tool; Content Editor only)
+3. Allegro JSS Settings `{cf47a771…}` still has `Name: main-website` and `FilesystemPath: /dist/main-website`, byte-identical to main-website's
+
+Changing the JSS app `Name` is invasive (used by JSS import/deploy) — get sign-off before trying it.
+
+Separately, and unrelated to the 500: the Allegro site has never been published, so `layout(site:"allegro-microsystems")` returns an empty `rendered` object and the local rendering host 404s. Publish to fix localhost only.
+
+### Workaround until then
+
+Assemble components in Pages editor. Datasource *content* can still be updated on items that are already placed (Header `fff51337` / Footer `dfd74e57`).
+
+---
+
 ## References
 
 - Agent API docs: https://api-docs.sitecore.com/ai-capabilities/agent-api

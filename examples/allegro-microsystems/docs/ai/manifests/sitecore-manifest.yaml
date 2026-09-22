@@ -1,23 +1,23 @@
 generatedAt: "2026-03-20T09:00:00Z"
-lastUpdatedAt: "2026-08-18T00:00:00Z"
-lastUpdatedBy: "claude-agent"
+lastUpdatedAt: "2026-09-21T21:08:00Z"
+lastUpdatedBy: "cursor-agent (Allegro Phase 5.5 variants)"
 
 project:
   siteCollection: "main"
-  siteName: "main-website"
+  siteName: "allegro-microsystems"
   sdk: "@sitecore-content-sdk/nextjs"
   renderingsRoot: "/sitecore/layout/Renderings/Project/fmc-custom-demo"
   projectTemplatesRoot: "/sitecore/templates/Project/fmc-custom-demo"
-  dataRoot: "/sitecore/content/main/main-website/Data"
+  dataRoot: "/sitecore/content/main/allegro-microsystems/Data"
   projectFoldersRoot: "/sitecore/templates/Project/fmc-custom-demo/Folders"
   renderingParamsRoot: "/sitecore/templates/Project/fmc-custom-demo/Rendering Parameters"
-  headlessVariantsRoot: "/sitecore/content/main/main-website/Presentation/Headless Variants"
+  headlessVariantsRoot: "/sitecore/content/main/allegro-microsystems/Presentation/Headless Variants"
 
 availableRenderings:
-  itemId: "{2BF7E311-E3A5-4290-A043-AB97EA1DFB15}"
-  lastKnownValue: "{55790BFE-783E-4FF0-BD53-F81D3857DAD4}|{C5F905F8-FD1F-444E-A9E5-AC6B774FF0DE}|{2492BAC4-DA07-4C86-87F0-9873D40E2276}|{9C6D53E3-FE57-4638-AF7B-6D68304C7A94}|{3836D951-BB14-43AC-9231-649B7F245DC5}|{E97DCF2B-8011-41E0-A605-8A379F3DF1AA}|{A41A47A5-D305-4ADC-BFC8-CCB0F301DDCF}|{EFE73752-6046-45A8-92F4-7A68430A0759}|{EAA7CC9B-4657-410E-9A25-CD33C700261B}|{58490557-5582-4B19-9E31-CE6A80F95D93}|{4281E3CD-2309-4427-9A3E-D69FDD32FCDA}|{E6D0C7C1-ACFF-4E85-8600-196649FEFFB9}|{90021266-66B3-47B6-9709-A070F56064A1}|{F6A1FA05-15FC-46C9-B921-98E79EFF5F4E}|{E194B962-0617-4A10-B4DB-2A4D19248C13}|{E1BCD607-51C4-4248-8EE2-B7F474D40B3E}|{A53006E8-C66B-419F-859D-7CFA92E7E26B}|{4E7E77EF-529C-4C28-A5D8-94C5ACA065FF}|{C739DB42-43E5-4DAC-B5FC-404EDDC9E37C}|{0F7C27E2-B960-47E9-AB85-F8A9C45D0F9C}|{D008D5FE-B27E-419F-889C-115B3D48A114}|{85CC2A41-AC6F-4C10-9C2F-44308B48C453}|{4C5C1FA5-C077-491D-9686-40D0F68EF03E}|{83BD1231-A48F-4F54-A361-20904C69A641}|{0E64EDCA-06DD-469A-B3D1-93D8700A8F41}|{505B6BB0-DEEA-46F9-9AB2-7020E386F4F0}|{C9FFEF83-C928-4346-AA68-14B3EE0B0017}|{B92A0B89-790F-4D94-89C7-B361C8688765}|{9E525B59-B9BF-4EB7-B75D-10811EF6100D}|{66E80043-36E4-48AE-8CAF-EEF4A77690BE}|{5A8724FB-D6E6-4C9D-8A4A-EFD8750B0019}|{14FCB11C-364D-4BC2-9238-B29B4C6F8145}|{FAA6D190-2A7C-4A18-A09D-7E5D33A5BDAF}|{06D05BB6-2DD6-457A-BC64-22A07F7D4359}"
-  lastUpdatedAt: "2026-08-18T00:00:00Z"
-  renderingCount: 37
+  itemId: "{0AE5714D-D2AD-4CFC-B709-F8558752B230}"
+  lastKnownValue: "{55790BFE-783E-4FF0-BD53-F81D3857DAD4}|{C5F905F8-FD1F-444E-A9E5-AC6B774FF0DE}|{2492BAC4-DA07-4C86-87F0-9873D40E2276}|{9C6D53E3-FE57-4638-AF7B-6D68304C7A94}|{3836D951-BB14-43AC-9231-649B7F245DC5}|{E97DCF2B-8011-41E0-A605-8A379F3DF1AA}|{A41A47A5-D305-4ADC-BFC8-CCB0F301DDCF}|{EFE73752-6046-45A8-92F4-7A68430A0759}|{EAA7CC9B-4657-410E-9A25-CD33C700261B}|{58490557-5582-4B19-9E31-CE6A80F95D93}|{4281E3CD-2309-4427-9A3E-D69FDD32FCDA}|{E6D0C7C1-ACFF-4E85-8600-196649FEFFB9}|{90021266-66B3-47B6-9709-A070F56064A1}|{F6A1FA05-15FC-46C9-B921-98E79EFF5F4E}|{E194B962-0617-4A10-B4DB-2A4D19248C13}|{E1BCD607-51C4-4248-8EE2-B7F474D40B3E}|{A53006E8-C66B-419F-859D-7CFA92E7E26B}|{4E7E77EF-529C-4C28-A5D8-94C5ACA065FF}|{C739DB42-43E5-4DAC-B5FC-404EDDC9E37C}|{0F7C27E2-B960-47E9-AB85-F8A9C45D0F9C}|{D008D5FE-B27E-419F-889C-115B3D48A114}|{85CC2A41-AC6F-4C10-9C2F-44308B48C453}|{4C5C1FA5-C077-491D-9686-40D0F68EF03E}|{83BD1231-A48F-4F54-A361-20904C69A641}|{0E64EDCA-06DD-469A-B3D1-93D8700A8F41}|{505B6BB0-DEEA-46F9-9AB2-7020E386F4F0}|{C9FFEF83-C928-4346-AA68-14B3EE0B0017}|{B92A0B89-790F-4D94-89C7-B361C8688765}|{9E525B59-B9BF-4EB7-B75D-10811EF6100D}|{66E80043-36E4-48AE-8CAF-EEF4A77690BE}|{5A8724FB-D6E6-4C9D-8A4A-EFD8750B0019}|{14FCB11C-364D-4BC2-9238-B29B4C6F8145}|{FAA6D190-2A7C-4A18-A09D-7E5D33A5BDAF}|{06D05BB6-2DD6-457A-BC64-22A07F7D4359}|{D33F0079-E54F-48C3-A33A-6A3A83146DA8}|{158772E0-46FD-4626-9144-527C24854F97}|{59FFD4F9-1D2B-4C56-94D8-C15235AC3E0F}|{9B311CEC-7A0F-4156-9599-35E1BA7A55FA}"
+  lastUpdatedAt: "2026-09-21T20:55:00Z"
+  renderingCount: 38
   note: "2026-08-18: appended {158772E0-46FD-4626-9144-527C24854F97} (SearchCollection), then {59FFD4F9-1D2B-4C56-94D8-C15235AC3E0F} (SearchTypeahead), each with a pre-write staleness check against live get_allowed_comps_by_ph and post-write verification. lastKnownValue below is the 2026-08-07 pre-SearchResults value; current = that + {D33F0079-E54F-48C3-A33A-6A3A83146DA8} + {158772E0-46FD-4626-9144-527C24854F97} + {59FFD4F9-1D2B-4C56-94D8-C15235AC3E0F}."
   warning: "MCP cannot read this field — value may be stale if modified outside this session. Also: MCP write returned empty updatedFields — silent-write. Verify in Content Editor."
 
@@ -68,8 +68,8 @@ components:
 
     datasourceFolder:
       name: "AnnouncementBars"
-      path: "/sitecore/content/main/main-website/Data/AnnouncementBars"
-      itemId: "{93B0A4DC-4E8A-42DB-85A4-D54E7A64D737}"
+      path: "/sitecore/content/main/allegro-microsystems/Data/AnnouncementBars"
+      itemId: "{90068EE6-1A20-422A-886D-585370DC07B9}"
       insertOptionsSet: true
       exampleItem:
         name: "Announcement Bar"
@@ -88,8 +88,8 @@ components:
       registeredInAvailableRenderings: true
 
     headlessVariants:
-      containerPath: "/sitecore/content/main/main-website/Presentation/Headless Variants/AnnouncementBar"
-      containerId: "{6F2C4B0A-5592-4E3C-A1D1-DDA54BD90CC0}"
+      containerPath: "/sitecore/content/main/allegro-microsystems/Presentation/Headless Variants/AnnouncementBar"
+      containerId: "{E01B3598-3270-4A26-A719-3AD1B91C015B}"
       variants:
         - { name: "Default", itemId: "{C443BF0E-5B40-4F84-98A2-F0825E83E345}" }
         - { name: "Highlight", itemId: "{6A6E7095-E948-46F1-A37B-260ADA3604FF}" }
@@ -126,12 +126,108 @@ components:
 
     notes: []
 
+  - name: "FloatingSupportActions"
+    kind: "simple"
+    category: "Navigation"
+    status: "complete"
+    createdAt: "2026-09-21T20:55:00Z"
+    updatedAt: "2026-09-21T20:55:00Z"
+
+    react:
+      filePath: "src/components/uiim/navigation/FloatingSupportActions.tsx"
+      componentMapKey: "FloatingSupportActions"
+      variants:
+        - "Default"
+
+    templates:
+      datasource:
+        name: "FloatingSupportActions"
+        path: "/sitecore/templates/Project/fmc-custom-demo/Components/Navigation/FloatingSupportActions"
+        itemId: "{A5818853-9394-4CE4-B8AE-71CE187FE53A}"
+        sectionName: "Data"
+        fields:
+          - { name: "AskLabel", type: "Single-Line Text" }
+          - { name: "AskLink", type: "General Link" }
+          - { name: "ContactLabel", type: "Single-Line Text" }
+          - { name: "ContactLink", type: "General Link" }
+        baseTemplatesSet: true
+        standardValues:
+          itemId: "{FC068EBD-69E5-4CF3-BF10-8AB66D6D02DF}"
+          linked: true
+
+      folder:
+        name: "FloatingSupportActions Folder"
+        path: "/sitecore/templates/Project/fmc-custom-demo/Folders/FloatingSupportActions Folder"
+        itemId: "{94E40ADE-2E61-4A12-B1EE-52647D352C4A}"
+        standardValues:
+          itemId: "{43A2DBA0-C50B-4014-83F3-7FF392D1A97E}"
+          linked: true
+          masters: ["FloatingSupportActions"]
+
+      renderingParams:
+        name: "FloatingSupportActions"
+        path: "/sitecore/templates/Project/fmc-custom-demo/Rendering Parameters/Navigation/FloatingSupportActions"
+        itemId: "{AC49010E-2F3D-4DB7-82F3-7005F52EAD4B}"
+        baseTemplatesSet: true
+
+    datasourceFolder:
+      name: "FloatingSupportActions"
+      path: "/sitecore/content/main/allegro-microsystems/Data/FloatingSupportActions"
+      itemId: "{B235CD0D-2920-4FE9-B5A7-4A7A76D1FDA6}"
+      insertOptionsSet: true
+      exampleItem:
+        name: "Floating Support Actions"
+        itemId: "{164D4AA2-316D-47E4-BDC4-9425AB344654}"
+      clientItem:
+        name: "Allegro MicroSystems - Floating Support Actions"
+        itemId: "{EC5B03EF-F042-4752-B4D9-5AFAD03939E7}"
+
+    rendering:
+      name: "FloatingSupportActions"
+      path: "/sitecore/layout/Renderings/Project/fmc-custom-demo/Navigation/FloatingSupportActions"
+      itemId: "{9B311CEC-7A0F-4156-9599-35E1BA7A55FA}"
+      componentName: "FloatingSupportActions"
+      datasourceTemplatePath: "/sitecore/templates/Project/fmc-custom-demo/Components/Navigation/FloatingSupportActions"
+      datasourceLocationQuery: "query:$site/*[@@name='Data']/*[@@templatename='FloatingSupportActions Folder']|query:$sharedSites/*[@@name='Data']/*[@@templatename='FloatingSupportActions Folder']"
+      parametersTemplateId: "{AC49010E-2F3D-4DB7-82F3-7005F52EAD4B}"
+      componentQuery: ""
+      addFieldEditorButton: "1"
+      registeredInAvailableRenderings: true
+
+    headlessVariants:
+      containerPath: "/sitecore/content/main/allegro-microsystems/Presentation/Headless Variants/FloatingSupportActions"
+      containerId: "{7E94A849-AB8D-4330-A9CF-1828A4E833E2}"
+      variants:
+        - { name: "Default", itemId: "{B3A25C42-52B9-45B8-92E6-B17FBA4F51AF}" }
+
+    verification:
+      checkedAt: "2026-09-21T20:55:00Z"
+      passed:
+        - "Template exists with Standard + Grid Parameters bases"
+        - "Fields created with correct Type"
+        - "Standard Values created"
+        - "Folder template and Standard Values created"
+        - "Rendering Parameters template created with 4 base templates"
+        - "JSON Rendering created with componentName, Parameters Template GUID, datasource path and location"
+        - "Datasource folder and example item created"
+        - "Client datasource populated"
+        - "Default Variant Definition created"
+        - "React file created"
+      failed: []
+      pendingManual:
+        - "__Standard values link (silent-write)"
+        - "__Masters on folder SV and folder instance (silent-write)"
+        - "get_allowed_comps_by_ph did not yet list FloatingSupportActions after Renderings write (possible cache)"
+
+    notes:
+      - "Contact Us chip uses live-site green #24A148; AskAllegro uses --brand-primary."
+
   - name: "NavigationHeader"
     kind: "list"
     category: "Navigation"
     status: "complete"
     createdAt: "2026-03-25T12:30:00Z"
-    updatedAt: "2026-05-05T16:00:00Z"
+    updatedAt: "2026-09-21T21:05:00Z"
 
     react:
       filePath: "src/components/uiim/navigation/NavigationHeader.tsx"
@@ -141,6 +237,7 @@ components:
         - "Default"
         - "Transparent"
         - "Minimal"
+        - "AllegroHeader"
 
     templates:
       parent:
@@ -189,8 +286,8 @@ components:
 
     datasourceFolder:
       name: "NavigationHeaders"
-      path: "/sitecore/content/main/main-website/Data/NavigationHeaders"
-      itemId: "{A1055559-2113-4BAF-B3C3-05C38404DED2}"
+      path: "/sitecore/content/main/allegro-microsystems/Data/NavigationHeaders"
+      itemId: "{74D50B07-0F5B-4571-95F8-BD2C1DEE40CF}"
       insertOptionsSet: true
       exampleItem:
         name: "Main Navigation"
@@ -213,12 +310,13 @@ components:
       registeredInAvailableRenderings: true
 
     headlessVariants:
-      containerPath: "/sitecore/content/main/main-website/Presentation/Headless Variants/NavigationHeader"
-      containerId: "{C215D8ED-461E-4AE4-8D57-94CC5CDEC8DF}"
+      containerPath: "/sitecore/content/main/allegro-microsystems/Presentation/Headless Variants/NavigationHeader"
+      containerId: "{DE88C161-CB0F-4179-8187-CA6A11CC81C4}"
       variants:
-        - { name: "Default", itemId: "{150B9AFE-2B9F-48AD-8F01-036666057814}" }
-        - { name: "Transparent", itemId: "{A46EFC9D-7CF0-4C92-9577-1D94FD1D9782}" }
-        - { name: "Minimal", itemId: "{608E0EC7-E2C6-4093-A1A1-3962FF17885A}" }
+        - { name: "Default", itemId: "{EF071409-2C73-4564-94CA-002C3C1E6616}" }
+        - { name: "Transparent", itemId: "{C131B5BB-F184-4061-8F90-7CEE90F6BA36}" }
+        - { name: "Minimal", itemId: "{00CAB06E-E51F-440E-A91A-9F3F221F2314}" }
+        - { name: "AllegroHeader", itemId: "{11891C03-395F-4AE2-9F20-48F74AA097E9}" }
 
     verification:
       checkedAt: "2026-05-05T16:00:00Z"
@@ -293,8 +391,8 @@ components:
 
     datasourceFolder:
       name: "HeroBanners"
-      path: "/sitecore/content/main/main-website/Data/HeroBanners"
-      itemId: "{79A9DFE3-D529-4ED3-8105-DCA4C0A3B25C}"
+      path: "/sitecore/content/main/allegro-microsystems/Data/HeroBanners"
+      itemId: "{A982A6A1-4158-46BC-9F4D-6945173D757B}"
       insertOptionsSet: true
       exampleItem:
         name: "Hero Banner"
@@ -313,8 +411,8 @@ components:
       registeredInAvailableRenderings: true
 
     headlessVariants:
-      containerPath: "/sitecore/content/main/main-website/Presentation/Headless Variants/HeroBanner"
-      containerId: "{D28D8B6E-3030-4D49-9558-44B7EED789B8}"
+      containerPath: "/sitecore/content/main/allegro-microsystems/Presentation/Headless Variants/HeroBanner"
+      containerId: "{0BA603CB-4020-40A5-8CD7-771038140807}"
       variants:
         - { name: "Default", itemId: "{51E32CC6-C761-4E8D-A9EB-03A11D358DC4}" }
         - { name: "SplitImageText", itemId: "{085ED09F-42C4-4C25-BB70-CC13D3F9AF8F}" }
@@ -410,8 +508,8 @@ components:
 
     datasourceFolder:
       name: "TabNavigationSections"
-      path: "/sitecore/content/main/main-website/Data/TabNavigationSections"
-      itemId: "{62A76B57-53E0-4F57-A793-E5CF0CC8ADA5}"
+      path: "/sitecore/content/main/allegro-microsystems/Data/TabNavigationSections"
+      itemId: "{3EBB1B9D-0D78-436D-BDA8-83B784676979}"
       insertOptionsSet: true
       exampleItem:
         name: "Tab Navigation Section"
@@ -434,8 +532,8 @@ components:
       registeredInAvailableRenderings: true
 
     headlessVariants:
-      containerPath: "/sitecore/content/main/main-website/Presentation/Headless Variants/TabNavigationSection"
-      containerId: "{5DF30ECF-56D0-4599-BB2A-C6737C30C333}"
+      containerPath: "/sitecore/content/main/allegro-microsystems/Presentation/Headless Variants/TabNavigationSection"
+      containerId: "{3F9C652D-3E3A-4D82-8D41-DEC0A9D43668}"
       variants:
         - { name: "Default", itemId: "{37CD0AB0-A6F4-4F5B-9032-666FA10925D4}" }
         - { name: "Underline", itemId: "{F6AB5E2B-D266-4BAC-8536-48404A6EF04A}" }
@@ -539,8 +637,8 @@ components:
 
     datasourceFolder:
       name: "ProductPricingCards"
-      path: "/sitecore/content/main/main-website/Data/ProductPricingCards"
-      itemId: "{B5C8AA4C-5B7D-4008-8945-68F7D909134F}"
+      path: "/sitecore/content/main/allegro-microsystems/Data/ProductPricingCards"
+      itemId: "{7B14502C-1095-42E1-A63E-FA2BD5D361AE}"
       insertOptionsSet: true
       exampleItem:
         name: "Product Pricing Cards"
@@ -564,8 +662,8 @@ components:
       registeredInAvailableRenderings: true
 
     headlessVariants:
-      containerPath: "/sitecore/content/main/main-website/Presentation/Headless Variants/ProductPricingCards"
-      containerId: "{2D0654D5-0BFB-4ABB-9B42-83278B8AEC42}"
+      containerPath: "/sitecore/content/main/allegro-microsystems/Presentation/Headless Variants/ProductPricingCards"
+      containerId: "{04D17E28-4298-4E5E-8EE3-43F954EE7469}"
       variants:
         - { name: "Default", itemId: "{8059925F-0667-437B-AD6F-450BAF663C08}" }
         - { name: "Horizontal", itemId: "{C9B441F5-71A8-46E6-AE86-478930CA907F}" }
@@ -649,8 +747,8 @@ components:
 
     datasourceFolder:
       name: "LegalComplianceBanners"
-      path: "/sitecore/content/main/main-website/Data/LegalComplianceBanners"
-      itemId: "{6565D16E-5989-481B-AF40-CFFA4D58DF12}"
+      path: "/sitecore/content/main/allegro-microsystems/Data/LegalComplianceBanners"
+      itemId: "{A8792B8C-E660-4FF0-9B68-437296B75C47}"
       insertOptionsSet: true
       exampleItem:
         name: "Legal Compliance Banner"
@@ -669,8 +767,8 @@ components:
       registeredInAvailableRenderings: true
 
     headlessVariants:
-      containerPath: "/sitecore/content/main/main-website/Presentation/Headless Variants/LegalComplianceBanner"
-      containerId: "{A5368715-1C3A-49CC-88A7-1FFB98645A93}"
+      containerPath: "/sitecore/content/main/allegro-microsystems/Presentation/Headless Variants/LegalComplianceBanner"
+      containerId: "{15F10F71-529E-49F2-AE04-B6B9B9A7BA59}"
       variants:
         - { name: "Default", itemId: "{E3E57B11-8697-4BC7-B56F-352091BDC6BC}" }
         - { name: "WithImage", itemId: "{21600F34-BAD3-4EF8-88C9-03F723EEE608}" }
@@ -766,8 +864,8 @@ components:
 
     datasourceFolder:
       name: "ValuePropositionGrids"
-      path: "/sitecore/content/main/main-website/Data/ValuePropositionGrids"
-      itemId: "{BE69F95D-9D08-4C4B-ADF3-59007B2E0BB4}"
+      path: "/sitecore/content/main/allegro-microsystems/Data/ValuePropositionGrids"
+      itemId: "{2E8785A2-F02C-4DD0-8DBF-8EAB68158BBF}"
       insertOptionsSet: true
       exampleItem:
         name: "Value Proposition Grid"
@@ -791,8 +889,8 @@ components:
       registeredInAvailableRenderings: true
 
     headlessVariants:
-      containerPath: "/sitecore/content/main/main-website/Presentation/Headless Variants/ValuePropositionGrid"
-      containerId: "{24A8E37E-7102-407A-9899-8CD940160F39}"
+      containerPath: "/sitecore/content/main/allegro-microsystems/Presentation/Headless Variants/ValuePropositionGrid"
+      containerId: "{B233A1E4-F210-48DC-B9F2-26ABD69B2459}"
       variants:
         - { name: "Default", itemId: "{B2D75BE0-CE27-431F-BF59-9F49EEC5DF31}" }
         - { name: "TwoColumn", itemId: "{3935D1DD-DC84-4A01-B271-BEF9475C5AE1}" }
@@ -888,8 +986,8 @@ components:
 
     datasourceFolder:
       name: "TrustStatsRows"
-      path: "/sitecore/content/main/main-website/Data/TrustStatsRows"
-      itemId: "{6A826E8E-4AB2-4F62-8605-40430028C64C}"
+      path: "/sitecore/content/main/allegro-microsystems/Data/TrustStatsRows"
+      itemId: "{C2E0AEF9-E8E2-44F4-B81E-2415AF34690A}"
       insertOptionsSet: true
       exampleItem:
         name: "Trust Stats Row"
@@ -914,8 +1012,8 @@ components:
       registeredInAvailableRenderings: true
 
     headlessVariants:
-      containerPath: "/sitecore/content/main/main-website/Presentation/Headless Variants/TrustStatsRow"
-      containerId: "{7AE37D15-B227-4274-809B-27023796BACD}"
+      containerPath: "/sitecore/content/main/allegro-microsystems/Presentation/Headless Variants/TrustStatsRow"
+      containerId: "{E0E83B01-B8C6-467A-B9D1-DC98A5F450BE}"
       variants:
         - { name: "Default", itemId: "{71BDCB75-6061-460C-98BE-86C4E5E79B3A}" }
         - { name: "WithIcons", itemId: "{A31EA0E4-1E93-43EE-9615-EC73A1451E63}" }
@@ -1008,8 +1106,8 @@ components:
 
     datasourceFolder:
       name: "TestimonialBlocks"
-      path: "/sitecore/content/main/main-website/Data/TestimonialBlocks"
-      itemId: "{E5004E14-EA49-43B7-A093-006648A14A60}"
+      path: "/sitecore/content/main/allegro-microsystems/Data/TestimonialBlocks"
+      itemId: "{68BAD03E-4CE3-48E0-9681-B06316E2C9FA}"
       insertOptionsSet: true
       exampleItem:
         name: "Testimonial Block"
@@ -1032,8 +1130,8 @@ components:
       registeredInAvailableRenderings: true
 
     headlessVariants:
-      containerPath: "/sitecore/content/main/main-website/Presentation/Headless Variants/TestimonialBlock"
-      containerId: "{77FA9798-E911-41DC-804F-5A3649087CB4}"
+      containerPath: "/sitecore/content/main/allegro-microsystems/Presentation/Headless Variants/TestimonialBlock"
+      containerId: "{81B103F1-49F9-4F2A-8D24-A20D42EA987B}"
       variants:
         - { name: "Default", itemId: "{7C588A0F-5720-4CA7-A50A-4AD02E272B62}" }
         - { name: "Carousel", itemId: "{0F34A807-A42C-4E7D-BD54-EF222EB2D952}" }
@@ -1112,8 +1210,8 @@ components:
 
     datasourceFolder:
       name: "CTABanners"
-      path: "/sitecore/content/main/main-website/Data/CTABanners"
-      itemId: "{F86BE13D-2F5E-4D7E-B2E5-EF4C9637FC4C}"
+      path: "/sitecore/content/main/allegro-microsystems/Data/CTABanners"
+      itemId: "{06F3EB5A-24A6-41B9-A6B1-C6E4E0A6C819}"
       insertOptionsSet: true
       exampleItem:
         name: "CTA Banner"
@@ -1132,8 +1230,8 @@ components:
       registeredInAvailableRenderings: true
 
     headlessVariants:
-      containerPath: "/sitecore/content/main/main-website/Presentation/Headless Variants/CTABanner"
-      containerId: "{A739A883-D5E1-4CAD-A8EE-5D3287D6B238}"
+      containerPath: "/sitecore/content/main/allegro-microsystems/Presentation/Headless Variants/CTABanner"
+      containerId: "{D57CB181-AED9-429F-BFA7-576E5683F049}"
       variants:
         - { name: "Default", itemId: "{B526E0D8-C4F9-4A21-AFA9-B828119FA988}" }
         - { name: "WithImage", itemId: "{2DC4E1E9-79A0-48C7-A6D9-AC7DD8AFAAA0}" }
@@ -1167,7 +1265,7 @@ components:
     category: "Cards"
     status: "complete"
     createdAt: "2026-03-25T18:30:00Z"
-    updatedAt: "2026-03-25T18:30:00Z"
+    updatedAt: "2026-09-21T21:05:00Z"
 
     react:
       filePath: "src/components/uiim/cards/FeatureCardsGrid.tsx"
@@ -1177,6 +1275,8 @@ components:
         - "TwoColumn"
         - "WithImages"
         - "Carousel"
+        - "AllegroFeaturedProducts"
+        - "AllegroStoryMosaic"
 
     templates:
       datasource:
@@ -1226,8 +1326,8 @@ components:
 
     datasourceFolder:
       name: "FeatureCardsGrids"
-      path: "/sitecore/content/main/main-website/Data/FeatureCardsGrids"
-      itemId: "{BAB76C01-9A6E-49D5-9F44-22D7EDBE13FE}"
+      path: "/sitecore/content/main/allegro-microsystems/Data/FeatureCardsGrids"
+      itemId: "{1E014F89-A626-4966-AFEF-ED13837F708A}"
       insertOptionsSet: true
       exampleItem:
         name: "Feature Cards Grid"
@@ -1251,13 +1351,15 @@ components:
       registeredInAvailableRenderings: true
 
     headlessVariants:
-      containerPath: "/sitecore/content/main/main-website/Presentation/Headless Variants/FeatureCardsGrid"
-      containerId: "{72669095-6581-4595-9C9E-2F650BCA4404}"
+      containerPath: "/sitecore/content/main/allegro-microsystems/Presentation/Headless Variants/FeatureCardsGrid"
+      containerId: "{972A4A3B-7216-4B64-BA0E-0EC2BAD5B910}"
       variants:
-        - { name: "Default", itemId: "{495EF058-D306-4328-ABE4-261E7CFE8E9E}" }
-        - { name: "TwoColumn", itemId: "{0BCA5162-9643-49F3-BEE2-6B5243287D5E}" }
-        - { name: "WithImages", itemId: "{0378DF47-C562-4BE1-8BA7-DFE429A2015A}" }
-        - { name: "Carousel", itemId: "" }  # TODO: create in Sitecore
+        - { name: "Default", itemId: "{C1B0FEE4-8490-4F55-B37D-3D2535554C92}" }
+        - { name: "TwoColumn", itemId: "{188CC758-37AF-47C7-983F-7B6ADDC557D4}" }
+        - { name: "WithImages", itemId: "{9A9CDACB-7BE1-4811-96B9-B9DDE2F71544}" }
+        - { name: "Carousel", itemId: "{509905B1-FFC1-40DA-95DD-969DCB95A5B6}" }
+        - { name: "AllegroFeaturedProducts", itemId: "{CEE215A5-D4E4-47BB-B006-1A9B9A621852}" }
+        - { name: "AllegroStoryMosaic", itemId: "{126232D4-73B4-4279-8546-724C6CC48563}" }
 
     verification:
       checkedAt: "2026-03-25T18:30:00Z"
@@ -1328,8 +1430,8 @@ components:
 
     datasourceFolder:
       name: "ImageGalleries"
-      path: "/sitecore/content/main/main-website/Data/ImageGalleries"
-      itemId: "{98392731-3CBC-498C-888B-9669BA639B96}"
+      path: "/sitecore/content/main/allegro-microsystems/Data/ImageGalleries"
+      itemId: "{9AC291D9-033C-4846-81F9-36A3679D75DB}"
       insertOptionsSet: true
       exampleItem:
         name: "Image Gallery"
@@ -1348,8 +1450,8 @@ components:
       registeredInAvailableRenderings: true
 
     headlessVariants:
-      containerPath: "/sitecore/content/main/main-website/Presentation/Headless Variants/ImageGallery"
-      containerId: "{C022A2B3-EF0B-4035-9103-F752D98E0C6A}"
+      containerPath: "/sitecore/content/main/allegro-microsystems/Presentation/Headless Variants/ImageGallery"
+      containerId: "{B9F17788-78C1-446E-B6B2-2537BFC30703}"
       variants:
         - { name: "Default", itemId: "{36325627-294D-44ED-BD63-2E622F782684}" }
         - { name: "Gallery", itemId: "{CF1F5876-5157-441C-A6FB-7BF150651345}" }
@@ -1437,8 +1539,8 @@ components:
 
     datasourceFolder:
       name: "LogoClouds"
-      path: "/sitecore/content/main/main-website/Data/LogoClouds"
-      itemId: "{A0F83F36-4BFB-4C6A-9079-A01EC54A5276}"
+      path: "/sitecore/content/main/allegro-microsystems/Data/LogoClouds"
+      itemId: "{10EC81D2-7CDB-4F73-B63B-2A86739F823F}"
       insertOptionsSet: true
       exampleItem:
         name: "Logo Cloud"
@@ -1462,8 +1564,8 @@ components:
       registeredInAvailableRenderings: true
 
     headlessVariants:
-      containerPath: "/sitecore/content/main/main-website/Presentation/Headless Variants/LogoCloud"
-      containerId: "{0D58C38F-2601-444C-8981-6FB3DCA202EC}"
+      containerPath: "/sitecore/content/main/allegro-microsystems/Presentation/Headless Variants/LogoCloud"
+      containerId: "{2E9DA407-857D-46BF-B325-E9E4CD9DA3C8}"
       variants:
         - { name: "Default", itemId: "{125C1A27-2F29-4A84-B45A-DD43279C23CE}" }
         - { name: "Grid", itemId: "{8CCCB55E-D891-4F4B-B8C7-E254DC95C9F1}" }
@@ -1496,7 +1598,7 @@ components:
     category: "Navigation"
     status: "complete"
     createdAt: "2026-03-25T20:00:00Z"
-    updatedAt: "2026-05-05T13:00:00Z"
+    updatedAt: "2026-09-21T21:05:00Z"
 
     react:
       filePath: "src/components/uiim/navigation/SiteFooter.tsx"
@@ -1506,6 +1608,7 @@ components:
         - "Default"
         - "Minimal"
         - "MegaFooter"
+        - "AllegroMegaFooter"
 
     templates:
       datasource:
@@ -1537,8 +1640,8 @@ components:
 
     datasourceFolder:
       name: "SiteFooters"
-      path: "/sitecore/content/main/main-website/Data/SiteFooters"
-      itemId: "{79F4A73C-71D2-4959-8FDE-C7D9C8748990}"
+      path: "/sitecore/content/main/allegro-microsystems/Data/SiteFooters"
+      itemId: "{7320ED5D-D74D-498D-AB4D-83AC7BD64D00}"
       insertOptionsSet: true
       exampleItem:
         name: "Site Footer"
@@ -1557,12 +1660,13 @@ components:
       registeredInAvailableRenderings: true
 
     headlessVariants:
-      containerPath: "/sitecore/content/main/main-website/Presentation/Headless Variants/SiteFooter"
-      containerId: "{613FAEEA-7FDC-453E-96DC-9B52337AC257}"
+      containerPath: "/sitecore/content/main/allegro-microsystems/Presentation/Headless Variants/SiteFooter"
+      containerId: "{32155878-9583-4C3A-BA24-8123B4D2E386}"
       variants:
-        - { name: "Default", itemId: "{143CFE84-1E77-4961-975C-38564DC43DB9}" }
-        - { name: "Minimal", itemId: "{AF87D61B-F6A8-4036-9BF8-FDB586268D24}" }
-        - { name: "MegaFooter", itemId: "{DA131066-F9A2-47F0-A099-F614E61817AA}" }
+        - { name: "Default", itemId: "{4383F2DE-5ADA-4F33-B5D8-F67B2B35F8AD}" }
+        - { name: "Minimal", itemId: "{D3F24B20-0668-43B4-8A25-D6253CDE1BAC}" }
+        - { name: "MegaFooter", itemId: "{5F2E5E33-2E91-4013-8027-DB480B949EF0}" }
+        - { name: "AllegroMegaFooter", itemId: "{66F7386F-2A66-4184-8F1A-631B59DB71D4}" }
 
     verification:
       checkedAt: "2026-03-25T20:00:00Z"
@@ -1629,8 +1733,8 @@ components:
 
     datasourceFolder:
       name: "NewsletterSignups"
-      path: "/sitecore/content/main/main-website/Data/NewsletterSignups"
-      itemId: "{4046B0A4-5F07-4F4B-8D6F-E04EDE1E1204}"
+      path: "/sitecore/content/main/allegro-microsystems/Data/NewsletterSignups"
+      itemId: "{1DFCAF45-EC80-4C73-AAE0-2DE62F06BE61}"
       insertOptionsSet: true
       exampleItem:
         name: "Newsletter Signup"
@@ -1649,8 +1753,8 @@ components:
       registeredInAvailableRenderings: true
 
     headlessVariants:
-      containerPath: "/sitecore/content/main/main-website/Presentation/Headless Variants/NewsletterSignup"
-      containerId: "{3DC77ED9-7155-4AE9-A658-D884E35D949A}"
+      containerPath: "/sitecore/content/main/allegro-microsystems/Presentation/Headless Variants/NewsletterSignup"
+      containerId: "{7310BB22-3434-441E-983E-EFA7C6339C33}"
       variants:
         - { name: "Default", itemId: "{F0F09912-52F5-4429-8CBF-F6FAA8AD2453}" }
         - { name: "Banner", itemId: "{5FE28EAE-3DC9-4DF5-89B8-0576C940BE01}" }
@@ -1729,8 +1833,8 @@ components:
 
     datasourceFolder:
       name: "IdentityCaptureForms"
-      path: "/sitecore/content/main/main-website/Data/IdentityCaptureForms"
-      itemId: "{826BD609-C026-458D-901A-C3503DAEF853}"
+      path: "/sitecore/content/main/allegro-microsystems/Data/IdentityCaptureForms"
+      itemId: "{C15AF6CF-00DB-410F-8783-F004AE8B8EB9}"
       insertOptionsSet: true   # silent-write — verify in Content Editor
       exampleItem:
         name: "Identity Capture Form"
@@ -1749,8 +1853,8 @@ components:
       registeredInAvailableRenderings: true
 
     headlessVariants:
-      containerPath: "/sitecore/content/main/main-website/Presentation/Headless Variants/IdentityCaptureForm"
-      containerId: "{24632B0B-55E2-4F2C-8D98-875972209B99}"
+      containerPath: "/sitecore/content/main/allegro-microsystems/Presentation/Headless Variants/IdentityCaptureForm"
+      containerId: "{74A0E1E4-2867-42E3-B04F-FEEDF24B7B08}"
       variants:
         - { name: "Default", itemId: "{27234935-C791-404E-84D9-8E83ADD0A60D}" }
 
@@ -1808,8 +1912,8 @@ components:
       registeredInAvailableRenderings: true
 
     headlessVariants:
-      containerPath: "/sitecore/content/main/main-website/Presentation/Headless Variants/IdentityEventDevForm"
-      containerId: "{DF35E4E7-28AF-49F7-AB9B-037DABBB5F5F}"
+      containerPath: "/sitecore/content/main/allegro-microsystems/Presentation/Headless Variants/IdentityEventDevForm"
+      containerId: "{7CA8666C-3FE5-4EF3-ACF7-773DB3407F3B}"
       variants:
         - { name: "Default", itemId: "{216D0EE6-3A08-429E-A34B-C1AA1CD7E493}" }
 
@@ -1890,8 +1994,8 @@ components:
 
     datasourceFolder:
       name: "FAQAccordions"
-      path: "/sitecore/content/main/main-website/Data/FAQAccordions"
-      itemId: "{547BF25D-1445-4C45-9C04-66FCB3FD339B}"
+      path: "/sitecore/content/main/allegro-microsystems/Data/FAQAccordions"
+      itemId: "{BCF1F759-D6A8-40DE-B2D8-A00F3CEA6BB0}"
       insertOptionsSet: true
       exampleItem:
         name: "FAQ Accordion"
@@ -1915,8 +2019,8 @@ components:
       registeredInAvailableRenderings: true
 
     headlessVariants:
-      containerPath: "/sitecore/content/main/main-website/Presentation/Headless Variants/FAQAccordion"
-      containerId: "{55FB6F57-5566-4CAF-ADDD-18BFB0152893}"
+      containerPath: "/sitecore/content/main/allegro-microsystems/Presentation/Headless Variants/FAQAccordion"
+      containerId: "{7BC7CC40-9270-48AE-8A9B-F175052491E3}"
       variants:
         - { name: "Default", itemId: "{3D01B4ED-75E0-4AD3-A6F4-FA47606082CB}" }
         - { name: "AllOpen", itemId: "{FFC0D7F8-8D1C-4A6E-8FC1-DD429718057A}" }
@@ -1991,8 +2095,8 @@ components:
 
     datasourceFolder:
       name: "RichTextBlocks"
-      path: "/sitecore/content/main/main-website/Data/RichTextBlocks"
-      itemId: "{E94DA9F2-19A0-4EEB-9F1C-C5B53DF8D8ED}"
+      path: "/sitecore/content/main/allegro-microsystems/Data/RichTextBlocks"
+      itemId: "{C91DF916-238A-4AFD-AD80-6F6053717F2F}"
       insertOptionsSet: true
       exampleItem:
         name: "Rich Text Block"
@@ -2011,8 +2115,8 @@ components:
       registeredInAvailableRenderings: true
 
     headlessVariants:
-      containerPath: "/sitecore/content/main/main-website/Presentation/Headless Variants/RichTextBlock"
-      containerId: "{F11626A1-AE7B-46F7-AB3A-F9EB9779C5EC}"
+      containerPath: "/sitecore/content/main/allegro-microsystems/Presentation/Headless Variants/RichTextBlock"
+      containerId: "{C03B8B2D-AA81-4F36-89C5-E385AEF5622A}"
       variants:
         - { name: "Default", itemId: "{68885D4E-9808-421D-AB93-30E9FF27D8F1}" }
         - { name: "Centered", itemId: "{61BF7CB2-B65C-4C85-902D-CFA95D0F429D}" }
@@ -2089,8 +2193,8 @@ components:
 
     datasourceFolder:
       name: "FeatureHighlights"
-      path: "/sitecore/content/main/main-website/Data/FeatureHighlights"
-      itemId: "{0A212E28-4EDE-45DE-8A8F-E1004E8AAD25}"
+      path: "/sitecore/content/main/allegro-microsystems/Data/FeatureHighlights"
+      itemId: "{F899052E-CCB9-47C9-99B0-0AECA65411B7}"
       insertOptionsSet: true
       exampleItem:
         name: "Feature Highlight"
@@ -2109,8 +2213,8 @@ components:
       registeredInAvailableRenderings: true
 
     headlessVariants:
-      containerPath: "/sitecore/content/main/main-website/Presentation/Headless Variants/FeatureHighlight"
-      containerId: "{D3E5415A-9247-4572-B146-73E4AEF78195}"
+      containerPath: "/sitecore/content/main/allegro-microsystems/Presentation/Headless Variants/FeatureHighlight"
+      containerId: "{5A524876-0FE5-4650-955A-D77FA42FBD42}"
       variants:
         - { name: "Default", itemId: "{0FDFE204-724E-4850-8891-ECC443607643}" }
         - { name: "Centered", itemId: "{3C33C16D-F0D3-4FBF-8D78-CE70CEA0868B}" }
@@ -2139,7 +2243,7 @@ components:
     category: "Banners"
     status: "complete"
     createdAt: "2026-05-05T12:00:00Z"
-    updatedAt: "2026-05-05T12:00:00Z"
+    updatedAt: "2026-09-21T21:05:00Z"
 
     react:
       filePath: "src/components/uiim/banners/HeroBannerCarousel.tsx"
@@ -2147,6 +2251,7 @@ components:
       variants:
         - "Default"
         - "WithThumbnails"
+        - "AllegroHero"
 
     templates:
       parent:
@@ -2196,8 +2301,8 @@ components:
 
     datasourceFolder:
       name: "HeroBannerCarousels"
-      path: "/sitecore/content/main/main-website/Data/HeroBannerCarousels"
-      itemId: "{E4703202-A87E-4387-987C-6B69E67ACADC}"
+      path: "/sitecore/content/main/allegro-microsystems/Data/HeroBannerCarousels"
+      itemId: "{86507992-272D-4CC4-B1EA-F95AA06DCC00}"
       insertOptionsSet: true
       exampleItem:
         name: "Hero Banner Carousel"
@@ -2217,6 +2322,14 @@ components:
       componentQuery: "query HeroBannerCarousel($datasource: String!, $language: String!) { datasource: item(path: $datasource, language: $language) { title: field(name: \"Title\") { jsonValue } children { results { id slideTitle: field(name: \"SlideTitle\") { jsonValue } slideSubtitle: field(name: \"SlideSubtitle\") { jsonValue } slideImage: field(name: \"SlideImage\") { jsonValue } primaryLink: field(name: \"PrimaryLink\") { jsonValue } secondaryLink: field(name: \"SecondaryLink\") { jsonValue } } } } }"
       addFieldEditorButton: "1"
       registeredInAvailableRenderings: true
+
+    headlessVariants:
+      containerPath: "/sitecore/content/main/allegro-microsystems/Presentation/Headless Variants/HeroBannerCarousel"
+      containerId: "{1A94C147-12A1-4D08-9B7E-DC6211C03D92}"
+      variants:
+        - { name: "Default", itemId: "{270199E9-AC51-4001-B954-79B247B5380A}" }
+        - { name: "WithThumbnails", itemId: "{6A099514-6315-4B78-8C22-029597F86872}" }
+        - { name: "AllegroHero", itemId: "{C89ADDA3-BD8D-47D5-BC1C-66E534E7E17E}" }
 
     verification:
       passed:
@@ -2280,8 +2393,8 @@ components:
       testsCreated: passed
 
     headlessVariants:
-      containerId: "{9894746a-f336-4856-bd1f-c1663374703c}"
-      containerPath: "/sitecore/content/main/main-website/Presentation/Headless Variants/ArticleHero"
+      containerId: "{776ADB29-4268-4021-9C68-914AC46D172A}"
+      containerPath: "/sitecore/content/main/allegro-microsystems/Presentation/Headless Variants/ArticleHero"
       definitions:
         - { name: "Default", itemId: "{71d4165d-543e-4b4f-8c88-da9d8d395163}" }
         - { name: "Minimal", itemId: "{fc567658-54d2-465e-80f4-85feb79c8598}" }
@@ -2336,8 +2449,8 @@ components:
       testsCreated: passed
 
     headlessVariants:
-      containerId: "{2e05330b-e438-4006-9096-165a2c36e425}"
-      containerPath: "/sitecore/content/main/main-website/Presentation/Headless Variants/ArticleBody"
+      containerId: "{35BBC370-9A91-4315-9AE0-420403123504}"
+      containerPath: "/sitecore/content/main/allegro-microsystems/Presentation/Headless Variants/ArticleBody"
       definitions:
         - { name: "Default", itemId: "{4ffc7bca-050e-4867-838d-f3bd19238f8c}" }
         - { name: "WithSidebar", itemId: "{bae365fb-8958-4b03-b494-1beccfd5d897}" }
@@ -2372,8 +2485,8 @@ components:
       datasourceRequired: false
       registeredInAvailableRenderings: pendingManual
     headlessVariants:
-      containerId: "{2571BE88-7763-4827-B661-1C6792B95847}"
-      containerPath: "/sitecore/content/main/main-website/Presentation/Headless Variants/LandingHero"
+      containerId: "{DD443D12-A2B7-47D0-8DA0-18CED898F654}"
+      containerPath: "/sitecore/content/main/allegro-microsystems/Presentation/Headless Variants/LandingHero"
       definitions:
         - { name: "Default", itemId: "{D1B9E599-F9C5-416F-A204-16F8EBC1E10C}" }
         - { name: "SplitImage", itemId: "{E000909A-01DA-498C-BAB3-54EAC6E2C89F}" }
@@ -2416,8 +2529,8 @@ components:
       datasourceRequired: false
       registeredInAvailableRenderings: pendingManual
     headlessVariants:
-      containerId: "{5ADEF5CB-11B4-4743-AA96-4D7EFEE55C5D}"
-      containerPath: "/sitecore/content/main/main-website/Presentation/Headless Variants/LandingFeatures"
+      containerId: "{BC17D814-D33F-4A2F-8E5C-C5701F5B9857}"
+      containerPath: "/sitecore/content/main/allegro-microsystems/Presentation/Headless Variants/LandingFeatures"
       definitions:
         - { name: "Default", itemId: "{31A214D5-7824-476C-8C63-4FB5F942DD28}" }
     verification:
@@ -2455,8 +2568,8 @@ components:
       datasourceRequired: false
       registeredInAvailableRenderings: pendingManual
     headlessVariants:
-      containerId: "{5619F2D9-B432-4A47-AA8A-911937AB991B}"
-      containerPath: "/sitecore/content/main/main-website/Presentation/Headless Variants/LandingStats"
+      containerId: "{D9D4BB3E-A556-478A-8809-AF3F345F12C7}"
+      containerPath: "/sitecore/content/main/allegro-microsystems/Presentation/Headless Variants/LandingStats"
       definitions:
         - { name: "Default", itemId: "{2623EBAE-BF3D-471A-8E7D-176BCF6E4BE6}" }
     verification:
@@ -2494,8 +2607,8 @@ components:
       datasourceRequired: false
       registeredInAvailableRenderings: pendingManual
     headlessVariants:
-      containerId: "{1077B0D2-420D-48E4-ADA2-853C6C0E880A}"
-      containerPath: "/sitecore/content/main/main-website/Presentation/Headless Variants/LandingSocialProof"
+      containerId: "{BBCE67F7-CA2F-4EBE-8AEC-AD1BF7092257}"
+      containerPath: "/sitecore/content/main/allegro-microsystems/Presentation/Headless Variants/LandingSocialProof"
       definitions:
         - { name: "Default", itemId: "{8ED8A4F7-10C3-4867-AC0E-B3F79BECC356}" }
     verification:
@@ -2534,8 +2647,8 @@ components:
       datasourceRequired: false
       registeredInAvailableRenderings: pendingManual
     headlessVariants:
-      containerId: "{4FC4C30A-8A86-43CD-AFF9-4D6C53CB0594}"
-      containerPath: "/sitecore/content/main/main-website/Presentation/Headless Variants/LandingFAQ"
+      containerId: "{CFE88447-C7ED-4AA4-94A4-BFB95B19A23B}"
+      containerPath: "/sitecore/content/main/allegro-microsystems/Presentation/Headless Variants/LandingFAQ"
       definitions:
         - { name: "Default", itemId: "{DCA2DB12-8D54-4AD6-8D43-082683AFA518}" }
     verification:
@@ -2573,8 +2686,8 @@ components:
       datasourceRequired: false
       registeredInAvailableRenderings: pendingManual
     headlessVariants:
-      containerId: "{C27474AD-EC5C-421E-AAAE-1DE43C9FC0D4}"
-      containerPath: "/sitecore/content/main/main-website/Presentation/Headless Variants/LandingFinalCTA"
+      containerId: "{7CC91DC0-B642-4F72-9E54-B0D9BDB96C37}"
+      containerPath: "/sitecore/content/main/allegro-microsystems/Presentation/Headless Variants/LandingFinalCTA"
       definitions:
         - { name: "Default", itemId: "{2FFE0507-9D6D-4D93-BFFE-43504C63D10C}" }
     verification:
@@ -2626,8 +2739,8 @@ sharedDataTemplates:
 
     datasourceFolder:
       name: "People"
-      path: "/sitecore/content/main/main-website/Data/People"
-      itemId: "{b4a7e448-2620-458e-9108-e6123c433660}"
+      path: "/sitecore/content/main/allegro-microsystems/Data/People"
+      itemId: "{74E9CF63-3E55-4835-9341-3414C26034AE}"
       insertOptionsSet: true
       exampleItem:
         name: "Jane Smith"
@@ -2672,7 +2785,7 @@ pageTemplates:
         fields:
           - { name: "ArticleContent", type: "Rich Text", itemId: "{63471bba-943c-4d82-b7bf-d7ec82babbf7}" }
           - { name: "ArticleImage", type: "Image", itemId: "{bb96e156-f355-4cc6-894b-5e70a45d8f30}" }
-          - { name: "ArticleAuthor", type: "Droptree", itemId: "{068d4fa8-7b15-4b86-b38a-9e40a58c548b}", source: "/sitecore/content/main/main-website/Data/People" }
+          - { name: "ArticleAuthor", type: "Droptree", itemId: "{068d4fa8-7b15-4b86-b38a-9e40a58c548b}", source: "/sitecore/content/main/allegro-microsystems/Data/People" }
           - { name: "ArticlePublicationDate", type: "Date", itemId: "{2fecdae7-6f5d-46a8-a9c9-c128dc4f4d0c}" }
           - { name: "ArticleKeyTakeaways", type: "Rich Text", itemId: "{bfa05db5-8ccf-4ba2-b312-21194a8a5d75}" }
           - { name: "ArticleReadTime", type: "Single-Line Text", itemId: "{76c93dec-a8a6-4185-9fd9-8247ebfb2dd0}" }
@@ -2684,7 +2797,7 @@ pageTemplates:
     contentTree:
       articlesParent:
         name: "Articles"
-        path: "/sitecore/content/main/main-website/Home/Articles"
+        path: "/sitecore/content/main/allegro-microsystems/Home/Articles"
         itemId: "{d8b01498-2838-4388-a68f-86665d9c1c80}"
         insertOptionsSet: true
 
@@ -2705,14 +2818,14 @@ pageTemplates:
 
     partialDesign:
       name: "Article Layout"
-      path: "/sitecore/content/main/main-website/Presentation/Partial Designs/Article Layout"
+      path: "/sitecore/content/main/allegro-microsystems/Presentation/Partial Designs/Article Layout"
       itemId: "{4e09b734-6f98-4599-bc8d-9b15b07b291c}"
       components: ["ArticleHero", "ArticleBody"]
       placeholder: "headless-main"
 
     pageDesign:
       name: "Article"
-      path: "/sitecore/content/main/main-website/Presentation/Page Designs/Article"
+      path: "/sitecore/content/main/allegro-microsystems/Presentation/Page Designs/Article"
       itemId: "{ea8b44fc-b855-40ea-b8e5-b210119c9aab}"
 
     notes:
@@ -2800,7 +2913,7 @@ pageTemplates:
     contentTree:
       lpParent:
         name: "lp"
-        path: "/sitecore/content/main/main-website/Home/lp"
+        path: "/sitecore/content/main/allegro-microsystems/Home/lp"
         itemId: "{AF65681C-5C75-40D2-89A3-3779D5A47A27}"
         insertOptionsSet: pendingManual
 
@@ -2826,7 +2939,7 @@ pageTemplates:
 
     partialDesign:
       name: "Landing Page Layout"
-      path: "/sitecore/content/main/main-website/Presentation/Partial Designs/Landing Page Layout"
+      path: "/sitecore/content/main/allegro-microsystems/Presentation/Partial Designs/Landing Page Layout"
       itemId: "{BEF9B1FC-E7F6-4296-B60B-780728B557C0}"
       components: ["LandingHero", "LandingFeatures", "LandingStats", "LandingSocialProof", "LandingFAQ", "LandingFinalCTA"]
       placeholder: "headless-main"
@@ -2834,7 +2947,7 @@ pageTemplates:
 
     pageDesign:
       name: "Landing Page"
-      path: "/sitecore/content/main/main-website/Presentation/Page Designs/Landing Page"
+      path: "/sitecore/content/main/allegro-microsystems/Presentation/Page Designs/Landing Page"
       itemId: "{E38ABC20-C7EA-43C8-AAAF-22CA71342814}"
       partialDesignsLinked: pendingManual
       linkedToStandardValues: pendingManual
@@ -2887,8 +3000,8 @@ pageTemplates:
 
     datasourceFolder:
       name: "Search Experiences"
-      path: "/sitecore/content/main/main-website/Data/Search Experiences"
-      itemId: "{1E320CFC-62AD-4378-97F7-6BFF5875BB3A}"
+      path: "/sitecore/content/main/allegro-microsystems/Data/Search Experiences"
+      itemId: "{C096EE36-0F08-4A6A-A756-6E71D63863C7}"
 
     rendering:
       name: "SearchExperience"
@@ -2929,8 +3042,8 @@ pageTemplates:
 
     datasourceFolder:
       name: "PreviewSearches"
-      path: "/sitecore/content/main/main-website/Data/PreviewSearches"
-      itemId: "{047DA76C-BF7A-4B53-A5EA-3A356A45B6F1}"
+      path: "/sitecore/content/main/allegro-microsystems/Data/PreviewSearches"
+      itemId: "{490F9E3D-BB1C-468C-AFBA-02B9BD6EE31F}"
 
     rendering:
       name: "PreviewSearch"
@@ -2969,8 +3082,8 @@ pageTemplates:
 
     datasourceFolder:
       name: "SearchResults"
-      path: "/sitecore/content/main/main-website/Data/SearchResults"
-      itemId: "{A03B9129-4D08-435E-B038-29802CE6A603}"
+      path: "/sitecore/content/main/allegro-microsystems/Data/SearchResults"
+      itemId: "{F5FA38B9-8364-40D5-9011-CCCCF64C7C43}"
 
     rendering:
       name: "SearchResults"
@@ -3036,8 +3149,8 @@ pageTemplates:
 
     datasourceFolder:
       name: "Search Experiences V2"
-      path: "/sitecore/content/main/main-website/Data/Search Experiences V2"
-      itemId: "{D5C6A76F-1A01-4B05-8B62-337B1B684D45}"
+      path: "/sitecore/content/main/allegro-microsystems/Data/Search Experiences V2"
+      itemId: "{4DBC5A6C-AB84-41A1-AAB7-C00D3BAAE6FF}"
       insertOptionsSet: true
       exampleItem:
         name: "Search Experience V2 Example"
@@ -3049,7 +3162,7 @@ pageTemplates:
       itemId: "{505B6BB0-DEEA-46F9-9AB2-7020E386F4F0}"
       componentName: "SearchExperienceV2"
       datasourceTemplate: "/sitecore/templates/Project/fmc-custom-demo/Components/Search/Search Experience V2"
-      datasourceLocation: "/sitecore/content/main/main-website/Data/Search Experiences V2"
+      datasourceLocation: "/sitecore/content/main/allegro-microsystems/Data/Search Experiences V2"
       parametersTemplate: "{8D097502-7D90-4690-822E-A1C9D3432F91}"
       addFieldEditorButton: true
       registeredInAvailableRenderings: true
@@ -3074,8 +3187,8 @@ pageTemplates:
       - "2026-05-20: All 3 pendingManual items verified via get_component and get_allowed_comps_by_ph — datasource template, datasource location, and available renderings all confirmed."
 
 lookups:
-  - path: "/sitecore/content/main/main-website/Data"
-    itemId: "{E6C852B5-B70D-412C-B5C6-E6502842F74E}"
+  - path: "/sitecore/content/main/allegro-microsystems/Data"
+    itemId: "{3270C5F2-4439-4D2C-B476-B040828589BC}"
     lastReadAt: "2026-03-25T12:00:00Z"
   - path: "/sitecore/templates/Project/fmc-custom-demo/Components/Search"
     itemId: "{44092340-AF76-44F3-A6C3-AA7347CE9D8B}"
@@ -3098,11 +3211,11 @@ lookups:
   - path: "/sitecore/templates/Project/fmc-custom-demo/Rendering Parameters"
     itemId: "{BEC41516-9F60-48E0-8E80-D515482B6BCC}"
     lastReadAt: "2026-03-25T12:00:00Z"
-  - path: "/sitecore/content/main/main-website/Presentation/Headless Variants"
-    itemId: "{7BC665DC-D7DA-418E-AEC6-124D6291E93F}"
+  - path: "/sitecore/content/main/allegro-microsystems/Presentation/Headless Variants"
+    itemId: "{D0AF0E2F-6A1E-44CB-B0F2-308F39D8A6D1}"
     lastReadAt: "2026-03-25T12:00:00Z"
-  - path: "/sitecore/content/main/main-website/Presentation/Available Renderings/Page Content"
-    itemId: "{2BF7E311-E3A5-4290-A043-AB97EA1DFB15}"
+  - path: "/sitecore/content/main/allegro-microsystems/Presentation/Available Renderings/Page Content"
+    itemId: "{0AE5714D-D2AD-4CFC-B709-F8558752B230}"
     lastReadAt: "2026-03-25T12:00:00Z"
     note: "Available Renderings — NEVER replace, always concatenate"
   - path: "/sitecore/layout/Renderings/Project/fmc-custom-demo"
@@ -3178,8 +3291,8 @@ lookups:
   - path: "/sitecore/templates/Project/fmc-custom-demo/Data/Person"
     itemId: "{513c2b76-7415-48b7-84a5-e663d3bb9129}"
     lastReadAt: "2026-05-18T12:00:00Z"
-  - path: "/sitecore/content/main/main-website/Data/People"
-    itemId: "{b4a7e448-2620-458e-9108-e6123c433660}"
+  - path: "/sitecore/content/main/allegro-microsystems/Data/People"
+    itemId: "{74E9CF63-3E55-4835-9341-3414C26034AE}"
     lastReadAt: "2026-05-18T12:00:00Z"
   - path: "/sitecore/templates/Project/main/Page Types"
     itemId: "{e7769708-59a5-4636-a9ea-c02245185e61}"
@@ -3187,10 +3300,10 @@ lookups:
   - path: "/sitecore/templates/Project/main/Page Types/Article Page"
     itemId: "{74360ad2-d3df-4fce-834c-2f5420488677}"
     lastReadAt: "2026-05-18T12:00:00Z"
-  - path: "/sitecore/content/main/main-website/Home/Articles"
+  - path: "/sitecore/content/main/allegro-microsystems/Home/Articles"
     itemId: "{d8b01498-2838-4388-a68f-86665d9c1c80}"
     lastReadAt: "2026-05-18T12:00:00Z"
-  - path: "/sitecore/content/main/main-website/Home"
+  - path: "/sitecore/content/main/allegro-microsystems/Home"
     itemId: "{e2124310-f817-4644-8671-bff8e72b66d7}"
     lastReadAt: "2026-05-18T12:00:00Z"
   - path: "/sitecore/templates/Project/fmc-custom-demo/Rendering Parameters/Article"
@@ -3210,19 +3323,19 @@ lookups:
   - path: "/sitecore/layout/Renderings/Project/fmc-custom-demo/Landing"
     itemId: "{142E3FB6-A1D0-4D7A-8AF3-F0E7DD155024}"
     lastReadAt: "2026-06-09T00:00:00Z"
-  - path: "/sitecore/content/main/main-website/Home/lp"
+  - path: "/sitecore/content/main/allegro-microsystems/Home/lp"
     itemId: "{AF65681C-5C75-40D2-89A3-3779D5A47A27}"
     lastReadAt: "2026-06-09T00:00:00Z"
-  - path: "/sitecore/content/main/main-website/Presentation/Partial Designs"
+  - path: "/sitecore/content/main/allegro-microsystems/Presentation/Partial Designs"
     itemId: "{B9355266-E4F8-4352-8F64-2700D071D46A}"
     lastReadAt: "2026-06-09T00:00:00Z"
-  - path: "/sitecore/content/main/main-website/Presentation/Page Designs"
+  - path: "/sitecore/content/main/allegro-microsystems/Presentation/Page Designs"
     itemId: "{0E863278-EA75-48C0-82C0-762B566CC40E}"
     lastReadAt: "2026-06-09T00:00:00Z"
-  - path: "/sitecore/content/main/main-website/Presentation/Partial Designs/Landing Page Layout"
+  - path: "/sitecore/content/main/allegro-microsystems/Presentation/Partial Designs/Landing Page Layout"
     itemId: "{BEF9B1FC-E7F6-4296-B60B-780728B557C0}"
     lastReadAt: "2026-06-09T00:00:00Z"
-  - path: "/sitecore/content/main/main-website/Presentation/Page Designs/Landing Page"
+  - path: "/sitecore/content/main/allegro-microsystems/Presentation/Page Designs/Landing Page"
     itemId: "{E38ABC20-C7EA-43C8-AAAF-22CA71342814}"
     lastReadAt: "2026-06-09T00:00:00Z"
 
@@ -3284,8 +3397,8 @@ components-searchv3:
 
     datasourceFolder:
       name: "SearchResults"
-      path: "/sitecore/content/main/main-website/Data/SearchResults"
-      itemId: "{A03B9129-4D08-435E-B038-29802CE6A603}"
+      path: "/sitecore/content/main/allegro-microsystems/Data/SearchResults"
+      itemId: "{F5FA38B9-8364-40D5-9011-CCCCF64C7C43}"
       preExisting: true
       items:
         - name: "Articles Search Results"
@@ -3383,8 +3496,8 @@ components-searchv3:
 
     datasourceFolder:
       name: "SearchCollections"
-      path: "/sitecore/content/main/main-website/Data/SearchCollections"
-      itemId: "{7A7EE0AB-BD25-4CC1-A827-AD88F8C4E75B}"
+      path: "/sitecore/content/main/allegro-microsystems/Data/SearchCollections"
+      itemId: "{8CFE11C6-93D9-4566-AFB6-98016FDDBF1E}"
       insertOptionsVerified: true  # list_avail_insertopts returns SearchCollection
       items:
         - name: "Latest Articles"
@@ -3445,7 +3558,7 @@ components-searchv3:
       tests: "src/__tests__/components/search-typeahead/SearchTypeahead.test.tsx (11 passing, SDK-mock seam)"
 
     headlessVariants:
-      container: { path: "/sitecore/content/main/main-website/Presentation/Headless Variants/SearchTypeahead", itemId: "{5F220220-DC16-49D1-8D9E-6C5BAEB51F78}" }
+      container: { path: "/sitecore/content/main/allegro-microsystems/Presentation/Headless Variants/SearchTypeahead", itemId: "{EFDAC129-9FF2-49BE-809D-AC20859F463F}" }
       definitions:
         - { name: "Default", itemId: "{9E3E0253-FFF5-42B4-8425-9F8DF87689E4}" }
         - { name: "Header", itemId: "{7A5E68E3-BEDE-4E83-B453-4A2298BBA3BD}" }
@@ -3507,8 +3620,8 @@ components-searchv3:
 
     datasourceFolder:
       name: "SearchTypeaheads"
-      path: "/sitecore/content/main/main-website/Data/SearchTypeaheads"
-      itemId: "{C9A981B0-4852-4036-BEFA-656E95D6ED7D}"
+      path: "/sitecore/content/main/allegro-microsystems/Data/SearchTypeaheads"
+      itemId: "{C8E51A9D-F9C6-4B26-B53E-152BCAC06161}"
       insertOptionsVerified: true  # list_avail_insertopts returns SearchTypeahead
       items:
         - name: "Articles Typeahead"
@@ -3563,7 +3676,7 @@ demoContent:
   - name: "Articles corpus 2026-08-18 (10 items, unpublished)"
     kind: "pages"
     template: "Article Page Template"
-    parentPath: "/sitecore/content/main/main-website/Home/Articles/"
+    parentPath: "/sitecore/content/main/allegro-microsystems/Home/Articles/"
     items:
       - { name: "Feature Flags Beyond On And Off", itemId: "{6C2F724D-85B8-4FC0-8F75-F1853C5AF539}", date: "2026-01-13", author: "Marcus Webb" }
       - { name: "Planning And Designing For Personalization", itemId: "{8BD20E7D-ED8D-4EC6-BD7E-0CBAE3F7F844}", date: "2026-02-05", author: "Jane Smith" }
@@ -3624,7 +3737,7 @@ demoContent:
   - name: "Canary Releases Explained"
     kind: "page"
     template: "Article Page Template"
-    path: "/sitecore/content/main/main-website/Home/Articles/Canary Releases Explained"
+    path: "/sitecore/content/main/allegro-microsystems/Home/Articles/Canary Releases Explained"
     itemId: "{2652AE38-3F8E-484A-B45C-DBBA192DEC9F}"
     probeKeyword: "canary"
     author: "Marcus Webb"
@@ -3637,7 +3750,7 @@ demoContent:
   - name: "Zero Downtime Database Migrations"
     kind: "page"
     template: "Article Page Template"
-    path: "/sitecore/content/main/main-website/Home/Articles/Zero Downtime Database Migrations"
+    path: "/sitecore/content/main/allegro-microsystems/Home/Articles/Zero Downtime Database Migrations"
     itemId: "{4377E7CA-9CC2-47BE-8996-1A40F717D613}"
     probeKeyword: "migrations"
     author: "Jane Smith"
@@ -3648,7 +3761,7 @@ demoContent:
   - name: "Observability Beyond Dashboards"
     kind: "page"
     template: "Article Page Template"
-    path: "/sitecore/content/main/main-website/Home/Articles/Observability Beyond Dashboards"
+    path: "/sitecore/content/main/allegro-microsystems/Home/Articles/Observability Beyond Dashboards"
     itemId: "{35035763-61D1-4ADA-A25E-A8FBDB1E659B}"
     probeKeyword: "observability"
     author: "Marcus Webb"
@@ -3659,7 +3772,7 @@ demoContent:
   - name: "SearchExperience dictionary entries"
     kind: "dictionary"
     template: "Dictionary entry ({6D1CD897-1936-4A3A-A511-289A94C2A7B1})"
-    path: "/sitecore/content/main/main-website/Dictionary/"
+    path: "/sitecore/content/main/allegro-microsystems/Dictionary/"
     createdAt: "2026-08-06"
     notes:
       - "11 entries for all DICTIONARY_KEYS in src/lib/search/search-components/constants.ts. Fixes MISSING_MESSAGE next-intl errors on pages hosting SearchExperienceV2 — the component's t() || fallback pattern is dead code with next-intl (missing key throws, does not return falsy). Component-side fix on improvement backlog."
@@ -3680,7 +3793,7 @@ demoContent:
   - name: "Articles Search (SearchExperienceV2 datasource)"
     kind: "dataItem"
     template: "Search Experience V2"
-    path: "/sitecore/content/main/main-website/Data/Search Experiences V2/Articles Search"
+    path: "/sitecore/content/main/allegro-microsystems/Data/Search Experiences V2/Articles Search"
     itemId: "{638071B9-9241-4096-911B-F5208C30791E}"
     createdAt: "2026-08-06"
     fields:
@@ -3696,7 +3809,7 @@ demoContent:
   - name: "Marcus Webb"
     kind: "dataItem"
     template: "Person"
-    path: "/sitecore/content/main/main-website/Data/People/Marcus Webb"
+    path: "/sitecore/content/main/allegro-microsystems/Data/People/Marcus Webb"
     itemId: "{EB2E25A6-F68D-4E9F-845F-C7A9B1625A55}"
     createdAt: "2026-08-05"
     notes:

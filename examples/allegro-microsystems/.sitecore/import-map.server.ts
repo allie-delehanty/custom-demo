@@ -13,14 +13,12 @@ import * as React_7214d18997ee864dd178de7b3a8430f6783e8b89 from 'react';
 import { NextImage, RichText, Text, Link, AppPlaceholder } from '@sitecore-content-sdk/nextjs';
 import { cn } from '@/lib/utils';
 import Link_a258c208ba01265ca0aa9c7abae745cc7141aa63 from 'next/link';
-import { ArrowRight, Facebook, Linkedin, Youtube, Sparkles } from 'lucide-react';
+import { Sparkles } from 'lucide-react';
 import * as LucideIcons from 'lucide-react';
 import { SmartMedia } from '@/components/uiim/media/SmartMedia';
-import { Default, TwoColumn, WithImages, Carousel, AllegroFeaturedProducts, AllegroStoryMosaic } from 'src/components/uiim/cards/FeatureCardsGrid.client';
-import { Default as Default_1186ad445cc0ab04fa51a506db9b70c984100f26, WithThumbnails, Allegro } from 'src/components/uiim/banners/HeroBannerCarousel.client';
 import { Slot } from '@radix-ui/react-slot';
 import { cva } from 'class-variance-authority';
-import componentMap from 'src/lib/sitecore-component-map';
+import componentMap from '.sitecore/component-map';
 import Image from 'next/image';
 
 const importMap = [
@@ -64,10 +62,6 @@ const importMap = [
   {
     module: 'lucide-react',
     exports: [
-      { name: 'ArrowRight', value: ArrowRight },
-      { name: 'Facebook', value: Facebook },
-      { name: 'Linkedin', value: Linkedin },
-      { name: 'Youtube', value: Youtube },
       { name: 'Sparkles', value: Sparkles },
       { name: '*', value: LucideIcons },
     ]
@@ -76,25 +70,6 @@ const importMap = [
     module: '@/components/uiim/media/SmartMedia',
     exports: [
       { name: 'SmartMedia', value: SmartMedia },
-    ]
-  },
-  {
-    module: 'src/components/uiim/cards/FeatureCardsGrid.client',
-    exports: [
-      { name: 'Default', value: Default },
-      { name: 'TwoColumn', value: TwoColumn },
-      { name: 'WithImages', value: WithImages },
-      { name: 'Carousel', value: Carousel },
-      { name: 'AllegroFeaturedProducts', value: AllegroFeaturedProducts },
-      { name: 'AllegroStoryMosaic', value: AllegroStoryMosaic },
-    ]
-  },
-  {
-    module: 'src/components/uiim/banners/HeroBannerCarousel.client',
-    exports: [
-      { name: 'Default', value: Default_1186ad445cc0ab04fa51a506db9b70c984100f26 },
-      { name: 'WithThumbnails', value: WithThumbnails },
-      { name: 'Allegro', value: Allegro },
     ]
   },
   {
@@ -110,7 +85,7 @@ const importMap = [
     ]
   },
   {
-    module: 'src/lib/sitecore-component-map',
+    module: '.sitecore/component-map',
     exports: [
       { name: 'default', value: componentMap },
     ]
