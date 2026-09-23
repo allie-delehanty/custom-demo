@@ -1,6 +1,7 @@
 'use client';
 
 import { JSX } from 'react';
+import { usePathname } from 'next/navigation';
 import {
   Field,
   ImageField,
@@ -9,6 +10,7 @@ import {
   RichText,
   RichTextField,
   NextImage,
+  useSitecore,
 } from '@sitecore-content-sdk/nextjs';
 import { ComponentProps } from 'lib/component-props';
 import { ParallaxBackgroundImage } from 'components/non-sitecore/ParallaxBackgroundImage';
@@ -30,6 +32,208 @@ export type PageBackgroundProps = ComponentProps & {
 };
 
 export const Default = (props: PageBackgroundProps): JSX.Element => {
+  return <Allegro {...props} />;
+};
+
+const DATE_LIKE =
+  /^(January|February|March|April|May|June|July|August|September|October|November|December)\s+\d{1,2},\s+\d{4}$/i;
+
+const splitLeadingParagraph = (html?: string): { lead: string; rest: string } => {
+  if (!html) {
+    return { lead: '', rest: '' };
+  }
+
+  const match = html.match(/<p\b[^>]*>[\s\S]*?<\/p>/i);
+  if (!match || match.index === undefined) {
+    return { lead: '', rest: html };
+  }
+
+  return {
+    lead: match[0],
+    rest: `${html.slice(0, match.index)}${html.slice(match.index + match[0].length)}`.trim(),
+  };
+};
+
+const formatCrumbLabel = (segment: string): string =>
+  decodeURIComponent(segment)
+    .replace(/-/g, ' ')
+    .replace(/\b\w/g, (char) => char.toUpperCase());
+
+const CalendarIcon = (): JSX.Element => (
+  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+    <rect x="3" y="5" width="18" height="16" rx="2" stroke="currentColor" strokeWidth="1.6" />
+    <path d="M3 9h18M8 3v4M16 3v4" stroke="currentColor" strokeWidth="1.6" />
+  </svg>
+);
+
+const ShareIcon = (): JSX.Element => (
+  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+    <circle cx="18" cy="5" r="2.4" stroke="currentColor" strokeWidth="1.6" />
+    <circle cx="6" cy="12" r="2.4" stroke="currentColor" strokeWidth="1.6" />
+    <circle cx="18" cy="19" r="2.4" stroke="currentColor" strokeWidth="1.6" />
+    <path d="M8.2 10.8l7.6-4.4M8.2 13.2l7.6 4.4" stroke="currentColor" strokeWidth="1.6" />
+  </svg>
+);
+
+/* Allegro article — blue hero + 50/50 summary and image, then RTE body */
+export const Allegro = (props: PageBackgroundProps): JSX.Element => {
+  const id = props.params?.RenderingIdentifier;
+  const { page } = useSitecore();
+  const isEditing = page?.mode?.isEditing;
+  const { Title, Excerpt, Content, Thumbnail } = props.fields || {};
+  const pathname = usePathname() || '';
+  const crumbs = [
+    { title: 'Home', href: '/' },
+    ...pathname
+      .split('/')
+      .filter(Boolean)
+      .map((segment, index, segments) => ({
+        title:
+          index === segments.length - 1 && Title?.value
+            ? Title.value
+            : formatCrumbLabel(segment),
+        href: `/${segments.slice(0, index + 1).join('/')}`,
+      })),
+  ];
+  const thumbnailValue = Thumbnail?.value as
+    | { src?: string; alt?: string; thumbnailsrc?: string }
+    | string
+    | undefined;
+  const imageSrc =
+    typeof thumbnailValue === 'string'
+      ? thumbnailValue.match(/src="([^"]+)"/)?.[1] ||
+        thumbnailValue.match(/thumbnailsrc="([^"]+)"/)?.[1] ||
+        ''
+      : thumbnailValue?.src || thumbnailValue?.thumbnailsrc || '';
+  const imageAlt =
+    typeof thumbnailValue === 'string'
+      ? thumbnailValue.match(/alt="([^"]*)"/)?.[1] || Title?.value || ''
+      : thumbnailValue?.alt || Title?.value || '';
+  const hasImage = Boolean(imageSrc);
+  const excerptValue = Excerpt?.value?.trim() || '';
+  const excerptIsDate = DATE_LIKE.test(excerptValue);
+  const { lead, rest } = splitLeadingParagraph(Content?.value);
+  const summaryHtml = excerptIsDate || !excerptValue ? lead : '';
+
+  const handleShare = (): void => {
+    if (typeof navigator !== 'undefined' && navigator.clipboard && window.location?.href) {
+      navigator.clipboard.writeText(window.location.href).catch(() => undefined);
+    }
+  };
+
+  return (
+    <>
+      <Head>
+        <meta property="og:description" content={Excerpt?.value} />
+        <meta property="og:name" content={Title?.value} />
+        <meta property="og:title" content={Title?.value} />
+        <meta property="og:image" content={Thumbnail?.value?.src} />
+        <meta property="og:type" content="article" />
+      </Head>
+      <div
+        className={`component article-details allegro-article col-12 ${props.params?.styles?.trimEnd() || ''}`}
+        id={id ? id : undefined}
+      >
+        <header className="allegro-article-hero">
+          <div className="container">
+            {isEditing ? (
+              <Placeholder name="page-navigation" rendering={props.rendering} />
+            ) : (
+              <nav className="allegro-article-breadcrumb" aria-label="breadcrumbs">
+                {crumbs.map((crumb, index) => (
+                  <span key={crumb.href} className="allegro-article-crumb">
+                    {index > 0 && <span className="allegro-article-crumb-sep"> / </span>}
+                    {index === crumbs.length - 1 ? (
+                      <span>{crumb.title}</span>
+                    ) : (
+                      <a href={crumb.href}>{crumb.title}</a>
+                    )}
+                  </span>
+                ))}
+              </nav>
+            )}
+            {(Title?.value || isEditing) && (
+              <h1 className="allegro-article-title">
+                <Text field={Title} />
+              </h1>
+            )}
+            {(excerptIsDate || isEditing) && (
+              <p className="allegro-article-date">
+                <CalendarIcon />
+                <Text field={Excerpt} />
+              </p>
+            )}
+          </div>
+        </header>
+
+        <article className="allegro-article-inner">
+          <div className="container">
+            <div className="allegro-article-summary">
+              <div className="allegro-article-summary-copy">
+                {isEditing && !excerptIsDate && (
+                  <p className="allegro-article-lede">
+                    <Text field={Excerpt} />
+                  </p>
+                )}
+                {!isEditing && excerptIsDate && summaryHtml && (
+                  <div
+                    className="allegro-article-lede"
+                    dangerouslySetInnerHTML={{ __html: summaryHtml }}
+                  />
+                )}
+                {!isEditing && !excerptIsDate && excerptValue && (
+                  <p className="allegro-article-lede">
+                    <Text field={Excerpt} />
+                  </p>
+                )}
+                {isEditing && (
+                  <div className="allegro-article-content">
+                    <RichText field={Content} className="rich-text" />
+                  </div>
+                )}
+              </div>
+              <div className="allegro-article-summary-media">
+                <button type="button" className="allegro-article-share" onClick={handleShare}>
+                  <ShareIcon />
+                  Share
+                </button>
+                {(hasImage || isEditing) && (
+                  <div className="allegro-article-image-wrap">
+                    {hasImage ? (
+                      <img
+                        src={imageSrc}
+                        alt={imageAlt}
+                        className="allegro-article-image"
+                      />
+                    ) : (
+                      <NextImage
+                        field={Thumbnail}
+                        className="allegro-article-image"
+                        width={720}
+                        height={480}
+                      />
+                    )}
+                  </div>
+                )}
+              </div>
+            </div>
+
+            {!isEditing && rest && (
+              <div className="allegro-article-content">
+                <div className="rich-text" dangerouslySetInnerHTML={{ __html: rest }} />
+              </div>
+            )}
+
+            <Placeholder name="background-page-content" rendering={props.rendering} />
+            <Placeholder name="page-content" rendering={props.rendering} />
+          </div>
+        </article>
+      </div>
+    </>
+  );
+};
+
+export const Financial = (props: PageBackgroundProps): JSX.Element => {
   const id = props.params?.RenderingIdentifier;
   return (
     <>

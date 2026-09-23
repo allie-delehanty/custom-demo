@@ -143,7 +143,6 @@ export const Allegro = (props: HeadingCtaProps): JSX.Element => {
               <Text field={props.fields?.Text} />
             </p>
           )}
-          {isPageEditing && <Link field={props.fields.Link} className="button button-main" />}
         </div>
       </div>
     </div>

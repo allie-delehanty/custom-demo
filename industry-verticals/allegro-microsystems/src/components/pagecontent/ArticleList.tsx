@@ -201,7 +201,74 @@ const ArticleListGrid = (props: ArticleListComponentProps): JSX.Element => {
   );
 };
 
-export const Default = withDatasourceCheck()<ArticleListComponentProps>(ArticleListDefault);
+const ALLEGRO_RESOURCE_FALLBACK = [
+  {
+    url: '/resources/replace-the-shunt',
+    title: 'Magnetic Sensors are a Great Alternative to Traditional Shunt Resistors for Industrial Current Sensing',
+    excerpt: 'January 07, 2025',
+  },
+  {
+    url: '/resources/hall-vs-tmr',
+    title: 'Hall vs. TMR: How to Match Sensor Technology and Sensing Range to a Specific Current Profile to Avoid Saturation and Noise',
+    excerpt: 'Beyond the Datasheet',
+  },
+  {
+    url: '/resources/specialized-motor-drivers',
+    title: 'Specialized Motor Drivers in Industrial Automation',
+    excerpt: 'Industrial automation',
+  },
+];
+
+const ArticleListAllegro = (props: ArticleListComponentProps): JSX.Element => {
+  const id = props.params?.RenderingIdentifier;
+  const newsItems = getNewsItems(props.fields?.items, parseInt(props.params?.NumberOfItems));
+  const hasSitecoreItems = Boolean(newsItems?.length);
+
+  return (
+    <div
+      className={`component article-list allegro-article-list ${props.params?.styles?.trimEnd() || ''}`}
+      id={id ? id : undefined}
+    >
+      <div className="container">
+        <div className="allegro-article-list-items">
+          {hasSitecoreItems
+            ? newsItems.map((item) => (
+                <article className="allegro-article-list-item" key={item.url}>
+                  <h3>
+                    <Link href={item.url}>
+                      <Text field={item.fields.Title} />
+                    </Link>
+                  </h3>
+                  {item.fields.Excerpt?.value && (
+                    <p>
+                      <Text field={item.fields.Excerpt} />
+                    </p>
+                  )}
+                  <Link href={item.url} className="allegro-article-list-link">
+                    Read article
+                  </Link>
+                </article>
+              ))
+            : ALLEGRO_RESOURCE_FALLBACK.map((item) => (
+                <article className="allegro-article-list-item" key={item.url}>
+                  <h3>
+                    <Link href={item.url}>{item.title}</Link>
+                  </h3>
+                  <p>{item.excerpt}</p>
+                  <Link href={item.url} className="allegro-article-list-link">
+                    Read article
+                  </Link>
+                </article>
+              ))}
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export const Default = ArticleListAllegro;
+export const Allegro = ArticleListAllegro;
+export const Financial = withDatasourceCheck()<ArticleListComponentProps>(ArticleListDefault);
 export const ThreeColumn = withDatasourceCheck()<ArticleListComponentProps>(ArticleListThreeColumn);
 export const Simplified = withDatasourceCheck()<ArticleListComponentProps>(ArticleListSimplified);
 export const Grid = withDatasourceCheck()<ArticleListComponentProps>(ArticleListGrid);

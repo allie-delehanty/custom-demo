@@ -350,6 +350,11 @@ body.site-financial,
     max-width: 40.5rem;
     opacity: 1;
   }
+
+  .button,
+  a.button {
+    display: none !important;
+  }
 }
 
 /* Product cards — rest is chrome-less; hover lifts a white rounded text card */
@@ -724,5 +729,405 @@ body.site-financial,
     .allegro-footer-grid {
       grid-template-columns: 1fr 1fr;
     }
+  }
+}
+
+/* Blog post — blue hero, 50/50 lede + image, then RTE body */
+.article-details.allegro-article {
+  padding: 0 0 5rem;
+  background-color: var(--brand-bg);
+  min-height: 40vh;
+
+  .allegro-article-hero {
+    background-color: #0014a8;
+    color: #fff;
+    padding: 3.5rem 0 4rem;
+
+    .allegro-article-breadcrumb,
+    .breadcrumb {
+      display: block;
+      padding: 0;
+      margin: 0 0 2.25rem;
+      overflow: visible;
+      background: transparent;
+      font-family: var(--brand-body-font);
+      font-size: 0.8125rem;
+      font-weight: 400;
+      line-height: 1.4;
+      color: rgba(255, 255, 255, 0.78);
+    }
+
+    .allegro-article-crumb a,
+    .allegro-article-crumb span {
+      color: rgba(255, 255, 255, 0.78);
+      text-decoration: none;
+      border-bottom: 0;
+    }
+
+    .allegro-article-crumb-sep {
+      color: rgba(255, 255, 255, 0.45);
+    }
+  }
+
+  .allegro-article-title {
+    font-family: var(--brand-heading-font);
+    font-size: clamp(2rem, 3.2vw, 2.625rem);
+    font-weight: 400;
+    letter-spacing: -0.02em;
+    line-height: 1.2;
+    color: #fff;
+    max-width: 52rem;
+    margin: 0 0 1.15rem;
+  }
+
+  .allegro-article-date {
+    display: flex;
+    align-items: center;
+    gap: 0.45rem;
+    font-family: var(--brand-body-font);
+    font-size: 0.875rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: rgba(255, 255, 255, 0.88);
+    margin: 0;
+  }
+
+  .allegro-article-inner {
+    padding-top: 2.75rem;
+  }
+
+  .allegro-article-summary {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    gap: 4rem;
+    align-items: start;
+    margin-bottom: 2.5rem;
+  }
+
+  .allegro-article-lede,
+  .allegro-article-lede p {
+    font-family: var(--brand-body-font);
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.7;
+    color: #111927;
+    margin: 0;
+  }
+
+  .allegro-article-summary-media {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .allegro-article-share {
+    align-self: flex-end;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    margin: 0 0 1rem;
+    padding: 0;
+    border: 0;
+    background: transparent;
+    color: #111927;
+    font-family: var(--brand-body-font);
+    font-size: 0.875rem;
+    cursor: pointer;
+  }
+
+  .allegro-article-image-wrap {
+    border-radius: 8px;
+    overflow: hidden;
+  }
+
+  .allegro-article-image {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin: 0;
+  }
+
+  .four-column-cta,
+  .article-list {
+    display: none;
+  }
+
+  @include media-breakpoint-down(lg) {
+    .allegro-article-summary {
+      grid-template-columns: 1fr;
+      gap: 1.75rem;
+    }
+
+    .allegro-article-share {
+      align-self: flex-start;
+      margin-bottom: 0.75rem;
+    }
+  }
+
+  /* Sitecore RTE wraps in .rich-text — beat Financial 20px / faded / bold defaults */
+  .allegro-article-content {
+    max-width: none;
+    width: 100%;
+  }
+
+  .allegro-article-content,
+  .allegro-article-content .rich-text,
+  .allegro-article-content .content {
+    --rich-text-base-size: 1rem;
+    --rich-text-p-opacity: 1;
+    border: 0;
+    overflow: visible;
+    font-family: var(--brand-body-font);
+    font-size: 1rem !important;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #111927;
+
+    p,
+    li {
+      font-family: var(--brand-body-font);
+      font-size: 1rem !important;
+      font-weight: 400;
+      line-height: 1.5 !important;
+      color: #111927;
+      opacity: 1 !important;
+    }
+
+    p {
+      margin: 0 0 1.25rem;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      font-family: var(--brand-heading-font) !important;
+      font-weight: 400 !important;
+      letter-spacing: -0.02em;
+      color: #111927;
+      margin: 2rem 0 0.75rem !important;
+    }
+
+    h1 {
+      font-size: 1.75rem !important;
+      line-height: 1.25;
+    }
+
+    h2 {
+      font-size: 1.375rem !important;
+      font-weight: 700 !important;
+      line-height: 1.35;
+    }
+
+    h3 {
+      font-size: 1.25rem !important;
+      line-height: 1.35;
+    }
+
+    h4 {
+      font-size: 1.125rem !important;
+      line-height: 1.4;
+    }
+
+    h5,
+    h6 {
+      font-size: 1rem !important;
+      line-height: 1.45;
+    }
+
+    ul,
+    ol {
+      margin: 0 0 1.25rem;
+      padding-left: 1.25rem;
+    }
+
+    ul li {
+      list-style-type: disc !important;
+    }
+
+    ol li {
+      list-style-type: decimal !important;
+    }
+
+    li {
+      margin-bottom: 0.4rem;
+    }
+
+    a {
+      color: #0f62fe !important;
+      text-decoration: underline;
+      border-bottom: 0 !important;
+    }
+
+    strong,
+    b {
+      font-weight: 600;
+    }
+
+    em,
+    i {
+      font-style: italic;
+    }
+
+    blockquote {
+      margin: 0 0 1.25rem;
+      padding: 0 0 0 1rem;
+      border-left: 3px solid #0c4ecb;
+      color: #374151;
+    }
+
+    img {
+      display: block;
+      max-width: min(100%, 48rem);
+      height: auto;
+      margin: 2rem auto;
+    }
+
+    table {
+      width: 100%;
+      margin: 0 0 1.25rem;
+      border-collapse: collapse;
+      font-size: 0.9375rem;
+    }
+
+    th,
+    td {
+      padding: 0.5rem 0.65rem;
+      border: 1px solid #e5e7eb;
+      text-align: left;
+    }
+  }
+
+  .breadcrumb,
+  .breadcrumb-item,
+  nav[aria-label='breadcrumb'] {
+    font-family: var(--brand-body-font);
+    font-size: 0.8125rem;
+    color: #5a6577;
+  }
+}
+
+.article-list.allegro-article-list {
+  padding: 0 0 5rem;
+  background-color: var(--brand-bg);
+
+  .allegro-article-list-items {
+    max-width: 46rem;
+    margin: 0 auto;
+  }
+
+  .allegro-article-list-item {
+    padding: 1.75rem 0;
+    border-top: 1px solid #eceff3;
+
+    h3 {
+      font-family: var(--brand-heading-font);
+      font-size: 1.5rem;
+      font-weight: 400;
+      letter-spacing: -0.02em;
+      line-height: 1.3;
+      margin: 0 0 0.5rem;
+
+      a {
+        color: #111927 !important;
+        text-decoration: none !important;
+        border-bottom: 0 !important;
+      }
+
+      a:hover {
+        color: var(--brand-primary) !important;
+      }
+    }
+
+    p {
+      font-family: var(--brand-body-font);
+      font-size: 0.875rem;
+      color: #5a6577;
+      margin: 0 0 0.75rem;
+    }
+  }
+
+  .allegro-article-list-link {
+    font-family: var(--brand-body-font);
+    font-size: 0.9375rem;
+    color: var(--brand-primary) !important;
+    text-decoration: none !important;
+    border-bottom: 0 !important;
+  }
+
+  .allegro-article-list-link:hover {
+    text-decoration: underline !important;
+  }
+}
+
+.documents-list.allegro-documents {
+  padding: 2.5rem 0 5rem;
+  background-color: var(--brand-bg);
+
+  .allegro-documents-title {
+    font-family: var(--brand-heading-font);
+    font-size: 1.5rem;
+    font-weight: 400;
+    letter-spacing: -0.02em;
+    color: #111927;
+    margin: 0 0 1.25rem;
+  }
+
+  .allegro-documents-list {
+    display: grid;
+    gap: 0.75rem;
+    max-width: none;
+  }
+
+  .allegro-documents-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem 1.15rem;
+    background: #f3f4f6;
+    border-radius: 6px;
+    border-left: 3px solid transparent;
+    transition: border-color 0.15s ease, background-color 0.15s ease;
+  }
+
+  .allegro-documents-item:hover {
+    background: #eef2f7;
+    border-left-color: #0c4ecb;
+  }
+
+  img {
+    width: 28px;
+    height: auto;
+    filter: none;
+    flex-shrink: 0;
+  }
+
+  .allegro-documents-copy {
+    display: flex;
+    flex-direction: column;
+    gap: 0.15rem;
+    min-width: 0;
+  }
+
+  a {
+    font-family: var(--brand-body-font);
+    font-size: 1rem;
+    font-weight: 500;
+    color: #0f62fe !important;
+    text-decoration: none !important;
+    border-bottom: 0 !important;
+  }
+
+  a:hover {
+    text-decoration: underline !important;
+  }
+
+  .allegro-documents-subtitle {
+    font-family: var(--brand-body-font);
+    font-size: 0.8125rem;
+    font-style: normal;
+    color: #5a6577;
   }
 }
