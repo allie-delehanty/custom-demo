@@ -14,6 +14,7 @@
 .env.local
 .env.*.local
 .env
+docs/ai/config/credentials.local.yaml
 
 # Log files
 *.log*

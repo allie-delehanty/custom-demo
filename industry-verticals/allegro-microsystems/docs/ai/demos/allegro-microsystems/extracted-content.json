@@ -1,0 +1,573 @@
+{
+  "url": "https://www.allegromicro.com/en/",
+  "extractedAt": "2026-09-23T15:32:15.160Z",
+  "detectedLanguage": "en",
+  "targetLanguage": "en",
+  "translationNeeded": false,
+  "totalSections": 5,
+  "totalImages": 13,
+  "totalVideos": 0,
+  "interactionStats": {
+    "lazySourcesResolved": 0,
+    "tabsClicked": 0,
+    "accordionsExpanded": 0,
+    "carouselDotsClicked": 4,
+    "carouselArrowSlides": 24,
+    "backgroundImagesCollected": 0
+  },
+  "sections": [
+    {
+      "position": 1,
+      "tagName": "header",
+      "classHint": "header header-white fixed top-0 left-0 w-full z-[1000] bg-white",
+      "backgroundHint": "light",
+      "headings": [],
+      "paragraphs": [
+        "Products Back To Main Menu Products Sensors Back To Main Menu Regulators Back To Main Menu Drivers Back To Main Menu",
+        "Applications Back To Main Menu Applications Automotive Back To Main Menu Industrial Back To Main Menu Consumer Back To Main Menu Technologies Back To Main Menu",
+        "Design Support Back To Main Menu Design Support Design and Development Packaging Quality and Environment Software Portal",
+        "Resources Back To Main Menu Resources Resource Center",
+        "About Allegro Back To Main Menu About Allegro Our Company Back To Main Menu Careers Back To Main Menu ESG Back To Main Menu Growth and Inclusion Back To Main Menu Contact Us Back To Main Menu"
+      ],
+      "links": [
+        {
+          "text": "Products",
+          "href": "https://www.allegromicro.com/en/products",
+          "target": ""
+        },
+        {
+          "text": "Applications",
+          "href": "https://www.allegromicro.com/en/applications",
+          "target": ""
+        },
+        {
+          "text": "Design Support",
+          "href": "https://www.allegromicro.com/en/design-support",
+          "target": ""
+        },
+        {
+          "text": "Resources",
+          "href": "https://www.allegromicro.com/en/insights-and-innovations",
+          "target": ""
+        },
+        {
+          "text": "About Allegro",
+          "href": "https://www.allegromicro.com/en/about-allegro",
+          "target": ""
+        },
+        {
+          "text": "Investors",
+          "href": "https://investors.allegromicro.com/",
+          "target": "_blank"
+        },
+        {
+          "text": "English",
+          "href": "https://www.allegromicro.com/en/",
+          "target": ""
+        },
+        {
+          "text": "中文(中国)",
+          "href": "https://www.allegromicro.com/zh-cn/",
+          "target": ""
+        },
+        {
+          "text": "日本語 (日本)",
+          "href": "https://www.allegromicro.com/ja-jp/",
+          "target": ""
+        }
+      ],
+      "images": [
+        {
+          "src": "https://www.allegromicro.com/-/media/images/feature/header/logo-rainbow.svg?h=42&iar=0&w=180&sc_lang=en&hash=9731FFF321C42B5B3278D7856A4BB929",
+          "alt": "",
+          "type": "img",
+          "width": 180,
+          "height": 42
+        }
+      ],
+      "listItems": [
+        {
+          "description": "",
+          "badge": "Products",
+          "link": {
+            "text": "",
+            "href": "https://www.allegromicro.com/en/"
+          },
+          "image": {
+            "src": "https://www.allegromicro.com/-/media/images/feature/header/logo-rainbow.svg?h=42&iar=0&w=180&sc_lang=en&hash=9731FFF321C42B5B3278D7856A4BB929",
+            "alt": ""
+          }
+        }
+      ]
+    },
+    {
+      "position": 2,
+      "tagName": "div",
+      "classHint": "dark-navigation hero ",
+      "backgroundHint": "dark",
+      "headings": [
+        {
+          "tag": "h4",
+          "text": "Our FY2026 ESG Report is Here"
+        },
+        {
+          "tag": "h4",
+          "text": "Beyond the Datasheet"
+        },
+        {
+          "tag": "h4",
+          "text": "Build Smarter, Safer Robotic Joints"
+        },
+        {
+          "tag": "h4",
+          "text": "Powering the Future of Braking"
+        }
+      ],
+      "paragraphs": [
+        "Our FY2026 ESG Report is Here",
+        "See how Allegro is driving progress in sustainability, energy efficiency, supply chain responsibility, and community impact.",
+        "Beyond the Datasheet",
+        "Navigate current sensor trade-offs to design safer, more efficient, and dependable solutions.",
+        "Build Smarter, Safer Robotic Joints",
+        "Join our technical webinar on September 23rd (Robotics in Motion | Part 1: Designing Precision Joints with TMR & Inductive Position Sensing) to explore these solutions.",
+        "Powering the Future of Braking",
+        "12V and 48V smart caliper architectures are engineered to solve the wheel node's toughest challenges — delivering reliable motor control and position feedback where it matters most. Join the free webinar on September 24."
+      ],
+      "links": [
+        {
+          "text": "Read the full report",
+          "href": "https://www.allegromicro.com/-/media/files/corporate-responsibility/allegro-fy26-esg-report.pdf?sc_lang=en",
+          "target": "_blank"
+        },
+        {
+          "text": "Start the Series",
+          "href": "https://www.allegromicro.com/en/insights-and-innovations/blogs/current-sensors-series",
+          "target": "_self"
+        },
+        {
+          "text": "Register Now",
+          "href": "https://event.on24.com/wcc/r/5464455/5048A87F2179622FC0AE4B290B9D8785?partnerref=AllegroWebsite",
+          "target": "_blank"
+        },
+        {
+          "text": "Register Now",
+          "href": "https://event.on24.com/wcc/r/5459420/4B9E161E5E623613CF72DB0DF81FF6F0?partnerref=AllegroNL",
+          "target": "_blank"
+        }
+      ],
+      "images": [
+        {
+          "src": "https://www.allegromicro.com/-/media/877eaaaaf99340caa18849b657765195.jpg?sc_lang=en&w=1024&hash=DF37ADABC355181D7D2519490ECE2A74",
+          "alt": " Banner graphic for the Allegro MicroSystems Fiscal Year 2026 Environmental, Social, and Governance (ESG) Report",
+          "type": "img",
+          "width": 1600,
+          "height": 640
+        },
+        {
+          "src": "https://www.allegromicro.com/-/media/0a1247f0671c4f6da963fe36d1071dea.jpg?sc_lang=en&w=1024&hash=F97A193A275F322AEB80FAEB7DA42883",
+          "alt": "Beyond the Datasheet - Navigate current sensor trade-off to design safer, more efficient, and dependable solutions, homepage image",
+          "type": "img",
+          "width": 1600,
+          "height": 640
+        },
+        {
+          "src": "https://www.allegromicro.com/-/media/533ad17b7cd644b3be7f887f3ad5f152.jpg?sc_lang=en&w=1024&hash=09D1FA8294D342FAD92135798577EE9F",
+          "alt": "Robotic joint assembly showing an integrated magnetic position sensor for precise motor commutation Robotics Webinar Image",
+          "type": "img",
+          "width": 1600,
+          "height": 640
+        },
+        {
+          "src": "https://www.allegromicro.com/-/media/297d356b00f4414286744196278b5c82.jpg?sc_lang=en&w=1024&hash=D943C84928BFF1F729C15F9DEA71FC94",
+          "alt": "Bipolar high-performance automotive brake disc assembly featuring an Electronic Mechanical Braking (EMB) caliper module with integrated electric actuator housing and high-voltage power cabling against a dark blue background.",
+          "type": "img",
+          "width": 1600,
+          "height": 640
+        }
+      ],
+      "listItems": [
+        {
+          "title": "Our FY2026 ESG Report is Here",
+          "description": "Our FY2026 ESG Report is Here See how Allegro is driving progress in sustainability, energy efficiency, supply chain responsibility, and community impact. Read the full report",
+          "badge": "",
+          "link": {
+            "text": "Read the full report",
+            "href": "https://www.allegromicro.com/-/media/files/corporate-responsibility/allegro-fy26-esg-report.pdf?sc_lang=en"
+          },
+          "image": {
+            "src": "https://www.allegromicro.com/-/media/877eaaaaf99340caa18849b657765195.jpg?sc_lang=en&w=1024&hash=DF37ADABC355181D7D2519490ECE2A74",
+            "alt": " Banner graphic for the Allegro MicroSystems Fiscal Year 2026 Environmental, Social, and Governance (ESG) Report"
+          }
+        }
+      ]
+    },
+    {
+      "position": 3,
+      "tagName": "div",
+      "classHint": "",
+      "backgroundHint": "dark",
+      "headings": [
+        {
+          "tag": "h2",
+          "text": "Featured Products"
+        },
+        {
+          "tag": "h3",
+          "text": "Low-Resistance Current Sensor"
+        },
+        {
+          "tag": "h3",
+          "text": "24V Hall-effect Switches"
+        },
+        {
+          "tag": "h3",
+          "text": "Full-Bridge DMOS PWM Motor Driver"
+        }
+      ],
+      "paragraphs": [
+        "Allegro technology is at the heart of systems that sense, regulate, and drive the world around us—from cars and clean energy to data centers and smart factories.",
+        "Maximizing efficiency through ultra-low resistance, this solution simplifies current sensing while enhancing system protection.",
+        "Precision, highly stable magnetic switches deliver superior performance, maximum reliability, and lower system costs.",
+        "Efficient 40V motor driver minimizes power dissipation and protects systems with robust, integrated safety features."
+      ],
+      "links": [],
+      "images": [
+        {
+          "src": "https://www.allegromicro.com/-/media/1288c3e2c9154c86ba8254d33f632194.png?sc_lang=en&w=1024&hash=ADC3E1318C38F5E3122F3DAAEEDDC0AE",
+          "alt": "7-Pin QFN EZ Package Image",
+          "type": "img",
+          "width": 473,
+          "height": 354
+        },
+        {
+          "src": "https://www.allegromicro.com/-/media/5ce8edb645c645df8e849b47082658d8.jpg?sc_lang=en&w=1024&hash=CF0AFBBF47ED3A18022117EA8BDD8465",
+          "alt": "24V Hall-effect Switches for Automotive and Industrial Applications - aps11203, aps12203",
+          "type": "img",
+          "width": 473,
+          "height": 354
+        },
+        {
+          "src": "https://www.allegromicro.com/-/media/dadcc6b9a23146d88aced70cafc40d70.jpg?w=1024&hash=0BE12574FB496CC0026A087E15E69355",
+          "alt": "Allegro LJ SOIC with exposed pad 8-pin package",
+          "type": "img",
+          "width": 473,
+          "height": 354
+        }
+      ],
+      "listItems": [
+        {
+          "title": "Featured Products",
+          "description": "Featured Products"
+        },
+        {
+          "title": "Low-Resistance Current Sensor",
+          "description": "Low-Resistance Current Sensor",
+          "link": {
+            "text": "Low-Resistance Current Sensor Maximizing efficiency through ultra-low resistance, this solution simplifies current sensing while enhancing system protection.",
+            "href": "https://www.allegromicro.com/en/products/sense/current-sensor-ics/integrated-current-sensors/acs37220"
+          },
+          "image": {
+            "src": "https://www.allegromicro.com/-/media/1288c3e2c9154c86ba8254d33f632194.png?sc_lang=en&w=1024&hash=ADC3E1318C38F5E3122F3DAAEEDDC0AE",
+            "alt": "7-Pin QFN EZ Package Image"
+          }
+        }
+      ]
+    },
+    {
+      "position": 4,
+      "tagName": "div",
+      "classHint": "",
+      "backgroundHint": "dark",
+      "headings": [
+        {
+          "tag": "h3",
+          "text": "Who We Are"
+        },
+        {
+          "tag": "h3",
+          "text": "Innovations"
+        },
+        {
+          "tag": "h3",
+          "text": "Join our Team"
+        },
+        {
+          "tag": "h3",
+          "text": "Newsletter"
+        }
+      ],
+      "paragraphs": [
+        "Discover our mission to lead the world toward a safer, more sustainable, and autonomous future.",
+        "Explore how our sensing and power solutions are driving e-mobility, clean energy, automation, and robotics forward.",
+        "Become part of a company that values innovation with purpose and puts customers first.",
+        "Sign Up for Our Newsletter! Stay informed about the latest advancements and news from Allegro MicroSystems.",
+        "Sign Up for Our Newsletter!",
+        "Stay informed about the latest advancements and news from Allegro MicroSystems."
+      ],
+      "links": [
+        {
+          "text": "Join our Team Become part of a company that values innovation with purpose and puts customers first.",
+          "href": "https://www.allegromicro.com/en/about-allegro/careers",
+          "target": "_self"
+        }
+      ],
+      "images": [
+        {
+          "src": "https://www.allegromicro.com/-/media/3886fd9900fd4aca9915853aec136e35.jpg?sc_lang=en&w=1024&hash=B2A3283AD3E8A136E42124FEA79663AE",
+          "alt": "Allegro Headquarters Building",
+          "type": "img",
+          "width": 361,
+          "height": 361
+        },
+        {
+          "src": "https://www.allegromicro.com/-/media/fdca153f13114153b33fac9c277fa66b.png?sc_lang=en&w=1024&hash=E23272378E68A223866B341C634C8CEF",
+          "alt": "Which Allegro current sensor packages offer reinforced isolation? This table compares basic versus reinforced isolation, minimum creepage, and minimum clearance for SOIC-16, SOIC-8, and QFN packages.",
+          "type": "img",
+          "width": 361,
+          "height": 201
+        },
+        {
+          "src": "https://www.allegromicro.com/-/media/c665fd83e273484b8957665dc9af8be1.jpg?sc_lang=en&w=1024&hash=B04C5D84FCFABC56AEFE88B2D9F3BFF2",
+          "alt": "Engineers in a meeting",
+          "type": "img",
+          "width": 361,
+          "height": 361
+        },
+        {
+          "src": "https://www.allegromicro.com/-/media/8d5e7bb645ce4b18af00901dc476d0d1.jpg?sc_lang=en&w=1024&hash=41558C0048E1617DDA52DF7FF02BE0C1",
+          "alt": "Computer sitting on an office desk",
+          "type": "img",
+          "width": 361,
+          "height": 361
+        }
+      ],
+      "listItems": [
+        {
+          "title": "Who We Are",
+          "description": "Who We Are",
+          "link": {
+            "text": "Who We Are Discover our mission to lead the world toward a safer, more sustainable, and autonomous future.",
+            "href": "https://www.allegromicro.com/en/about-allegro"
+          },
+          "image": {
+            "src": "https://www.allegromicro.com/-/media/3886fd9900fd4aca9915853aec136e35.jpg?sc_lang=en&w=1024&hash=B2A3283AD3E8A136E42124FEA79663AE",
+            "alt": "Allegro Headquarters Building"
+          }
+        }
+      ]
+    },
+    {
+      "position": 5,
+      "tagName": "footer",
+      "classHint": "footer footer-standard  bg-[var(--gray-100)] py-8 border-t-2 border-t-[var(--gray-500)] ",
+      "backgroundHint": "light",
+      "headings": [
+        {
+          "tag": "h3",
+          "text": "Products"
+        },
+        {
+          "tag": "h3",
+          "text": "Applications"
+        },
+        {
+          "tag": "h3",
+          "text": "Design Support"
+        },
+        {
+          "tag": "h3",
+          "text": "About Allegro"
+        },
+        {
+          "tag": "h3",
+          "text": "Investors"
+        },
+        {
+          "tag": "h3",
+          "text": "Newsletter"
+        }
+      ],
+      "paragraphs": [
+        "Technologies",
+        "Design and Development",
+        "Quality and Environment",
+        "Software Portal",
+        "Our Company",
+        "Growth and Inclusion",
+        "Subscribe to our highlights to stay up to date with our latest products and services",
+        "© 2026 Allegro MicroSystems, Inc. All Rights Reserved.",
+        "Privacy Notice",
+        "Cookie Notice",
+        "UK Modern Slavery Act"
+      ],
+      "links": [
+        {
+          "text": "Products",
+          "href": "https://www.allegromicro.com/en/products",
+          "target": "_self"
+        },
+        {
+          "text": "Sensors",
+          "href": "https://www.allegromicro.com/en/products/sense",
+          "target": "_self"
+        },
+        {
+          "text": "Regulators",
+          "href": "https://www.allegromicro.com/en/products/regulate",
+          "target": "_self"
+        },
+        {
+          "text": "Drivers",
+          "href": "https://www.allegromicro.com/en/products/motor-drivers",
+          "target": "_self"
+        },
+        {
+          "text": "Applications",
+          "href": "https://www.allegromicro.com/en/applications",
+          "target": "_self"
+        },
+        {
+          "text": "Automotive",
+          "href": "https://www.allegromicro.com/en/applications/automotive",
+          "target": "_self"
+        },
+        {
+          "text": "Industrial",
+          "href": "https://www.allegromicro.com/en/applications/industrial",
+          "target": "_self"
+        },
+        {
+          "text": "Consumer",
+          "href": "https://www.allegromicro.com/en/applications/consumer",
+          "target": "_self"
+        },
+        {
+          "text": "Technologies",
+          "href": "https://www.allegromicro.com/en/insights-and-innovations/allegro-technology",
+          "target": "_self"
+        },
+        {
+          "text": "Design Support",
+          "href": "https://www.allegromicro.com/en/design-support",
+          "target": "_self"
+        },
+        {
+          "text": "Design and Development",
+          "href": "https://www.allegromicro.com/en/design-support/design-and-development",
+          "target": "_self"
+        },
+        {
+          "text": "Packaging",
+          "href": "https://www.allegromicro.com/en/design-support/packaging",
+          "target": "_self"
+        },
+        {
+          "text": "Quality and Environment",
+          "href": "https://www.allegromicro.com/en/design-support/quality-and-environment",
+          "target": "_self"
+        },
+        {
+          "text": "Software Portal",
+          "href": "https://registration.allegromicro.com/login",
+          "target": "_blank"
+        },
+        {
+          "text": "About Allegro",
+          "href": "https://www.allegromicro.com/en/about-allegro",
+          "target": "_self"
+        },
+        {
+          "text": "Our Company",
+          "href": "https://www.allegromicro.com/en/about-allegro",
+          "target": "_self"
+        },
+        {
+          "text": "Careers",
+          "href": "https://www.allegromicro.com/en/about-allegro/careers",
+          "target": "_self"
+        },
+        {
+          "text": "ESG",
+          "href": "https://www.allegromicro.com/en/about-allegro/corporate-responsibility",
+          "target": "_self"
+        },
+        {
+          "text": "Growth and Inclusion",
+          "href": "https://www.allegromicro.com/en/about-allegro/corporate-responsibility/growth-and-inclusion",
+          "target": "_self"
+        },
+        {
+          "text": "Contact Us",
+          "href": "https://www.allegromicro.com/en/about-allegro/contact-us",
+          "target": "_self"
+        },
+        {
+          "text": "Investors",
+          "href": "https://investors.allegromicro.com/",
+          "target": "_blank"
+        },
+        {
+          "text": "Subscribe",
+          "href": "https://go.allegromicro.com/newsletter-signup-algm",
+          "target": "_blank"
+        },
+        {
+          "text": "Privacy Notice",
+          "href": "https://www.allegromicro.com/en/privacy-notice",
+          "target": ""
+        },
+        {
+          "text": "Cookie Notice",
+          "href": "https://www.allegromicro.com/en/cookie-notice",
+          "target": ""
+        },
+        {
+          "text": "Legal",
+          "href": "https://www.allegromicro.com/en/about-allegro/legal",
+          "target": ""
+        },
+        {
+          "text": "UK Modern Slavery Act",
+          "href": "https://www.allegromicro.com/-/media/files/corporate-responsibility/allegro-modern-slavery-statement_fy26.pdf?sc_lang=en&hash=313BBA9C030C5D38CCA843AA24B7E9E5",
+          "target": "_blank"
+        }
+      ],
+      "images": [
+        {
+          "src": "https://www.allegromicro.com/-/media/feature/navigation/logo-footer.svg?sc_lang=en&la=en&h=34&w=142&hash=A207D33C0E81FF1B97E3E41DAA51ACCF",
+          "alt": "logo",
+          "type": "img",
+          "width": 142,
+          "height": 34
+        }
+      ],
+      "listItems": [
+        {
+          "link": {
+            "text": "",
+            "href": "https://www.allegromicro.com/en/"
+          },
+          "image": {
+            "src": "https://www.allegromicro.com/-/media/feature/navigation/logo-footer.svg?sc_lang=en&la=en&h=34&w=142&hash=A207D33C0E81FF1B97E3E41DAA51ACCF",
+            "alt": "logo"
+          }
+        },
+        {
+          "title": "Products",
+          "description": "Products",
+          "link": {
+            "text": "Products",
+            "href": "https://www.allegromicro.com/en/products"
+          }
+        },
+        {
+          "description": "© 2026 Allegro MicroSystems, Inc. All Rights Reserved.",
+          "link": {
+            "text": "Privacy Notice",
+            "href": "https://www.allegromicro.com/en/privacy-notice"
+          }
+        }
+      ]
+    }
+  ]
+}

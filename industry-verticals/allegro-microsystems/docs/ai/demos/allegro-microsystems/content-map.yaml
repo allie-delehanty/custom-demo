@@ -1,0 +1,89 @@
+client:
+  name: "Allegro MicroSystems"
+  createdAt: "2026-09-23T16:20:00Z"
+  sitecoreContentRoot: "/sitecore/content/manufacturing/allegro-microsystems"
+
+datasourceItems:
+  - componentName: "Header"
+    itemName: "Header"
+    itemId: "bdb1be91-6a5a-43d6-91ac-a3e85778713c"
+    parentFolder: "Header partial Data"
+    fieldsPopulated: ["LogoImage"]
+    imageFieldsPending: []
+    children: []
+    notes: "Existing header datasource. Logo updated to Allegro rainbow wordmark."
+
+  - componentName: "Carousel"
+    itemName: "Carousel - Default"
+    itemId: "9ba34d8b-49ef-40a5-a23c-f569023b0366"
+    parentFolder: "a994bb2d (Home/Data)"
+    fieldsPopulated: []
+    imageFieldsPending: []
+    notes: "API cannot switch list datasources (missing Verticals/Carousel branch). Existing parent reused; children overwritten with Allegro slides. Dedicated parent 2ed2bcea-7c1f-4c73-b136-6068c1e0d275 also exists unused."
+    children:
+      - name: "Item 1"
+        itemId: "d0031eb6-a218-40e2-a9fe-ca711ffe1a50"
+        fieldsPopulated: ["Title", "Text", "Link", "Image"]
+      - name: "Item 2"
+        itemId: "ef005625-676d-454b-ac2f-caa71c8ca740"
+        fieldsPopulated: ["Title", "Text", "Link", "Image"]
+      - name: "Item 3"
+        itemId: "ee423e01-382c-4614-993d-d29ae8870602"
+        fieldsPopulated: ["Title", "Text", "Link", "Image"]
+      - name: "Allegro - Beyond the Datasheet"
+        itemId: "7c58cf32-415d-44cb-866a-78ff1ff94e1a"
+        fieldsPopulated: ["Title", "Text", "Link", "Image"]
+
+  - componentName: "HeadingCta"
+    itemName: "Allegro Microsystems - Featured Products Heading"
+    itemId: "08791425-2f63-43fe-85ac-755e2f89e5d8"
+    parentFolder: "Home/Data"
+    fieldsPopulated: ["Heading", "Text", "Eyebrow", "Link"]
+    imageFieldsPending: []
+    children: []
+
+  - componentName: "ThreeColumnCta"
+    itemName: "Allegro Microsystems - Featured Products"
+    itemId: "171fc073-c5f8-4e77-86f2-07599e0c5c61"
+    fallbackWiredItemId: "89b6a7b7-599d-4cdc-9c9c-12080ccc1bfa"
+    parentFolder: "89f5990a (Promos/Three Column CTA)"
+    fieldsPopulated: ["Text1", "SubText1", "Link1", "Image1", "Text2", "SubText2", "Link2", "Image2", "Text3", "SubText3", "Link3", "Image3"]
+    imageFieldsPending: []
+    children: []
+    notes: "set_component_datasource reported success; existing Three Column CTA 1 was also updated so content renders if the pointer stays on 89b6a7b7."
+
+  - componentName: "TwoColumnCta"
+    itemName: "Allegro Microsystems - Editorial Row 1"
+    itemId: "99994b9e-649d-47d9-a458-df21add861b7"
+    parentFolder: "15e82f63 (Promos/Two Column CTA)"
+    fieldsPopulated: ["Title1", "Text1", "Link1", "Image1", "Title2", "Text2", "Link2", "Image2"]
+    imageFieldsPending: []
+    children: []
+    notes: "Who We Are / Innovations. Innovations image is isolation-table PNG from scraper (section4-img10), not the live hand-holding-PCB photo."
+
+  - componentName: "TwoColumnCta"
+    itemName: "Allegro Microsystems - Editorial Row 2"
+    itemId: "0df35b57-3345-4c44-83aa-8914885020ae"
+    parentFolder: "15e82f63 (Promos/Two Column CTA)"
+    fieldsPopulated: ["Title1", "Text1", "Link1", "Image1", "Title2", "Text2", "Link2", "Image2"]
+    imageFieldsPending: []
+    children: []
+    notes: "Join our Team / Newsletter"
+
+  - componentName: "Footer"
+    itemName: "Allegro Microsystems - Footer"
+    itemId: "3c03b8e5-e256-4968-a646-acff948b89eb"
+    parentFolder: "Footer partial Data"
+    fieldsPopulated: ["Title1", "Text1", "Title2", "Text2", "Title3", "Text3", "Title4", "Text4", "Copyright", "Link1", "Link2", "Image1", "SocialLink1", "SocialLink2", "SocialLink3"]
+    imageFieldsPending: []
+    children: []
+
+manualVideoTasks: []
+
+variantDefinitions:
+  Header: "1742b59a-ebba-44ae-98d5-6a7e1bc4b83a"
+  Carousel: "a57f8dc7-9d3e-4063-9802-e57da9eb2226"
+  HeadingCta: "b106b6f9-d015-40f1-86ac-ccc2c9281ee5"
+  ThreeColumnCta: "b6a216eb-51a6-4de7-82e0-68b119a5f111"
+  TwoColumnCta: "7d247f72-725f-4449-aefa-0bfe7d1080aa"
+  Footer: "3161c883-d2ff-4cf6-b822-612282263b04"

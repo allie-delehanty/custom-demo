@@ -17,37 +17,7 @@ export type HeadingCtaProps = {
 };
 
 export const Default = (props: HeadingCtaProps): JSX.Element => {
-  const id = props.params.RenderingIdentifier;
-  const { page } = useSitecore();
-  const isPageEditing = page.mode.isEditing;
-  const sxaStyles = `${props.params?.styles || ''}`;
-
-  return (
-    <div className={`component heading-cta ${sxaStyles}`} id={id ? id : undefined}>
-      <div className="container">
-        <div className="row gx-5">
-          <div className="col">
-            <div className="heading-content-wrapper">
-              <h6 className="eyebrow-accent">
-                <Text field={props.fields?.Eyebrow} />
-              </h6>
-              <h2 className="display-4 fw-bold">
-                <Text field={props.fields?.Heading} />
-              </h2>
-              <p>
-                <Text field={props.fields?.Text} />
-              </p>
-            </div>
-          </div>
-          <div className="col-12 pt-lg-5 col-lg-auto">
-            {(isPageEditing || props.fields?.Link?.value?.href) && (
-              <Link field={props.fields.Link} className="button button-main" />
-            )}
-          </div>
-        </div>
-      </div>
-    </div>
-  );
+  return <Allegro {...props} />;
 };
 
 export const Compact = (props: HeadingCtaProps): JSX.Element => {
@@ -146,6 +116,34 @@ export const Centered = (props: HeadingCtaProps): JSX.Element => {
           {(isPageEditing || props.fields?.Link?.value?.href) && (
             <Link field={props.fields.Link} className="button button-main" />
           )}
+        </div>
+      </div>
+    </div>
+  );
+};
+
+/* Allegro variant — left-aligned featured-products intro, no eyebrow */
+export const Allegro = (props: HeadingCtaProps): JSX.Element => {
+  const id = props.params.RenderingIdentifier;
+  const { page } = useSitecore();
+  const isPageEditing = page.mode.isEditing;
+  const sxaStyles = `${props.params?.styles || ''}`;
+
+  return (
+    <div className={`component heading-cta allegro-heading ${sxaStyles}`} id={id ? id : undefined}>
+      <div className="container">
+        <div className="allegro-heading-copy">
+          {(isPageEditing || props.fields?.Heading?.value) && (
+            <h2>
+              <Text field={props.fields?.Heading} />
+            </h2>
+          )}
+          {(isPageEditing || props.fields?.Text?.value) && (
+            <p>
+              <Text field={props.fields?.Text} />
+            </p>
+          )}
+          {isPageEditing && <Link field={props.fields.Link} className="button button-main" />}
         </div>
       </div>
     </div>

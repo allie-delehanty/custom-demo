@@ -33,83 +33,7 @@ export type ThreeColumnCtaProps = {
 };
 
 export const Default = (props: ThreeColumnCtaProps): JSX.Element => {
-  const id = props.params.RenderingIdentifier;
-  const { page } = useSitecore();
-  const isPageEditing = page.mode.isEditing;
-  const sxaStyles = `${props.params?.styles || ''}`;
-
-  const Column = ({
-    image,
-    text,
-    subText,
-    link,
-    delay,
-  }: {
-    image: ImageField;
-    text: Field<string>;
-    subText: Field<string>;
-    link: LinkField;
-    delay?: number;
-  }) => {
-    const [isVisible, domRef] = useVisibility(delay);
-    const buttonStyle = props.params?.ButtonStyle
-      ? `button-${props.params.ButtonStyle.toLowerCase()}`
-      : 'button-main';
-
-    return (
-      <div
-        className={`col-sm-12 col-lg-4 ${
-          !isPageEditing ? `fade-section ${isVisible ? 'is-visible' : ''}` : ''
-        } `}
-        ref={domRef}
-      >
-        <div className="content-wrapper">
-          <NextImage field={image} width={400} height={400} />
-          <h2>
-            <Text field={text} />
-          </h2>
-          <p>
-            <Text field={subText} />
-          </p>
-          {(isPageEditing || link?.value?.href) && (
-            <Link field={link} className={`button ${buttonStyle}`} />
-          )}
-        </div>
-      </div>
-    );
-  };
-
-  return (
-    <div
-      className={`component component-spaced three-column-cta ${sxaStyles}`}
-      id={id ? id : undefined}
-    >
-      <div className="container">
-        <div className="row">
-          <Column
-            image={props.fields.Image1}
-            text={props.fields.Text1}
-            subText={props.fields.SubText1}
-            link={props.fields.Link1}
-          />
-          <Column
-            image={props.fields.Image2}
-            text={props.fields.Text2}
-            subText={props.fields.SubText2}
-            link={props.fields.Link2}
-            delay={500}
-          />
-          <Column
-            image={props.fields.Image3}
-            text={props.fields.Text3}
-            subText={props.fields.SubText3}
-            link={props.fields.Link3}
-            delay={1000}
-          />
-        </div>
-      </div>
-    </div>
-  );
+  return <Allegro {...props} />;
 };
 
 export const WithIcons = (props: ThreeColumnCtaProps): JSX.Element => {
@@ -261,6 +185,99 @@ export const WithIconsCompact = (props: ThreeColumnCtaProps): JSX.Element => {
             subText={props.fields.SubText3}
             link={props.fields.Link3}
             delay={1000}
+          />
+        </div>
+      </div>
+    </div>
+  );
+};
+
+/* Allegro variant — three product columns, photo + title + body + arrow */
+export const Allegro = (props: ThreeColumnCtaProps): JSX.Element => {
+  const id = props.params.RenderingIdentifier;
+  const { page } = useSitecore();
+  const isPageEditing = page.mode.isEditing;
+  const sxaStyles = `${props.params?.styles || ''}`;
+
+  const Column = ({
+    image,
+    text,
+    subText,
+    link,
+  }: {
+    image: ImageField;
+    text: Field<string>;
+    subText: Field<string>;
+    link: LinkField;
+  }) => {
+    const inner = (
+      <article className="allegro-product-card">
+        <div className="allegro-product-image">
+          <NextImage field={image} width={400} height={280} />
+        </div>
+        <div className="allegro-product-body">
+          {(isPageEditing || text?.value) && (
+            <h3>
+              <Text field={text} />
+            </h3>
+          )}
+          {(isPageEditing || subText?.value) && (
+            <p>
+              <Text field={subText} />
+            </p>
+          )}
+          <span className="allegro-product-arrow" aria-hidden="true">
+            <svg width="22" height="12" viewBox="0 0 22 12" fill="none">
+              <path
+                d="M1 6h19M15.5 1.5 20.5 6l-5 4.5"
+                stroke="currentColor"
+                strokeWidth="1.4"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              />
+            </svg>
+          </span>
+        </div>
+      </article>
+    );
+
+    return (
+      <div className="col-sm-12 col-lg-4">
+        {isPageEditing || link?.value?.href ? (
+          <Link field={link} className="allegro-product-link">
+            {inner}
+          </Link>
+        ) : (
+          inner
+        )}
+      </div>
+    );
+  };
+
+  return (
+    <div
+      className={`component component-spaced three-column-cta allegro-products ${sxaStyles}`}
+      id={id ? id : undefined}
+    >
+      <div className="container">
+        <div className="row g-5">
+          <Column
+            image={props.fields.Image1}
+            text={props.fields.Text1}
+            subText={props.fields.SubText1}
+            link={props.fields.Link1}
+          />
+          <Column
+            image={props.fields.Image2}
+            text={props.fields.Text2}
+            subText={props.fields.SubText2}
+            link={props.fields.Link2}
+          />
+          <Column
+            image={props.fields.Image3}
+            text={props.fields.Text3}
+            subText={props.fields.SubText3}
+            link={props.fields.Link3}
           />
         </div>
       </div>

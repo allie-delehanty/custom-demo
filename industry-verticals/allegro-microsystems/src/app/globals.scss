@@ -1,4 +1,30 @@
-@import "tailwindcss";
+/* CLIENT THEME — Allegro MicroSystems
+   Unlayered :root beats @layer base regardless of Next.js CSS processing. */
+:root {
+  --brand-primary: #0c4ecb;
+  --brand-primary-foreground: #ffffff;
+  --brand-secondary: #0a1628;
+  --brand-secondary-foreground: #ffffff;
+  --brand-accent: #0f62fe;
+  --brand-accent-foreground: #ffffff;
+  --brand-bg: #ffffff;
+  --brand-fg: #111927;
+  --brand-muted: #f8f9fb;
+  --brand-muted-fg: #5a6577;
+  --brand-header-bg: #ffffff;
+  --brand-header-fg: #111927;
+  --brand-footer-bg: #ffffff;
+  --brand-footer-fg: #111927;
+  --brand-border: #e5e7eb;
+  --brand-ring: #0c4ecb;
+  --brand-heading-font: 'Outfit', sans-serif;
+  --brand-body-font: 'Inter', sans-serif;
+  --brand-radius: 0px;
+  --brand-button-radius: 9999px;
+  --brand-card-radius: 0px;
+}
+
+@import 'tailwindcss';
 @import '../assets/basic/fonts';
 @import 'bootstrap/scss/bootstrap';
 @import '../assets/sass/main';

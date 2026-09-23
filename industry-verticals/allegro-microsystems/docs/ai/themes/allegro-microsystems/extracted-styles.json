@@ -1,0 +1,43 @@
+{
+  "colors": {
+    "bodyBackground": "rgba(0, 0, 0, 0)",
+    "bodyColor": "rgb(0, 0, 0)",
+    "headerBackground": "rgb(255, 255, 255)",
+    "headerColor": "rgb(17, 25, 39)",
+    "footerBackground": "rgb(243, 244, 246)",
+    "footerColor": "rgb(0, 0, 0)",
+    "heroBackground": null,
+    "primaryButtonBackground": "rgb(12, 78, 203)",
+    "primaryButtonColor": "rgb(255, 255, 255)",
+    "primaryButtonBorderRadius": "6px",
+    "linkColor": "rgb(15, 98, 254)"
+  },
+  "typography": {
+    "bodyFontFamily": "Inter, serif",
+    "bodyFontSize": "16px",
+    "bodyFontWeight": "400",
+    "bodyLineHeight": "24px",
+    "h2FontFamily": "canada-type-gibson, sans-serif",
+    "h2FontSize": "36px",
+    "h2FontWeight": "400",
+    "h3FontFamily": "canada-type-gibson, sans-serif",
+    "h3FontSize": "24px",
+    "h3FontWeight": "400",
+    "pFontSize": "16px",
+    "pLineHeight": "24px"
+  },
+  "shape": {
+    "cardBorderRadius": "0px",
+    "cardBoxShadow": "none",
+    "cardBorder": "0px solid rgb(229, 231, 235)",
+    "imgBorderRadius": "0px"
+  },
+  "spacing": {
+    "heroMinHeight": "0px",
+    "heroPadding": "0px",
+    "containerMaxWidth": "1280px"
+  },
+  "cssVariables": {
+    "--font-sans": "ui-sans-serif,system-ui,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\",\"Segoe UI Symbol\",\"Noto Color Emoji\""
+  }
+}

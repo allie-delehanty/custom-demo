@@ -1,0 +1,169 @@
+# Demo Progress Tracker — Allegro MicroSystems
+
+client:
+  name: "Allegro MicroSystems"
+  sourceUrl: "https://www.allegromicro.com/en/"
+  startedAt: "2026-09-23T15:18:00Z"
+  lastUpdatedAt: "2026-09-23T16:40:00Z"
+
+phases:
+  phase0_inputs:
+    status: "complete"
+    screenshot: true
+    url: "https://www.allegromicro.com/en/"
+
+  phase0_5_manifest:
+    status: "complete"
+    validationMode: "quick"
+    result: "pass-with-warnings"
+
+  phase1_theme:
+    status: "complete"
+    themeFile: "docs/ai/themes/allegro-microsystems.theme.yaml"
+    userApproved: true
+
+  phase2_analysis:
+    status: "complete"
+    buildPlanFile: "docs/ai/demos/allegro-microsystems/build-plan.yaml"
+    totalSections: 7
+    userApproved: true
+    approvalNotes: "Section 5 is 2x TwoColumnCta with specified hover; pixel-perfect Allegro variants required."
+
+  phase2_5_content:
+    status: "complete"
+    contentMapFile: "docs/ai/demos/allegro-microsystems/content-map.yaml"
+    extractorUsed: true
+
+  phase3_content:
+    status: "complete"
+    completedSections: 7
+    totalSections: 7
+
+  phase4_theme:
+    status: "complete"
+    themeDelivery: "globals-inlined"
+    cssWritten: true
+    fontsAdded: true
+
+  phase5_custom:
+    status: "skipped"
+    customComponentsNeeded: 0
+    customComponentsBuilt: 0
+
+  phase5_5_variants:
+    status: "complete"
+    variantsNeeded: 6
+    variantsCreated: 6
+    variantSpecsFile: "docs/ai/demos/allegro-microsystems/variant-specs.yaml"
+    skippedReason: ""
+
+  phase6_assembly:
+    status: "complete"
+    componentsAdded: 2
+    datasourcesWired: 6
+    totalComponents: 7
+
+  phase7_summary:
+    status: "complete"
+
+sections:
+  - position: 1
+    componentName: "Header"
+    kind: "simple"
+    phase3:
+      status: "populated"
+      itemId: "bdb1be91-6a5a-43d6-91ac-a3e85778713c"
+      fieldsPopulated: true
+      childrenCreated: 0
+      childrenExpected: 0
+      error: ""
+    phase6:
+      status: "wired"
+      componentInstanceId: "c494869c-a931-4f42-8bdf-aca32462f2b3"
+      notes: "Partial design. Variant must be set to Allegro in Pages."
+
+  - position: 2
+    componentName: "Carousel"
+    kind: "list"
+    phase3:
+      status: "populated"
+      itemId: "9ba34d8b-49ef-40a5-a23c-f569023b0366"
+      fieldsPopulated: true
+      childrenCreated: 4
+      childrenExpected: 4
+      error: "set_component_datasource to 2ed2bcea failed (missing Verticals/Carousel branch). Existing parent children updated instead."
+    phase6:
+      status: "wired"
+      componentInstanceId: "124106de-fb02-4b43-a521-a309fc75a5bc"
+
+  - position: 3
+    componentName: "HeadingCta"
+    kind: "simple"
+    phase3:
+      status: "populated"
+      itemId: "08791425-2f63-43fe-85ac-755e2f89e5d8"
+      fieldsPopulated: true
+      childrenCreated: 0
+      childrenExpected: 0
+      error: ""
+    phase6:
+      status: "wired"
+      componentInstanceId: "31b88036-45e2-48d1-bb77-64dfd404bd1f"
+
+  - position: 4
+    componentName: "ThreeColumnCta"
+    kind: "simple"
+    phase3:
+      status: "populated"
+      itemId: "171fc073-c5f8-4e77-86f2-07599e0c5c61"
+      fieldsPopulated: true
+      childrenCreated: 0
+      childrenExpected: 0
+      error: ""
+    phase6:
+      status: "wired"
+      componentInstanceId: "d54d53b4-1aa4-4998-9bdf-eb934c32cfb6"
+      notes: "Existing 89b6a7b7 also updated with Allegro copy as fallback."
+
+  - position: 5
+    componentName: "TwoColumnCta"
+    kind: "simple"
+    phase3:
+      status: "populated"
+      itemId: "99994b9e-649d-47d9-a458-df21add861b7"
+      fieldsPopulated: true
+      childrenCreated: 0
+      childrenExpected: 0
+      error: ""
+    phase6:
+      status: "wired"
+      componentInstanceId: "0ed2d2c2-e9ef-4e40-b040-6289cb174e03"
+
+  - position: 6
+    componentName: "TwoColumnCta"
+    kind: "simple"
+    phase3:
+      status: "populated"
+      itemId: "0df35b57-3345-4c44-83aa-8914885020ae"
+      fieldsPopulated: true
+      childrenCreated: 0
+      childrenExpected: 0
+      error: ""
+    phase6:
+      status: "wired"
+      componentInstanceId: "700af2d9-c5e1-4a3c-8673-afdc9d59706e"
+
+  - position: 7
+    componentName: "Footer"
+    kind: "simple"
+    phase3:
+      status: "populated"
+      itemId: "3c03b8e5-e256-4968-a646-acff948b89eb"
+      fieldsPopulated: true
+      childrenCreated: 0
+      childrenExpected: 0
+      error: ""
+    phase6:
+      status: "wired"
+      componentInstanceId: "29758c1f-8daf-4d56-a212-eb734e2907ae"
+      notes: "Partial design. Variant must be set to Allegro in Pages."

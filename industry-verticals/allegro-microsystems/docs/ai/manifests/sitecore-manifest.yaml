@@ -3,15 +3,18 @@ lastUpdatedAt: "2026-06-09T00:00:00Z"
 lastUpdatedBy: "claude-agent"
 
 project:
-  siteCollection: "main"
-  siteName: "main-website"
+  siteCollection: "manufacturing"
+  siteName: "allegro-microsystems"
   sdk: "@sitecore-content-sdk/nextjs"
-  renderingsRoot: "/sitecore/layout/Renderings/Project/fmc-custom-demo"
-  projectTemplatesRoot: "/sitecore/templates/Project/fmc-custom-demo"
-  dataRoot: "/sitecore/content/main/main-website/Data"
-  projectFoldersRoot: "/sitecore/templates/Project/fmc-custom-demo/Folders"
-  renderingParamsRoot: "/sitecore/templates/Project/fmc-custom-demo/Rendering Parameters"
-  headlessVariantsRoot: "/sitecore/content/main/main-website/Presentation/Headless Variants"
+  renderingsRoot: "/sitecore/layout/Renderings/Project/financial"
+  projectTemplatesRoot: "/sitecore/templates/Project/financial"
+  dataRoot: "/sitecore/content/manufacturing/allegro-microsystems/Data"
+  projectFoldersRoot: "/sitecore/templates/Project/financial/Folders"
+  renderingParamsRoot: "/sitecore/templates/Project/financial/Rendering Parameters"
+  headlessVariantsRoot: "/sitecore/content/manufacturing/allegro-microsystems/Presentation/Headless Variants"
+  # 2026-09-23 validate-manifest: environment switch from main/main-website (fmc-custom-demo)
+  # to manufacturing/allegro-microsystems (Financial starter). Site-dependent IDs below
+  # still reflect the old environment and should not be used for this demo.
 
 availableRenderings:
   itemId: "{2BF7E311-E3A5-4290-A043-AB97EA1DFB15}"

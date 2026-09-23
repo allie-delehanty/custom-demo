@@ -1,0 +1,285 @@
+# Demo Build Plan — Allegro MicroSystems
+# Mapped to the Financial starter components that exist in this environment
+# (the UIIM template library in the skill catalog is not deployed here).
+
+client:
+  name: "Allegro MicroSystems"
+  sourceUrl: "https://www.allegromicro.com/en/"
+  themeFile: "docs/ai/themes/allegro-microsystems.theme.yaml"
+  analyzedAt: "2026-09-23T15:40:00Z"
+  sitecoreContentRoot: "/sitecore/content/manufacturing/allegro-microsystems"
+  homePageId: "afc1c152-af3e-455b-968b-8a215d58ebe3"
+  homePagePath: "/sitecore/content/manufacturing/allegro-microsystems/Home"
+  dataRootId: "8a79e64e-e929-4d8f-a43f-8290e57a2889"
+
+pageAnalysis:
+  screenshotFiles:
+    desktop: "docs/ai/themes/allegro-microsystems/screenshot-desktop.png"
+    mobile: "docs/ai/themes/allegro-microsystems/screenshot-mobile.png"
+    hero: "docs/ai/themes/allegro-microsystems/screenshot-hero.png"
+    userProvided: "user-attached homepage screenshot"
+  totalSections: 7
+  templateMatches: 7
+  customRequired: 0
+  environmentNote: >
+    This site is a Financial starter (Header, Carousel, ThreeColumnCta, TwoColumnCta,
+    HeadingCta, Footer). The UIIM catalog (AnnouncementBar, FeatureCardsGrid, etc.)
+    is not present in Sitecore or React. All matches use Financial components that
+    already exist and are registered for allegro-microsystems.
+
+sections:
+  - position: 1
+    description: "White solid header bar with rainbow globe logo, six nav links, language, search, and utility icons"
+    matchedComponent:
+      registryId: "navigation-header"
+      manifestName: "Header"
+      renderingId: "81317d3b-f929-426a-83ec-421982f8f1e6"
+      variant: "WithLogoImage"
+      matchType: "template"
+      matchConfidence: "high"
+      variantMatch: "partial"
+      apiAddable: false
+    sectionBackground: "default"
+    alreadyOnPage: true
+    livesIn: "header partial design"
+    content:
+      Logo: "ALLEGRO microsystems rainbow globe wordmark"
+      NavLinks:
+        - "Products"
+        - "Applications"
+        - "Design Support"
+        - "Resources"
+        - "About Allegro"
+        - "Investors"
+    contentNotes: "Context-only / partial design. Update logo + nav items in the Header partial. Do not add via add_component_on_page."
+    variantReason: "Solid white bar with logo image on the left matches WithLogoImage, not Transparent."
+    customVariantNeeded:
+      name: "Allegro"
+      description: "Compact white bar, small logo, evenly spaced text links, language + search + account icons on the right, no filled CTA"
+      parentComponent: "Header"
+
+  - position: 2
+    description: "Full-width dark navy hero carousel — headline and outlined pill CTA on the left, product photography on the right, dots and arrows"
+    matchedComponent:
+      registryId: "hero-banner-carousel"
+      manifestName: "Carousel"
+      renderingId: "8094185b-4c72-40c8-b005-c6ed91708754"
+      variant: "Default"
+      matchType: "template"
+      matchConfidence: "high"
+      variantMatch: "partial"
+      apiAddable: true
+    sectionBackground: "dark"
+    alreadyOnPage: true
+    existingInstanceId: "124106de-fb02-4b43-a521-a309fc75a5bc"
+    existingDatasourceId: "9ba34d8b-49ef-40a5-a23c-f569023b0366"
+    existingDatasourcePath: "/sitecore/content/manufacturing/allegro-microsystems/Home/Data/Carousel - Default"
+    kind: "list"
+    content:
+      slides:
+        - SlideTitle: "Build Smarter, Safer Robotic Joints"
+          SlideSubtitle: "Join our technical webinar on September 23rd (Robotics in Motion | Part 1: Designing Precision Joints with TMR & Inductive Position Sensing) to explore these solutions."
+          PrimaryLink: { text: "Register Now", href: "https://www.allegromicro.com/en/" }
+          image: "Robotic arm with integrated magnetic position sensor on dark navy"
+        - SlideTitle: "Powering the Future of Braking"
+          SlideSubtitle: "12V and 48V smart caliper architectures are engineered to solve the wheel node's toughest challenges — delivering reliable motor control and position feedback where it matters most."
+          PrimaryLink: { text: "Register Now", href: "https://www.allegromicro.com/en/" }
+          image: "Automotive brake disc with EMB caliper module"
+        - SlideTitle: "Our FY2026 ESG Report is Here"
+          SlideSubtitle: "See how Allegro is driving progress in sustainability, energy efficiency, supply chain responsibility, and community impact."
+          PrimaryLink: { text: "Read the full report", href: "https://www.allegromicro.com/en/" }
+          image: "FY2026 ESG report graphic"
+        - SlideTitle: "Beyond the Datasheet"
+          SlideSubtitle: "Navigate current sensor trade-offs to design safer, more efficient, and dependable solutions."
+          PrimaryLink: { text: "Start the Series", href: "https://www.allegromicro.com/en/" }
+          image: "Current sensor series graphic"
+    contentNotes: "Reuse the existing Carousel instance. Create a new client datasource (do not overwrite the financial example children). Existing carousel has 3 children; Allegro homepage has 4 slides — create 4 children."
+    variantReason: "Default carousel already has slides, arrows, and dots. Visual style is full-bleed overlay today; Allegro needs a split navy + photo layout."
+    customVariantNeeded:
+      name: "Allegro"
+      description: "Dark navy full-bleed slide, left-aligned white headline, outlined pill CTA, right-side product photography, white arrows and dots"
+      parentComponent: "Carousel"
+
+  - position: 3
+    description: "Featured Products intro — left-aligned heading and supporting paragraph on a white background"
+    matchedComponent:
+      registryId: "rich-text-block"
+      manifestName: "HeadingCta"
+      renderingId: "89e1d547-7cd6-4ef0-9a27-1e99410797dd"
+      variant: "Default"
+      matchType: "template"
+      matchConfidence: "high"
+      variantMatch: "partial"
+      apiAddable: true
+    sectionBackground: "default"
+    alreadyOnPage: false
+    kind: "simple"
+    content:
+      Heading: "Featured Products"
+      Text: "Allegro technology is at the heart of systems that sense, regulate, and drive the world around us—from cars and clean energy to data centers and smart factories."
+      Link: ""
+    contentNotes: "No CTA button on the live site. Leave Link empty. Place immediately after the carousel."
+    variantReason: "Default HeadingCta is heading + body + optional button. Compact would also work; Default is closer to the large heading size."
+    customVariantNeeded:
+      name: "Allegro"
+      description: "Left-aligned heading and body only, no eyebrow, no button, generous top padding"
+      parentComponent: "HeadingCta"
+
+  - position: 4
+    description: "Three product cards — semiconductor package photos, title, short description, and a small arrow link"
+    matchedComponent:
+      registryId: "feature-cards-grid"
+      manifestName: "ThreeColumnCta"
+      renderingId: "ad385021-ce2b-4fc1-89aa-207d408034a8"
+      variant: "Default"
+      matchType: "template"
+      matchConfidence: "high"
+      variantMatch: "partial"
+      apiAddable: true
+    sectionBackground: "default"
+    alreadyOnPage: true
+    existingInstanceId: "d54d53b4-1aa4-4998-9bdf-eb934c32cfb6"
+    existingDatasourceId: "89b6a7b7-599d-4cdc-9c9c-12080ccc1bfa"
+    kind: "simple"
+    content:
+      Text1: "Low-Resistance Current Sensor"
+      SubText1: "Maximizing efficiency through ultra-low resistance, this solution simplifies current sensing while enhancing system protection."
+      Link1: { text: "", href: "https://www.allegromicro.com/en/" }
+      Image1: "7-pin QFN current sensor package"
+      Text2: "24V Hall-effect Switches"
+      SubText2: "Precision, highly stable magnetic switches deliver superior performance, maximum reliability, and lower system costs."
+      Link2: { text: "", href: "https://www.allegromicro.com/en/" }
+      Image2: "24V Hall-effect switch package"
+      Text3: "Full-Bridge DMOS PWM Motor Driver"
+      SubText3: "Efficient 40V motor driver minimizes power dissipation and protects systems with robust, integrated safety features."
+      Link3: { text: "", href: "https://www.allegromicro.com/en/" }
+      Image3: "LJ SOIC 8-pin motor driver package"
+    contentNotes: "Reuse the existing Three Column CTA instance and wire a new Allegro datasource. Live site uses a text-less arrow link; Financial component renders a labeled button — Phase 5.5 should restyle to an arrow."
+    variantReason: "3-column product grid matches ThreeColumnCta Default. Visual treatment is product-on-white, not the financial photo-card style."
+    customVariantNeeded:
+      name: "Allegro"
+      description: "Three white columns, product photo on white, title + 2-line description, small blue arrow link, no card chrome"
+      parentComponent: "ThreeColumnCta"
+
+  - position: 5
+    description: "First editorial row — Who We Are + Innovations — 50/50 text+image tiles, white rest, blue hover fill"
+    matchedComponent:
+      registryId: "two-column-cta"
+      manifestName: "TwoColumnCta"
+      renderingId: "3a9a9d22-c092-4b54-9511-eb202ceabe8d"
+      variant: "Allegro"
+      matchType: "template"
+      matchConfidence: "high"
+      variantMatch: "none"
+      apiAddable: true
+    sectionBackground: "default"
+    alreadyOnPage: true
+    existingInstanceId: "0ed2d2c2-e9ef-4e40-b040-6289cb174e03"
+    kind: "simple"
+    content:
+      Title1: "Who We Are"
+      Text1: "Discover our mission to lead the world toward a safer, more sustainable, and autonomous future."
+      Image1: "Allegro headquarters building and campus"
+      Link1: { text: "", href: "https://www.allegromicro.com/en/about-allegro" }
+      Title2: "Innovations"
+      Text2: "Explore how our sensing and power solutions are driving e-mobility, clean energy, automation, and robotics forward."
+      Image2: "Hand holding a sensor board"
+      Link2: { text: "", href: "https://www.allegromicro.com/en/" }
+    contentNotes: "Approved as 2x Two Column CTA (not Four Column). Rest state is a white rounded tile with title, description, image, and bottom-left arrow. Hover fills the text panel brand blue, hides the description, and keeps title + arrow white."
+    variantReason: "Two Column CTA is the only 2-slot image+title+text+link component. Default stacks image then text; Allegro is a 50/50 editorial tile with hover fill."
+    customVariantNeeded:
+      name: "Allegro"
+      description: "50/50 editorial tile. Rest: white copy panel + photo, title, muted description, blue arrow. Hover: copy panel fills --brand-primary, description hides, title and arrow turn white."
+      parentComponent: "TwoColumnCta"
+
+  - position: 6
+    description: "Second editorial row — Join our Team + Newsletter — same 50/50 hover tiles"
+    matchedComponent:
+      registryId: "two-column-cta"
+      manifestName: "TwoColumnCta"
+      renderingId: "3a9a9d22-c092-4b54-9511-eb202ceabe8d"
+      variant: "Allegro"
+      matchType: "template"
+      matchConfidence: "high"
+      variantMatch: "none"
+      apiAddable: true
+    sectionBackground: "default"
+    alreadyOnPage: false
+    existingInstanceId: "700af2d9-c5e1-4a3c-8673-afdc9d59706e"
+    kind: "simple"
+    content:
+      Title1: "Join our Team"
+      Text1: "Become part of a company that values innovation with purpose and puts customers first."
+      Image1: "Engineers collaborating in a meeting"
+      Link1: { text: "", href: "https://www.allegromicro.com/en/about-allegro/careers" }
+      Title2: "Newsletter"
+      Text2: "Sign Up for Our Newsletter! Stay informed about the latest advancements and news from Allegro MicroSystems."
+      Image2: "Laptop on an office desk"
+      Link2: { text: "", href: "https://go.allegromicro.com/newsletter-signup-algm" }
+    contentNotes: "Second Two Column CTA instance, placed after the Who We Are / Innovations row."
+    variantReason: "Same Allegro Two Column variant as section 5."
+    customVariantNeeded:
+      name: "Allegro"
+      description: "Same 50/50 editorial tile + blue hover as section 5."
+      parentComponent: "TwoColumnCta"
+
+  - position: 7
+    description: "White mega footer — logo, five link columns, newsletter subscribe, social icons, copyright"
+    matchedComponent:
+      registryId: "footer"
+      manifestName: "Footer"
+      renderingId: "771a3f27-6448-44ac-add0-e5de311c6e3b"
+      variant: "Default"
+      matchType: "template"
+      matchConfidence: "high"
+      variantMatch: "partial"
+      apiAddable: false
+    sectionBackground: "default"
+    alreadyOnPage: true
+    livesIn: "footer partial design"
+    kind: "simple"
+    content:
+      Title1: "Products"
+      Text1: "Sensors<br/>Regulators<br/>Drivers"
+      Title2: "Applications"
+      Text2: "Automotive<br/>Industrial<br/>Consumer<br/>Technologies"
+      Title3: "Design Support"
+      Text3: "Design and Development<br/>Packaging<br/>Quality and Environment<br/>Software Portal"
+      Title4: "About Allegro"
+      Text4: "Our Company<br/>Careers<br/>ESG<br/>Growth and Inclusion<br/>Contact Us"
+      Copyright: "© 2026 Allegro MicroSystems, Inc. All Rights Reserved."
+    contentNotes: "Footer template has 4 columns + socials. Live site has 5 columns (Investors) plus a newsletter subscribe. Investors and newsletter will be noted as Phase 5.5 / manual if the 4-column template cannot hold them. Context-only — do not add via API."
+    variantReason: "Default Footer is a multi-column link footer with logo and socials — closest match."
+    customVariantNeeded:
+      name: "Allegro"
+      description: "White footer, compact logo, five link columns plus newsletter subscribe row, social icons top-right, legal links in the copyright row"
+      parentComponent: "Footer"
+
+customComponents: []
+
+oobToCleanup:
+  - { componentName: "Promo CTA", instanceHint: "3 instances of leftover financial promo content" }
+  - { componentName: "Five Column CTA", instanceHint: "Available Services financial promo" }
+  - { componentName: "Two Column CTA", instanceHint: "financial leftover — reused for editorial row 1, do not remove that instance" }
+  - { componentName: "Article List", instanceHint: "financial articles" }
+  - { componentName: "Documents List", instanceHint: "financial documents" }
+  - { componentName: "App Promo", instanceHint: "financial app promo" }
+
+buildOrder:
+  phase1_sitecore:
+    - "Header (skip add — partial design, update content)"
+    - "Carousel (reuse existing instance, new Allegro datasource + 4 children)"
+    - "HeadingCta (add after Carousel)"
+    - "ThreeColumnCta (reuse existing instance, new Allegro datasource)"
+    - "TwoColumnCta row 1 (reuse existing instance, new Allegro datasource)"
+    - "TwoColumnCta row 2 (add after row 1, new Allegro datasource)"
+    - "Footer (skip add — partial design, update content)"
+  phase2_theme: "Inline Allegro :root variables in the starter stylesheet + Outfit/Inter Google Fonts"
+  phase3_custom: []
+
+manualTasks:
+  - "Set Header variant to WithLogoImage / Allegro and update nav labels in the header partial"
+  - "Set Footer variant to Allegro and update column copy in the footer partial"
+  - "Remove leftover financial OOB components from Home (Promo CTA x3, Five Column CTA, Two Column CTA, Article List, Documents List, App Promo)"
+  - "Set Carousel / HeadingCta / ThreeColumnCta / both TwoColumnCta / Header / Footer variants to Allegro after Phase 5.5"
+  - "Out of scope: AskAllegro / Contact Us floating chat widget"

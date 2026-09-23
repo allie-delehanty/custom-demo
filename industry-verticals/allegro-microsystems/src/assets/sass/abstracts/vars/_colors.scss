@@ -1,21 +1,21 @@
-// Financial
+// Financial — remapped to Allegro MicroSystems brand tokens
 body.site-financial,
 .site-financial {
-  --text-body: #333;
-  --text-body-inverted: #fff;
-  --text-colored: #034c81;
-  --text-footer: #fff;
-  --text-accent: #a82a39;
-  --bg-body: #fff;
-  --bg-footer: #333;
-  --bg-main: #f0f5f7;
-  --bg-main-alt: #f0f5f7;
-  --bg-color: #c5e4f3;
-  --bg-saturated: #034c81;
-  --bg-accent: #c03021;
-  --border-color: #f0f5f7;
-  --hr-color: #fff;
-  --roundness: 1rem;
+  --text-body: var(--brand-fg, #111927);
+  --text-body-inverted: var(--brand-primary-foreground, #fff);
+  --text-colored: var(--brand-primary, #0c4ecb);
+  --text-footer: var(--brand-footer-fg, #111927);
+  --text-accent: var(--brand-primary, #0c4ecb);
+  --bg-body: var(--brand-bg, #fff);
+  --bg-footer: var(--brand-footer-bg, #fff);
+  --bg-main: var(--brand-muted, #f8f9fb);
+  --bg-main-alt: var(--brand-muted, #f8f9fb);
+  --bg-color: var(--brand-muted, #f8f9fb);
+  --bg-saturated: var(--brand-secondary, #0a1628);
+  --bg-accent: var(--brand-primary, #0c4ecb);
+  --border-color: var(--brand-border, #e5e7eb);
+  --hr-color: var(--brand-border, #e5e7eb);
+  --roundness: var(--brand-radius, 0);
 }
 
 body.site-financial.dark,

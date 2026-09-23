@@ -1,0 +1,74 @@
+variantSpecs:
+  - position: 1
+    componentName: "Header"
+    variantName: "Allegro"
+    baseVariant: "WithLogoImage"
+    visualDifferences:
+      layout: "compact white bar, logo image left, nav/utilities right; header-left PLAY! RichText hidden"
+      spacing: "py-4, logo height 36px"
+      typography: "15px medium Inter nav links"
+      background: "white with 1px brand-border bottom"
+      distinctive: "rainbow globe + ALLEGRO wordmark"
+
+  - position: 2
+    componentName: "Carousel"
+    variantName: "Allegro"
+    baseVariant: "Default"
+    visualDifferences:
+      layout: "42% navy copy left, photo right, no gradient mask overlay"
+      spacing: "min-height 36rem desktop, copy padding 4rem"
+      typography: "Outfit 2–3rem heading, white; body 17px at 86% white"
+      background: "var(--brand-secondary) #0A1628"
+      buttons: "outlined pill, white 1px border, hover invert"
+      distinctive: "left-aligned dots, white arrows"
+
+  - position: 3
+    componentName: "HeadingCta"
+    variantName: "Allegro"
+    baseVariant: "Default"
+    visualDifferences:
+      layout: "left-aligned heading + body only, no eyebrow, no CTA"
+      spacing: "pt-20 pb-6, max-width 46rem"
+      typography: "Outfit 2–2.5rem heading, Inter 17px muted body"
+      background: "white"
+
+  - position: 4
+    componentName: "ThreeColumnCta"
+    variantName: "Allegro"
+    baseVariant: "Default"
+    visualDifferences:
+      layout: "3 columns, product photo contain on white, title, 2-line body, arrow"
+      spacing: "14rem image height, g-5 gap"
+      typography: "Outfit 1.25rem title, 15px muted body"
+      background: "white, no card chrome"
+      distinctive: "blue arrow instead of labeled button"
+
+  - position: 5
+    componentName: "TwoColumnCta"
+    variantName: "Allegro"
+    baseVariant: "Default"
+    visualDifferences:
+      layout: "50/50 copy | image, two tiles per row"
+      spacing: "min-height 15.5rem, copy padding 2.25rem 2rem 3.25rem, 1rem radius"
+      typography: "Outfit 1.5rem title, 15px muted description"
+      background: "white tile, 8px 28px soft shadow"
+      distinctive: "hover fills copy panel --brand-primary, hides description, title + arrow turn white; arrow stays bottom-left"
+
+  - position: 6
+    componentName: "TwoColumnCta"
+    variantName: "Allegro"
+    baseVariant: "Default"
+    visualDifferences:
+      layout: "same as position 5"
+      distinctive: "Join our Team / Newsletter row"
+
+  - position: 7
+    componentName: "Footer"
+    variantName: "Allegro"
+    baseVariant: "Default"
+    visualDifferences:
+      layout: "logo + socials top row, then 4 link columns, legal footnote"
+      spacing: "pt-14, 1px top border"
+      typography: "15px links, 16px semibold column titles"
+      background: "white"
+      distinctive: "no dark footer; Investors/newsletter columns omitted (4-column template)"

@@ -1,14 +1,20 @@
 // Client-safe component map for App Router
+import { NextjsContentSdkComponent } from '@sitecore-content-sdk/nextjs';
 
-import { BYOCClientWrapper, NextjsContentSdkComponent, FEaaSClientWrapper } from '@sitecore-content-sdk/nextjs';
+
+import { BYOCClientWrapper, FEaaSClientWrapper } from '@sitecore-content-sdk/nextjs';
 import { Form } from '@sitecore-content-sdk/nextjs';
 
+// end of built-in import section
 import * as ThemeSwitcher from 'src/components/utilities/ThemeSwitcher';
 import * as SiteTheme from 'src/components/utilities/SiteTheme';
 import * as LoanCalculator from 'src/components/utilities/LoanCalculator';
 import * as LanguageSwitcher from 'src/components/utilities/LanguageSwitcher';
 import * as ContactForm from 'src/components/utilities/ContactForm';
 import * as ApplicationForm from 'src/components/utilities/ApplicationForm';
+import * as SearchResults from 'src/components/search/SearchResults';
+import * as PreviewSearch from 'src/components/search/PreviewSearch';
+import * as MoreLikeThis from 'src/components/search/MoreLikeThis';
 import * as ColumnSplitter from 'src/components/pagestructure/ColumnSplitter';
 import * as TwoColumnCta from 'src/components/pagecontent/TwoColumnCta';
 import * as ThreeColumnCta from 'src/components/pagecontent/ThreeColumnCta';
@@ -40,6 +46,8 @@ import * as ArticleList from 'src/components/pagecontent/ArticleList';
 import * as ArticleDetails from 'src/components/pagecontent/ArticleDetails';
 import * as AppPromo from 'src/components/pagecontent/AppPromo';
 import * as Accordion from 'src/components/pagecontent/Accordion';
+import * as ProfileWidget from 'src/components/non-sitecore/ProfileWidget';
+import * as ProfileIdWidget from 'src/components/non-sitecore/ProfileIdWidget';
 import * as ParallaxBackgroundImage from 'src/components/non-sitecore/ParallaxBackgroundImage';
 import * as IconAccent from 'src/components/non-sitecore/IconAccent';
 import * as DottedAccent from 'src/components/non-sitecore/DottedAccent';
@@ -49,6 +57,22 @@ import * as Header from 'src/components/navigation/Header';
 import * as Footer from 'src/components/navigation/Footer';
 import * as Eyebrow from 'src/components/navigation/Eyebrow';
 import * as Breadcrumb from 'src/components/navigation/Breadcrumb';
+import * as SuggestionBlock from 'src/components/legacysearch/SuggestionBlock';
+import * as SortOrder from 'src/components/legacysearch/SortOrder';
+import * as SearchResultsComponent from 'src/components/legacysearch/SearchResultsComponent';
+import * as SearchProvider from 'src/components/legacysearch/SearchProvider';
+import * as SearchPagination from 'src/components/legacysearch/SearchPagination';
+import * as SearchFacets from 'src/components/legacysearch/SearchFacets';
+import * as ResultsPerPage from 'src/components/legacysearch/ResultsPerPage';
+import * as QuestionsAnswers from 'src/components/legacysearch/QuestionsAnswers';
+import * as QueryResultsSummary from 'src/components/legacysearch/QueryResultsSummary';
+import * as LegacySearchResults from 'src/components/legacysearch/LegacySearchResults';
+import * as LegacyPreviewSearch from 'src/components/legacysearch/LegacyPreviewSearch';
+import * as HomeHighlighted from 'src/components/legacysearch/HomeHighlighted';
+import * as Filter from 'src/components/legacysearch/Filter';
+import * as CardViewSwitcher from 'src/components/legacysearch/CardViewSwitcher';
+import * as ArticleHorizontalCard from 'src/components/legacysearch/ArticleHorizontalCard';
+import * as ArticleCard from 'src/components/legacysearch/ArticleCard';
 
 export const componentMap = new Map<string, NextjsContentSdkComponent>([
   ['BYOCWrapper', BYOCClientWrapper],
@@ -60,6 +84,9 @@ export const componentMap = new Map<string, NextjsContentSdkComponent>([
   ['LanguageSwitcher', { ...LanguageSwitcher }],
   ['ContactForm', { ...ContactForm }],
   ['ApplicationForm', { ...ApplicationForm }],
+  ['SearchResults', { ...SearchResults }],
+  ['PreviewSearch', { ...PreviewSearch }],
+  ['MoreLikeThis', { ...MoreLikeThis }],
   ['ColumnSplitter', { ...ColumnSplitter }],
   ['TwoColumnCta', { ...TwoColumnCta }],
   ['ThreeColumnCta', { ...ThreeColumnCta }],
@@ -91,6 +118,8 @@ export const componentMap = new Map<string, NextjsContentSdkComponent>([
   ['ArticleDetails', { ...ArticleDetails }],
   ['AppPromo', { ...AppPromo }],
   ['Accordion', { ...Accordion }],
+  ['ProfileWidget', { ...ProfileWidget }],
+  ['ProfileIdWidget', { ...ProfileIdWidget }],
   ['ParallaxBackgroundImage', { ...ParallaxBackgroundImage }],
   ['IconAccent', { ...IconAccent }],
   ['DottedAccent', { ...DottedAccent }],
@@ -100,6 +129,22 @@ export const componentMap = new Map<string, NextjsContentSdkComponent>([
   ['Footer', { ...Footer }],
   ['Eyebrow', { ...Eyebrow }],
   ['Breadcrumb', { ...Breadcrumb }],
+  ['SuggestionBlock', { ...SuggestionBlock }],
+  ['SortOrder', { ...SortOrder }],
+  ['SearchResultsComponent', { ...SearchResultsComponent }],
+  ['SearchProvider', { ...SearchProvider }],
+  ['SearchPagination', { ...SearchPagination }],
+  ['SearchFacets', { ...SearchFacets }],
+  ['ResultsPerPage', { ...ResultsPerPage }],
+  ['QuestionsAnswers', { ...QuestionsAnswers }],
+  ['QueryResultsSummary', { ...QueryResultsSummary }],
+  ['LegacySearchResults', { ...LegacySearchResults }],
+  ['LegacyPreviewSearch', { ...LegacyPreviewSearch }],
+  ['HomeHighlighted', { ...HomeHighlighted }],
+  ['Filter', { ...Filter }],
+  ['CardViewSwitcher', { ...CardViewSwitcher }],
+  ['ArticleHorizontalCard', { ...ArticleHorizontalCard }],
+  ['ArticleCard', { ...ArticleCard }],
 ]);
 
 export default componentMap;
