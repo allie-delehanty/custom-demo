@@ -81,7 +81,11 @@
       "buildCommand": "build",
       "runCommand": "next:start"
     }
-  },
+  }
+  ,
+  "deployItems": { "modules": ["Project.click-click-launch", "prosperabank"]
+  }
+  ,
   "postActions": {
     "actions": {
       "warmUpCm": {
