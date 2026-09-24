@@ -8,7 +8,6 @@ import {
   Text,
   Link,
   useSitecore,
-  Placeholder,
   NextImage,
 } from '@sitecore-content-sdk/nextjs';
 import { ComponentProps } from 'lib/component-props';
@@ -65,13 +64,11 @@ const AllegroEditorial = ({
     title,
     text,
     link,
-    placeholder,
   }: {
     image: ImageField;
     title: Field<string>;
     text: Field<string>;
     link: LinkField;
-    placeholder: string;
   }) => {
     const copy = (
       <div className="allegro-editorial-copy">
@@ -108,7 +105,6 @@ const AllegroEditorial = ({
             {media}
           </>
         )}
-        <Placeholder name={placeholder} rendering={props.rendering} />
       </article>
     );
 
@@ -137,14 +133,12 @@ const AllegroEditorial = ({
             title={props.fields.Title1}
             text={props.fields.Text1}
             link={props.fields.Link1}
-            placeholder="two-col-placeholder-left"
           />
           <Tile
             image={props.fields.Image2}
             title={props.fields.Title2}
             text={props.fields.Text2}
             link={props.fields.Link2}
-            placeholder="two-col-placeholder-right"
           />
         </div>
       </div>

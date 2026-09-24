@@ -19,6 +19,7 @@ import Head from 'next/head';
 interface Fields {
   Title: Field<string>;
   Excerpt: Field<string>;
+  Date?: Field<string>;
   Content: RichTextField;
   Thumbnail: ImageField;
   BackgroundImage: ImageField;
@@ -33,25 +34,6 @@ export type PageBackgroundProps = ComponentProps & {
 
 export const Default = (props: PageBackgroundProps): JSX.Element => {
   return <Allegro {...props} />;
-};
-
-const DATE_LIKE =
-  /^(January|February|March|April|May|June|July|August|September|October|November|December)\s+\d{1,2},\s+\d{4}$/i;
-
-const splitLeadingParagraph = (html?: string): { lead: string; rest: string } => {
-  if (!html) {
-    return { lead: '', rest: '' };
-  }
-
-  const match = html.match(/<p\b[^>]*>[\s\S]*?<\/p>/i);
-  if (!match || match.index === undefined) {
-    return { lead: '', rest: html };
-  }
-
-  return {
-    lead: match[0],
-    rest: `${html.slice(0, match.index)}${html.slice(match.index + match[0].length)}`.trim(),
-  };
 };
 
 const formatCrumbLabel = (segment: string): string =>
@@ -80,7 +62,7 @@ export const Allegro = (props: PageBackgroundProps): JSX.Element => {
   const id = props.params?.RenderingIdentifier;
   const { page } = useSitecore();
   const isEditing = page?.mode?.isEditing;
-  const { Title, Excerpt, Content, Thumbnail } = props.fields || {};
+  const { Title, Excerpt, Date, Content, Thumbnail } = props.fields || {};
   const pathname = usePathname() || '';
   const crumbs = [
     { title: 'Home', href: '/' },
@@ -110,10 +92,8 @@ export const Allegro = (props: PageBackgroundProps): JSX.Element => {
       ? thumbnailValue.match(/alt="([^"]*)"/)?.[1] || Title?.value || ''
       : thumbnailValue?.alt || Title?.value || '';
   const hasImage = Boolean(imageSrc);
-  const excerptValue = Excerpt?.value?.trim() || '';
-  const excerptIsDate = DATE_LIKE.test(excerptValue);
-  const { lead, rest } = splitLeadingParagraph(Content?.value);
-  const summaryHtml = excerptIsDate || !excerptValue ? lead : '';
+  const dateValue = Date?.value?.trim() || '';
+  const summaryValue = Excerpt?.value?.trim() || '';
 
   const handleShare = (): void => {
     if (typeof navigator !== 'undefined' && navigator.clipboard && window.location?.href) {
@@ -157,10 +137,10 @@ export const Allegro = (props: PageBackgroundProps): JSX.Element => {
                 <Text field={Title} />
               </h1>
             )}
-            {(excerptIsDate || isEditing) && (
+            {Date && (dateValue || isEditing) && (
               <p className="allegro-article-date">
                 <CalendarIcon />
-                <Text field={Excerpt} />
+                <Text field={Date} />
               </p>
             )}
           </div>
@@ -170,26 +150,10 @@ export const Allegro = (props: PageBackgroundProps): JSX.Element => {
           <div className="container">
             <div className="allegro-article-summary">
               <div className="allegro-article-summary-copy">
-                {isEditing && !excerptIsDate && (
+                {(summaryValue || isEditing) && (
                   <p className="allegro-article-lede">
                     <Text field={Excerpt} />
                   </p>
-                )}
-                {!isEditing && excerptIsDate && summaryHtml && (
-                  <div
-                    className="allegro-article-lede"
-                    dangerouslySetInnerHTML={{ __html: summaryHtml }}
-                  />
-                )}
-                {!isEditing && !excerptIsDate && excerptValue && (
-                  <p className="allegro-article-lede">
-                    <Text field={Excerpt} />
-                  </p>
-                )}
-                {isEditing && (
-                  <div className="allegro-article-content">
-                    <RichText field={Content} className="rich-text" />
-                  </div>
                 )}
               </div>
               <div className="allegro-article-summary-media">
@@ -218,9 +182,9 @@ export const Allegro = (props: PageBackgroundProps): JSX.Element => {
               </div>
             </div>
 
-            {!isEditing && rest && (
+            {(Content?.value || isEditing) && (
               <div className="allegro-article-content">
-                <div className="rich-text" dangerouslySetInnerHTML={{ __html: rest }} />
+                <RichText field={Content} className="rich-text" />
               </div>
             )}
 
