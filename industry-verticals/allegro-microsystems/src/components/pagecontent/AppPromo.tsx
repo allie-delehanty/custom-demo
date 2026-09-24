@@ -60,3 +60,71 @@ export const Default = (props: AppPromoProps): JSX.Element => {
     </div>
   );
 };
+
+const AllegroAppPromo = ({
+  props,
+  imagePosition,
+}: {
+  props: AppPromoProps;
+  imagePosition: 'left' | 'right';
+}): JSX.Element => {
+  const id = props.params.RenderingIdentifier;
+  const { page } = useSitecore();
+  const isPageEditing = page.mode.isEditing;
+  const sxaStyles = `${props.params?.styles || ''}`;
+  const { Title, Text: body, Image } = props.fields || {};
+
+  const copy = (
+    <div className="allegro-app-promo-copy">
+      {(Title?.value || isPageEditing) && (
+        <h2 className="allegro-app-promo-title">
+          <Text field={Title} />
+        </h2>
+      )}
+      {(body?.value || isPageEditing) && (
+        <div className="allegro-app-promo-text">
+          <RichText field={body} />
+        </div>
+      )}
+    </div>
+  );
+
+  const media = (
+    <div className="allegro-app-promo-image">
+      {(Image?.value?.src || isPageEditing) && (
+        <NextImage field={Image} width={720} height={480} />
+      )}
+    </div>
+  );
+
+  return (
+    <div
+      className={`component app-promo allegro-app-promo allegro-app-promo-${imagePosition} ${sxaStyles}`}
+      id={id ? id : undefined}
+    >
+      <div className="container">
+        <div className="allegro-app-promo-row">
+          {imagePosition === 'left' ? (
+            <>
+              {media}
+              {copy}
+            </>
+          ) : (
+            <>
+              {copy}
+              {media}
+            </>
+          )}
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export const ImageRight = (props: AppPromoProps): JSX.Element => (
+  <AllegroAppPromo props={props} imagePosition="right" />
+);
+
+export const ImageLeft = (props: AppPromoProps): JSX.Element => (
+  <AllegroAppPromo props={props} imagePosition="left" />
+);
