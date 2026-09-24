@@ -1131,3 +1131,20 @@ body.site-financial,
     color: #5a6577;
   }
 }
+
+.documents-list.allegro-documents.allegro-documents-grid {
+  .allegro-documents-list {
+    grid-template-columns: 1fr;
+    gap: 0.75rem;
+
+    @media (min-width: 768px) {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+
+  .allegro-documents-item {
+    min-height: 5.5rem;
+    height: 100%;
+    align-items: flex-start;
+  }
+}

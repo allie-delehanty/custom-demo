@@ -1,0 +1,23 @@
+Title:
+Sensors
+
+Short Description:
+Engineered for precision and reliability, our sensors enable smarter, more efficient systems in an increasingly electrified world — it's why we're #1 in magnetic sensor IC market.
+
+Content:
+Browse by category
+
+Current Sensors
+Allegro's current sensors deliver galvanic isolation, lossless operation, and high-precision accuracy—enabling maximum efficiency and power density in compact systems.
+
+Inductive Position Sensors
+Allegro's inductive sensors deliver precision motor position sensing with unmatched configurability, enabling tailored performance for diverse applications.
+
+Position Sensors
+Allegro's position sensors deliver accurate, contactless linear and rotary measurements across harsh automotive and industrial environments.
+
+Speed Sensors
+Backed by decades of algorithm expertise, our speed sensor solutions ensure reliable operation, even in harsh environments with vibration, EMI, and air gap variations.
+
+Switches and Latches
+Allegro offers a comprehensive range of magnetic switches and latches featuring both Hall-effect and TMR technologies for ultra-low power consumption and high reliability.

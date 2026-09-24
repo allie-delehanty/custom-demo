@@ -153,15 +153,22 @@ const AllegroDocumentItem = ({
   );
 };
 
-export const Allegro = (props: DocumentsListProps): JSX.Element => {
+const AllegroDocuments = ({
+  props,
+  layout,
+}: {
+  props: DocumentsListProps;
+  layout: 'list' | 'grid';
+}): JSX.Element => {
   const id = props.params.RenderingIdentifier;
   const { page } = useSitecore();
   const isPageEditing = page.mode.isEditing;
   const sxaStyles = `${props.params?.styles || ''}`;
+  const layoutClass = layout === 'grid' ? 'allegro-documents-grid' : '';
 
   return (
     <div
-      className={`component documents-list allegro-documents ${sxaStyles}`}
+      className={`component documents-list allegro-documents ${layoutClass} ${sxaStyles}`}
       id={id ? id : undefined}
     >
       <div className="container">
@@ -200,3 +207,11 @@ export const Allegro = (props: DocumentsListProps): JSX.Element => {
     </div>
   );
 };
+
+export const Allegro = (props: DocumentsListProps): JSX.Element => (
+  <AllegroDocuments props={props} layout="list" />
+);
+
+export const Grid = (props: DocumentsListProps): JSX.Element => (
+  <AllegroDocuments props={props} layout="grid" />
+);
