@@ -1,0 +1,175 @@
+# Demo Build Plan
+client:
+  name: "Con Edison"
+  sourceUrl: "https://www.coned.com/"
+  themeFile: "docs/ai/themes/con-edison.theme.yaml"
+  analyzedAt: "2026-10-08T15:22:00Z"
+  contentRoot: "/sitecore/content/ConEdison/ConEdison"
+  codeRoot: "industry-verticals/con-edison"
+
+pageAnalysis:
+  screenshotFiles:
+    desktop: "docs/ai/themes/con-edison/screenshot-desktop.png"
+    mobile: "docs/ai/themes/con-edison/screenshot-mobile.png"
+    hero: "docs/ai/themes/con-edison/screenshot-hero.png"
+    fullPage: "/Users/dele/.cursor/projects/Users-dele-Desktop-custom-demo/assets/www.coned.com_en_-ac4c2d8d-1e3f-4d3c-8e12-6f217f517a22.jpg"
+  totalSections: 6
+  templateMatches: 5
+  customRequired: 1
+
+sections:
+  - position: 1
+    description: "Thin dark utility bar with Contact Us and a language menu."
+    matchedComponent:
+      registryId: "announcement-bar"
+      manifestName: "AnnouncementBar"
+      variant: "Highlight"
+      matchType: "template"
+      matchConfidence: "medium"
+      variantMatch: "exact"
+      apiAddable: true
+    sectionBackground: "dark"
+    content:
+      Title: "Contact Us"
+      Description: "English"
+    contentNotes: "This is a utility strip, not a promotional announcement. Highlight is the high-contrast dark variant."
+    variantReason: "Dark #2A2A2A bar with light text. Highlight is the high-contrast Announcement Bar variant."
+
+  - position: 2
+    description: "White header with the Con Edison logo, four nav labels, and two blue buttons."
+    matchedComponent:
+      registryId: "navigation-header"
+      manifestName: "NavigationHeader"
+      variant: "Default"
+      matchType: "template"
+      matchConfidence: "high"
+      variantMatch: "exact"
+      apiAddable: true
+    sectionBackground: "default"
+    content:
+      BrandLogo: "Con Edison logo"
+      CtaLabel: "Log In or Register"
+      links:
+        - "Account & Billing"
+        - "Services & Outages"
+        - "Save Energy & Money"
+        - "Clean Energy"
+        - "Search"
+    contentNotes: "Search is a second blue button beside Log In. The component has one CTA, so Search is a nav link unless a custom variant adds a second button."
+    variantReason: "Solid white bar. Theme navStyle is solid-bar, which maps to Default."
+
+  - position: 3
+    description: "Two full-bleed photos side by side, each with a white headline and short sentence."
+    matchedComponent:
+      registryId: "hero-banner"
+      manifestName: "HeroBanner"
+      variant: "DualPanelOverlay"
+      matchType: "template"
+      matchConfidence: "medium"
+      variantMatch: "none"
+      apiAddable: true
+    customVariantNeeded:
+      name: "DualPanelOverlay"
+      description: "Two equal photo panels, each with a white headline and supporting line over the image. Left panel and right panel are independent."
+      parentComponent: "HeroBanner"
+    sectionBackground: "primary"
+    content:
+      left:
+        Title: "Focus on What Matters With My Account"
+        Description: "Manage costs, track how you use energy, get personalized tips, and more."
+        Image: "Person with glasses repairing a bicycle indoors"
+      right:
+        Title: "Because Con Edison is New York"
+        Description: "Investing today to keep New York's energy reliable, resilient, and affordable for the future."
+        Image: "Worker in a hard hat and headlamp repairing underground equipment"
+    contentNotes: "SplitImageText is text beside one image. BackgroundImage is one full-bleed photo. Neither covers two overlay panels."
+    variantReason: "No existing Hero Banner variant is two image overlays."
+
+  - position: 4
+    description: "Six icon links in one row. The first three sit on blue; the last three sit on white."
+    matchedComponent:
+      registryId: "value-proposition-grid"
+      manifestName: "ValuePropositionGrid"
+      variant: "SplitIconRow"
+      matchType: "template"
+      matchConfidence: "medium"
+      variantMatch: "none"
+      apiAddable: true
+    customVariantNeeded:
+      name: "SplitIconRow"
+      description: "Six icon-and-label tiles in one row. The first half uses the primary blue background and white text. The second half uses a white background and dark text."
+      parentComponent: "ValuePropositionGrid"
+    sectionBackground: "primary"
+    content:
+      items:
+        - "Pay Your Bill"
+        - "Manage Your Account"
+        - "Start or Stop Service"
+        - "See How We Keep the City Running"
+        - "New Eligibility for Energy Assistance"
+        - "Explore More Bill Help Options"
+    contentNotes: "Labels only, no descriptions. Default and FourColumn expect three or four items and one background."
+    variantReason: "Six tiles and a blue/white split are not an existing variant."
+
+  - position: 5
+    description: "Large gray link directory, then a dark bar with legal links, social icons, and the copyright line."
+    matchedComponent:
+      registryId: "footer"
+      manifestName: "SiteFooter"
+      variant: "MegaFooter"
+      matchType: "template"
+      matchConfidence: "medium"
+      variantMatch: "partial"
+      apiAddable: false
+    sectionBackground: "muted"
+    content:
+      columns:
+        - "Outages"
+        - "Safety"
+        - "About Us"
+        - "Community Affairs"
+        - "Contact Us"
+        - "Renters and Homeowners"
+        - "Multifamily Building Managers"
+        - "Small Business & Nonprofit"
+        - "Commercial & Industrial"
+        - "Business Partners"
+        - "Investors"
+        - "Rates & Tariffs"
+        - "Social"
+      legal: "© 2016 - 2026 Consolidated Edison Company of New York, Inc. All Rights Reserved."
+    contentNotes: "SiteFooterData only has BrandLogo, and the manifest marks this rendering as context-only. The link columns will not come from the API datasource. Place MegaFooter manually and treat the link index as follow-up content."
+    variantReason: "MegaFooter is the multi-column variant. It does not include this many audience groups plus a separate legal bar, so the match is partial."
+
+  - position: 6
+    description: "A vertical Feedback tab on the left edge and a Chat With Us button at the lower right."
+    matchedComponent:
+      registryId: ""
+      manifestName: ""
+      variant: ""
+      matchType: "custom"
+      matchConfidence: "low"
+      variantMatch: "none"
+      apiAddable: false
+    sectionBackground: "primary"
+    content:
+      Title: "Chat With Us"
+      Description: "Feedback"
+    contentNotes: "Third-party page chrome. Do not build a Sitecore component unless the demo needs the chat widget."
+    variantReason: "No template component is a floating chat or feedback tab."
+
+customComponents:
+  - position: 6
+    name: "PageChrome"
+    description: "Feedback tab and Chat With Us button. Skip unless the demo must show the chat widget."
+
+buildOrder:
+  phase1_sitecore:
+    - "AnnouncementBar"
+    - "NavigationHeader"
+    - "HeroBanner"
+    - "ValuePropositionGrid"
+  phase2_theme: "Apply con-edison.theme.yaml"
+  phase3_manual:
+    - "SiteFooter MegaFooter"
+  phase3_custom: []

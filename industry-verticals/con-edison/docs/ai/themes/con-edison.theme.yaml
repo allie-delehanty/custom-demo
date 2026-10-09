@@ -1,0 +1,120 @@
+# Client Brand Theme — Con Edison
+# Extracted from: https://www.coned.com/
+
+client:
+  name: "Con Edison"
+  sourceUrl: "https://www.coned.com/"
+  extractedAt: "2026-10-07T17:16:00Z"
+  extractedBy: "cursor"
+
+colors:
+  primary: "#0078CF"
+  primaryForeground: "#ffffff"
+  secondary: "#2A2A2A"
+  secondaryForeground: "#ffffff"
+  accent: "#069BD7"
+  accentForeground: "#ffffff"
+  background: "#ffffff"
+  foreground: "#2A2A2A"
+  muted: "#E6E6E6"
+  mutedForeground: "#636363"
+  headerBackground: "#ffffff"
+  headerForeground: "#2A2A2A"
+  footerBackground: "#2A2A2A"
+  footerForeground: "#ffffff"
+  border: "#E6E6E6"
+  ring: "#0078CF"
+  extra:
+    - { name: "utilityBar", value: "#2A2A2A" }
+    - { name: "logoCyan", value: "#069BD7" }
+
+typography:
+  headingFamily: "'Lexend', sans-serif"
+  headingWeight: "800"
+  bodyFamily: "'Open Sans', sans-serif"
+  bodyWeight: "400"
+  monoFamily: "'Open Sans', sans-serif"
+  googleFontsUrl: "https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;600;800&family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,600;1,700;1,800&display=swap"
+  scale:
+    hero: "2.875rem"
+    h1: "2.875rem"
+    h2: "2.875rem"
+    h3: "1.4375rem"
+    body: "1rem"
+    small: "0.75rem"
+  headingTransform: "none"
+  letterSpacing: "normal"
+  lineHeight: "1.625"
+
+spacing:
+  density: "compact"
+  sectionGap: "0"
+  containerMaxWidth: "1400px"
+  containerPadding: "0"
+
+shape:
+  borderRadius: "0px"
+  buttonRadius: "0px"
+  cardRadius: "0px"
+  imageRadius: "0px"
+  shadowStyle: "none"
+  borderStyle: "thin"
+
+tone:
+  overall: "corporate"
+  colorMode: "light"
+  contrast: "high"
+  imagery: "photography"
+  heroStyle: "split-image-text"
+  cardStyle: "flat"
+  navStyle: "solid-bar"
+
+tailwind:
+  colors:
+    brand:
+      primary: "#0078CF"
+      secondary: "#2A2A2A"
+      accent: "#069BD7"
+  fontFamily:
+    heading: ["Lexend", "sans-serif"]
+    body: ["Open Sans", "sans-serif"]
+  borderRadius:
+    DEFAULT: "0px"
+    button: "0px"
+    card: "0px"
+
+cssVariables: |
+  :root {
+    --brand-primary: #0078CF;
+    --brand-primary-foreground: #ffffff;
+    --brand-secondary: #2A2A2A;
+    --brand-secondary-foreground: #ffffff;
+    --brand-accent: #069BD7;
+    --brand-accent-foreground: #ffffff;
+    --brand-bg: #ffffff;
+    --brand-fg: #2A2A2A;
+    --brand-muted: #E6E6E6;
+    --brand-muted-fg: #636363;
+    --brand-header-bg: #ffffff;
+    --brand-header-fg: #2A2A2A;
+    --brand-footer-bg: #2A2A2A;
+    --brand-footer-fg: #ffffff;
+    --brand-border: #E6E6E6;
+    --brand-ring: #0078CF;
+    --brand-heading-font: 'Lexend', sans-serif;
+    --brand-body-font: 'Open Sans', sans-serif;
+    --brand-radius: 0px;
+    --brand-button-radius: 0px;
+    --brand-card-radius: 0px;
+  }
+
+extraction:
+  confidence: "high"
+  method: "playwright-full"
+  notes:
+    - "Primary blue #0078CF was sampled from the Search and Log In buttons and the quick-action bar, and matches the computed link color rgb(0, 120, 207)."
+    - "Accent #069BD7 is the lighter cyan in the Con Edison logo."
+    - "The scraper reported a transparent header and a gray footer. The screenshot shows a white nav under a #2A2A2A utility bar, and the full homepage ends in a dark footer, so those fields follow the screenshot."
+    - "Headings use Lexend at weight 800. Body copy uses Open Sans. The icon font coned-icons is proprietary and is not used for text."
+    - "Buttons, cards, and images are square. Icon circles inside the action tiles are the exception."
+    - "Hero is two full-bleed photos side by side, with white type over the images and a blue action row underneath."

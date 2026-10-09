@@ -1,0 +1,1016 @@
+{
+  "url": "https://www.coned.com/",
+  "extractedAt": "2026-10-08T15:30:08.116Z",
+  "detectedLanguage": "en",
+  "targetLanguage": "en",
+  "translationNeeded": false,
+  "totalSections": 6,
+  "totalImages": 7,
+  "totalVideos": 0,
+  "interactionStats": {
+    "lazySourcesResolved": 0,
+    "tabsClicked": 0,
+    "accordionsExpanded": 13,
+    "carouselDotsClicked": 0,
+    "carouselArrowSlides": 0,
+    "backgroundImagesCollected": 0
+  },
+  "sections": [
+    {
+      "position": 1,
+      "tagName": "header",
+      "classHint": "header  js-header-select-language js-module",
+      "backgroundHint": "dark",
+      "headings": [
+        {
+          "tag": "h3",
+          "text": "Verify Your Identity"
+        },
+        {
+          "tag": "h5",
+          "text": "To protect your account, we need to confirm it’s you."
+        }
+      ],
+      "paragraphs": [],
+      "links": [
+        {
+          "text": "Contact Us",
+          "href": "https://www.coned.com/en/contact-us",
+          "target": ""
+        },
+        {
+          "text": "English",
+          "href": "#",
+          "target": ""
+        },
+        {
+          "text": "My Account",
+          "href": "https://www.coned.com/en/accounts-billing/my-account",
+          "target": ""
+        },
+        {
+          "text": "Pay Bill",
+          "href": "https://www.coned.com/en/accounts-billing/my-account/pay-my-bill",
+          "target": ""
+        },
+        {
+          "text": "Bill History & Assistance",
+          "href": "https://www.coned.com/en/accounts-billing/my-account/bill-history-assistance",
+          "target": ""
+        },
+        {
+          "text": "Energy Use",
+          "href": "https://www.coned.com/en/accounts-billing/my-account/energy-use",
+          "target": ""
+        },
+        {
+          "text": "Manage My Account",
+          "href": "https://www.coned.com/en/accounts-billing/my-account/manage-my-account",
+          "target": ""
+        },
+        {
+          "text": "How to Submit a Meter Reading",
+          "href": "https://www.coned.com/en/accounts-billing/how-to-read-your-meter",
+          "target": ""
+        },
+        {
+          "text": "Start, Move, or Stop Service",
+          "href": "https://www.coned.com/en/services-and-outages/service-management-page",
+          "target": ""
+        },
+        {
+          "text": "Report & Track Service Problems",
+          "href": "https://www.coned.com/en/services-and-outages/report-track-service-issue",
+          "target": ""
+        },
+        {
+          "text": "Prevent & Recover From Outages",
+          "href": "https://www.coned.com/en/services-and-outages/preventing-recovering-from-outages",
+          "target": ""
+        },
+        {
+          "text": "File a Claim",
+          "href": "https://www.coned.com/en/services-and-outages/claim-form",
+          "target": ""
+        },
+        {
+          "text": "Tips & Tools for Lowering Your Energy Bill",
+          "href": "https://www.coned.com/en/save-money/tips-to-lower-your-bill",
+          "target": ""
+        },
+        {
+          "text": "Explore Clean Energy Programs",
+          "href": "https://www.coned.com/en/save-money/explore-clean-energy-programs",
+          "target": ""
+        },
+        {
+          "text": "Shop for Energy Service Companies",
+          "href": "https://www.coned.com/en/save-money/shop-for-energy-service-companies",
+          "target": ""
+        },
+        {
+          "text": "Using Distributed Generation Energy Sources",
+          "href": "https://www.coned.com/en/save-money/using-distributed-generation-energy-sources",
+          "target": ""
+        },
+        {
+          "text": "Our Clean Energy Commitment",
+          "href": "https://www.coned.com/en/our-energy-future/our-energy-vision/our-energy-future-commitment",
+          "target": ""
+        },
+        {
+          "text": "Our Energy Vision",
+          "href": "https://www.coned.com/en/our-energy-future/our-energy-vision",
+          "target": ""
+        },
+        {
+          "text": "Electric Heating & Cooling",
+          "href": "https://www.coned.com/en/our-energy-future/electric-heating-and-cooling-equipment",
+          "target": ""
+        },
+        {
+          "text": "Electric Vehicles",
+          "href": "https://www.coned.com/en/our-energy-future/electric-vehicles",
+          "target": ""
+        },
+        {
+          "text": "Log In or Register",
+          "href": "#",
+          "target": ""
+        },
+        {
+          "text": "Register",
+          "href": "https://www.coned.com/en/register/pre-register",
+          "target": ""
+        },
+        {
+          "text": "Reset My Password",
+          "href": "https://www.coned.com/en/register/reset-password",
+          "target": ""
+        },
+        {
+          "text": "Steam customer?",
+          "href": "https://mysteamaccount.coned.com/SelfService/SSvcController/login",
+          "target": ""
+        }
+      ],
+      "images": [
+        {
+          "src": "https://www.coned.com/images/logo.svg",
+          "alt": "Con Edison logo",
+          "type": "img",
+          "width": 300,
+          "height": 58
+        },
+        {
+          "src": "https://www.coned.com/images/ajax-loader.gif",
+          "alt": "ajax loader animation",
+          "type": "img",
+          "width": 317,
+          "height": 282
+        }
+      ],
+      "listItems": [
+        {
+          "title": "Energy Affordability Program",
+          "link": {
+            "text": "Energy Affordability Program",
+            "href": "https://www.coned.com/en/accounts-billing/payment-plans-assistance/energy-affordability-program"
+          }
+        },
+        {
+          "title": "Auto Pay",
+          "link": {
+            "text": "Auto Pay",
+            "href": "https://www.coned.com/en/accounts-billing/my-account/manage-my-account?sectionId=billSettingsSection"
+          }
+        },
+        {
+          "title": "Building & Remodeling Project Center",
+          "link": {
+            "text": "Building & Remodeling Project Center",
+            "href": "https://www.coned.com/en/small-medium-size-businesses/building-project-center"
+          }
+        },
+        {
+          "title": "Pay My Bill",
+          "link": {
+            "text": "Pay My Bill",
+            "href": "https://www.coned.com/en/accounts-billing/my-account/pay-my-bill"
+          }
+        },
+        {
+          "title": "Careers",
+          "link": {
+            "text": "Careers",
+            "href": "https://www.coned.com/en/about-us/careers"
+          }
+        }
+      ]
+    },
+    {
+      "position": 2,
+      "tagName": "div",
+      "classHint": "header-wrapper js-header-wrapper ",
+      "backgroundHint": "dark",
+      "headings": [
+        {
+          "tag": "h3",
+          "text": "Verify Your Identity"
+        },
+        {
+          "tag": "h5",
+          "text": "To protect your account, we need to confirm it’s you."
+        }
+      ],
+      "paragraphs": [
+        "You are using an unsupported browser. Please download the latest version of Chrome, Firefox, Edge, or Safari."
+      ],
+      "links": [
+        {
+          "text": "Skip to Main Content",
+          "href": "https://www.coned.com/#mainContent",
+          "target": ""
+        },
+        {
+          "text": "Chrome",
+          "href": "https://www.google.com/chrome/downloads/",
+          "target": "_blank"
+        },
+        {
+          "text": "Firefox",
+          "href": "https://www.mozilla.org/en-US/firefox/new/",
+          "target": "_blank"
+        },
+        {
+          "text": "Edge",
+          "href": "https://www.microsoft.com/en-us/edge",
+          "target": "_blank"
+        },
+        {
+          "text": "Safari",
+          "href": "https://support.apple.com/downloads/safari",
+          "target": "_blank"
+        },
+        {
+          "text": "Contact Us",
+          "href": "https://www.coned.com/en/contact-us",
+          "target": ""
+        },
+        {
+          "text": "English",
+          "href": "#",
+          "target": ""
+        },
+        {
+          "text": "My Account",
+          "href": "https://www.coned.com/en/accounts-billing/my-account",
+          "target": ""
+        },
+        {
+          "text": "Pay Bill",
+          "href": "https://www.coned.com/en/accounts-billing/my-account/pay-my-bill",
+          "target": ""
+        },
+        {
+          "text": "Bill History & Assistance",
+          "href": "https://www.coned.com/en/accounts-billing/my-account/bill-history-assistance",
+          "target": ""
+        },
+        {
+          "text": "Energy Use",
+          "href": "https://www.coned.com/en/accounts-billing/my-account/energy-use",
+          "target": ""
+        },
+        {
+          "text": "Manage My Account",
+          "href": "https://www.coned.com/en/accounts-billing/my-account/manage-my-account",
+          "target": ""
+        },
+        {
+          "text": "How to Submit a Meter Reading",
+          "href": "https://www.coned.com/en/accounts-billing/how-to-read-your-meter",
+          "target": ""
+        },
+        {
+          "text": "Start, Move, or Stop Service",
+          "href": "https://www.coned.com/en/services-and-outages/service-management-page",
+          "target": ""
+        },
+        {
+          "text": "Report & Track Service Problems",
+          "href": "https://www.coned.com/en/services-and-outages/report-track-service-issue",
+          "target": ""
+        },
+        {
+          "text": "Prevent & Recover From Outages",
+          "href": "https://www.coned.com/en/services-and-outages/preventing-recovering-from-outages",
+          "target": ""
+        },
+        {
+          "text": "File a Claim",
+          "href": "https://www.coned.com/en/services-and-outages/claim-form",
+          "target": ""
+        },
+        {
+          "text": "Tips & Tools for Lowering Your Energy Bill",
+          "href": "https://www.coned.com/en/save-money/tips-to-lower-your-bill",
+          "target": ""
+        },
+        {
+          "text": "Explore Clean Energy Programs",
+          "href": "https://www.coned.com/en/save-money/explore-clean-energy-programs",
+          "target": ""
+        },
+        {
+          "text": "Shop for Energy Service Companies",
+          "href": "https://www.coned.com/en/save-money/shop-for-energy-service-companies",
+          "target": ""
+        },
+        {
+          "text": "Using Distributed Generation Energy Sources",
+          "href": "https://www.coned.com/en/save-money/using-distributed-generation-energy-sources",
+          "target": ""
+        },
+        {
+          "text": "Our Clean Energy Commitment",
+          "href": "https://www.coned.com/en/our-energy-future/our-energy-vision/our-energy-future-commitment",
+          "target": ""
+        },
+        {
+          "text": "Our Energy Vision",
+          "href": "https://www.coned.com/en/our-energy-future/our-energy-vision",
+          "target": ""
+        },
+        {
+          "text": "Electric Heating & Cooling",
+          "href": "https://www.coned.com/en/our-energy-future/electric-heating-and-cooling-equipment",
+          "target": ""
+        },
+        {
+          "text": "Electric Vehicles",
+          "href": "https://www.coned.com/en/our-energy-future/electric-vehicles",
+          "target": ""
+        },
+        {
+          "text": "Log In or Register",
+          "href": "#",
+          "target": ""
+        },
+        {
+          "text": "Register",
+          "href": "https://www.coned.com/en/register/pre-register",
+          "target": ""
+        },
+        {
+          "text": "Reset My Password",
+          "href": "https://www.coned.com/en/register/reset-password",
+          "target": ""
+        },
+        {
+          "text": "Steam customer?",
+          "href": "https://mysteamaccount.coned.com/SelfService/SSvcController/login",
+          "target": ""
+        }
+      ],
+      "images": [],
+      "listItems": [
+        {
+          "title": "Energy Affordability Program",
+          "link": {
+            "text": "Energy Affordability Program",
+            "href": "https://www.coned.com/en/accounts-billing/payment-plans-assistance/energy-affordability-program"
+          }
+        },
+        {
+          "title": "Auto Pay",
+          "link": {
+            "text": "Auto Pay",
+            "href": "https://www.coned.com/en/accounts-billing/my-account/manage-my-account?sectionId=billSettingsSection"
+          }
+        },
+        {
+          "title": "Building & Remodeling Project Center",
+          "link": {
+            "text": "Building & Remodeling Project Center",
+            "href": "https://www.coned.com/en/small-medium-size-businesses/building-project-center"
+          }
+        },
+        {
+          "title": "Pay My Bill",
+          "link": {
+            "text": "Pay My Bill",
+            "href": "https://www.coned.com/en/accounts-billing/my-account/pay-my-bill"
+          }
+        },
+        {
+          "title": "Careers",
+          "link": {
+            "text": "Careers",
+            "href": "https://www.coned.com/en/about-us/careers"
+          }
+        }
+      ]
+    },
+    {
+      "position": 3,
+      "tagName": "div",
+      "classHint": "page-content js-page-content ",
+      "backgroundHint": "dark",
+      "headings": [
+        {
+          "tag": "h1",
+          "text": "Home"
+        },
+        {
+          "tag": "h2",
+          "text": "Focus on What Matters With My Account"
+        },
+        {
+          "tag": "h3",
+          "text": "Manage costs, track how you use energy, get personalized tips, and more."
+        },
+        {
+          "tag": "h2",
+          "text": "Because Con Edison is New York"
+        },
+        {
+          "tag": "h3",
+          "text": "Investing today to keep New York’s energy reliable, resilient, and affordable for the future."
+        }
+      ],
+      "paragraphs": [
+        "Manage costs, track how you use energy, get personalized tips, and more.",
+        "Investing today to keep New York’s energy reliable, resilient, and affordable for the future."
+      ],
+      "links": [
+        {
+          "text": "PAY YOUR BILL",
+          "href": "https://www.coned.com/en/accounts-billing/my-account/pay-my-bill",
+          "target": ""
+        },
+        {
+          "text": "MANAGE YOUR ACCOUNT",
+          "href": "https://www.coned.com/en/accounts-billing/my-account",
+          "target": ""
+        },
+        {
+          "text": "START OR STOP SERVICE",
+          "href": "https://www.coned.com/en/services-and-outages/service-management-page",
+          "target": ""
+        },
+        {
+          "text": "SEE HOW WE KEEP THE CITY RUNNING",
+          "href": "https://www.coned.com/en/our-energy-future/your-energy",
+          "target": ""
+        },
+        {
+          "text": "NEW ELIGIBILITY FOR ENERGY ASSISTANCE",
+          "href": "https://dps.ny.gov/energy-affordability-program",
+          "target": ""
+        },
+        {
+          "text": "EXPLORE MORE BILL HELP OPTIONS",
+          "href": "https://www.coned.com/en/accounts-billing/payment-plans-assistance",
+          "target": ""
+        }
+      ],
+      "images": [
+        {
+          "src": "https://edge-c-dcxprod-web-enfbhbfkb2fghhey.a03.azurefd.net/-/media/images/coned/homepage/images/2026/hero-left-fall.jpg?rev=b2c98812ddb14c0d9823a59269deb6a4",
+          "alt": "Man fixing his bike.",
+          "type": "img",
+          "width": 850,
+          "height": 560
+        },
+        {
+          "src": "https://edge-c-dcxprod-web-enfbhbfkb2fghhey.a03.azurefd.net/-/media/images/coned/homepage/images/2026/hero-right-fall.jpg?rev=33ef2988d7d34a87a74e889eda5227c5",
+          "alt": "Con Ed working fixing pipe.",
+          "type": "img",
+          "width": 850,
+          "height": 560
+        },
+        {
+          "src": "https://edge-c-dcxprod-web-enfbhbfkb2fghhey.a03.azurefd.net/-/media/images/coned/homepage/images/2026/hero-left_mobile-fall.jpg?rev=94797bcd6f9846939d72c924d5d61b63",
+          "alt": "",
+          "type": "srcset",
+          "width": null,
+          "height": null
+        },
+        {
+          "src": "https://edge-c-dcxprod-web-enfbhbfkb2fghhey.a03.azurefd.net/-/media/images/coned/homepage/images/2026/hero-right_mobile-fall.jpg?rev=4df9b8e71561424d8fc845f6fcd18a0d",
+          "alt": "",
+          "type": "srcset",
+          "width": null,
+          "height": null
+        }
+      ]
+    },
+    {
+      "position": 4,
+      "tagName": "footer",
+      "classHint": "footer  js-module js-footer",
+      "backgroundHint": "dark",
+      "headings": [
+        {
+          "tag": "h2",
+          "text": "Outages"
+        },
+        {
+          "tag": "h2",
+          "text": "Safety"
+        },
+        {
+          "tag": "h2",
+          "text": "About Us"
+        },
+        {
+          "tag": "h2",
+          "text": "Community Affairs"
+        },
+        {
+          "tag": "h2",
+          "text": "Contact Us"
+        },
+        {
+          "tag": "h2",
+          "text": "Renters and Homeowners"
+        },
+        {
+          "tag": "h2",
+          "text": "Multifamily Building Managers"
+        },
+        {
+          "tag": "h2",
+          "text": "Small Business & Nonprofit"
+        },
+        {
+          "tag": "h2",
+          "text": "Commercial & Industrial"
+        },
+        {
+          "tag": "h2",
+          "text": "Business Partners"
+        },
+        {
+          "tag": "h2",
+          "text": "Investors"
+        },
+        {
+          "tag": "h2",
+          "text": "Rates & Tariffs"
+        },
+        {
+          "tag": "h2",
+          "text": "Social"
+        }
+      ],
+      "paragraphs": [
+        "© 2016 - 2026 Consolidated Edison Company of New York, Inc. All Rights Reserved."
+      ],
+      "links": [
+        {
+          "text": "Report & Track Service Problems",
+          "href": "https://www.coned.com/en/services-and-outages/report-track-service-issue",
+          "target": ""
+        },
+        {
+          "text": "View Outage Map",
+          "href": "https://outagemap.coned.com/external/default.html",
+          "target": ""
+        },
+        {
+          "text": "File a Claim",
+          "href": "https://www.coned.com/en/services-and-outages/claim-form",
+          "target": ""
+        },
+        {
+          "text": "Gas Safety",
+          "href": "https://www.coned.com/en/safety/energy-safety/gas-safety",
+          "target": ""
+        },
+        {
+          "text": "Electric Safety",
+          "href": "https://www.coned.com/en/safety/energy-safety/electric-safety",
+          "target": ""
+        },
+        {
+          "text": "Steam Safety",
+          "href": "https://www.coned.com/en/safety/energy-safety/steam-safety",
+          "target": ""
+        },
+        {
+          "text": "Carbon Monoxide Safety",
+          "href": "https://www.coned.com/en/safety/energy-safety/carbon-monoxide-safety",
+          "target": ""
+        },
+        {
+          "text": "Beware of Scammers",
+          "href": "https://www.coned.com/en/safety/energy-safety/beware-of-scammers",
+          "target": ""
+        },
+        {
+          "text": "Company Information",
+          "href": "https://www.coned.com/en/about-us/company-information",
+          "target": ""
+        },
+        {
+          "text": "How We Source Our Energy",
+          "href": "https://www.coned.com/en/about-us/how-we-source-our-energy",
+          "target": ""
+        },
+        {
+          "text": "News & Media Center",
+          "href": "https://www.coned.com/en/about-us/media-center",
+          "target": ""
+        },
+        {
+          "text": "Company Culture & Environment",
+          "href": "https://www.coned.com/en/about-us/company-culture-and-environment",
+          "target": ""
+        },
+        {
+          "text": "Sustainability Report",
+          "href": "https://edge-c-dcxprod-web-enfbhbfkb2fghhey.a03.azurefd.net/-/media/files/conedison/about-us/sustainability-reports/sustainability-report-2025.pdf?rev=2b7a5c05c44540b4a32db6e5ed33c003",
+          "target": ""
+        },
+        {
+          "text": "Regulatory Guidance & Oversight",
+          "href": "https://www.coned.com/en/about-us/regulatory-guidance",
+          "target": ""
+        },
+        {
+          "text": "Retirees",
+          "href": "https://www.retirees.coned.com/en",
+          "target": ""
+        },
+        {
+          "text": "Careers",
+          "href": "https://www.coned.com/en/about-us/careers",
+          "target": ""
+        },
+        {
+          "text": "Community Partnerships",
+          "href": "https://www.coned.com/en/community-affairs/strategic-partnerships",
+          "target": ""
+        },
+        {
+          "text": "Community Outreach and Updates",
+          "href": "https://www.coned.com/en/community-affairs/customer-outreach",
+          "target": ""
+        },
+        {
+          "text": "Teachers & Students",
+          "href": "https://www.coned.com/en/community-affairs/for-teachers-students",
+          "target": ""
+        },
+        {
+          "text": "Our Outage Recovery Plan",
+          "href": "https://www.coned.com/en/community-affairs/our-storm-recovery-plan",
+          "target": ""
+        },
+        {
+          "text": "Resources for Municipalities",
+          "href": "https://www.coned.com/en/municipalities/resources-for-municipalities",
+          "target": ""
+        },
+        {
+          "text": "Former Manufactured Gas Plants",
+          "href": "https://www.coned.com/en/community-affairs/former-con-edison-manufactured-gas-plants",
+          "target": ""
+        },
+        {
+          "text": "Contact Us",
+          "href": "https://www.coned.com/en/contact-us",
+          "target": ""
+        },
+        {
+          "text": "FAQs",
+          "href": "https://www.coned.com/en/faqs/frequently-asked-questions",
+          "target": ""
+        },
+        {
+          "text": "Tips & Tools for Lowering Your Energy Bill",
+          "href": "https://www.coned.com/en/save-money/tips-to-lower-your-bill",
+          "target": ""
+        },
+        {
+          "text": "Savings for Renters and Homeowners",
+          "href": "https://www.coned.com/en/save-money/rebates-incentives-tax-credits/rebates-incentives-tax-credits-for-residential-customers",
+          "target": ""
+        },
+        {
+          "text": "SmartCharge NY",
+          "href": "https://www.coned.com/en/save-money/rebates-incentives-tax-credits/rebates-incentives-tax-credits-for-residential-customers/electric-vehicle-rewards",
+          "target": ""
+        },
+        {
+          "text": "Request Past Energy Bills & Data",
+          "href": "https://www.coned.com/en/accounts-billing/share-energy-usage-data",
+          "target": ""
+        },
+        {
+          "text": "Building & Remodeling Project Center",
+          "href": "https://www.coned.com/en/small-medium-size-businesses/building-project-center",
+          "target": ""
+        },
+        {
+          "text": "Savings for Multifamily Building Managers",
+          "href": "https://www.coned.com/en/save-money/rebates-incentives-tax-credits/rebates-incentives-for-multifamily-customers",
+          "target": ""
+        },
+        {
+          "text": "Incentives for Installing & Operating Electric Vehicle Chargers",
+          "href": "https://www.coned.com/en/our-energy-future/electric-vehicles/install-and-operate",
+          "target": ""
+        },
+        {
+          "text": "Download & Share Your Data",
+          "href": "https://www.coned.com/en/accounts-billing/share-energy-usage-data/share-my-data",
+          "target": ""
+        },
+        {
+          "text": "Leave on for Landlord",
+          "href": "https://www.coned.com/en/save-money/rebates-incentives-tax-credits/rebates-incentives-for-multifamily-customers/leave-on-for-landlord",
+          "target": ""
+        },
+        {
+          "text": "Building Energy Usage Portal",
+          "href": "https://www.coned.com/en/commercial-industrial/aggregated-building-energy-consumption-data",
+          "target": ""
+        },
+        {
+          "text": "Savings for Small Business & Nonprofits",
+          "href": "https://www.coned.com/en/save-money/rebates-incentives-tax-credits/small-business",
+          "target": ""
+        },
+        {
+          "text": "Incentives for Installing & Operating Electric Vehicle Chargers",
+          "href": "https://www.coned.com/en/our-energy-future/electric-vehicles",
+          "target": ""
+        },
+        {
+          "text": "Supplier Enablement, Engagement, and Development (SEED)",
+          "href": "https://www.coned.com/en/business-partners/vendor-services/seed",
+          "target": ""
+        },
+        {
+          "text": "Savings for Business Customers",
+          "href": "https://www.coned.com/en/save-money/rebates-incentives-tax-credits/rebates-incentives-tax-credits-for-commercial-industrial-buildings-customers",
+          "target": ""
+        },
+        {
+          "text": "Steam Service",
+          "href": "https://www.coned.com/en/commercial-industrial/steam",
+          "target": ""
+        },
+        {
+          "text": "Building Energy Usage History & Share Your Data",
+          "href": "https://www.coned.com/en/accounts-billing/commerical-industrial-request-and-share-data",
+          "target": ""
+        },
+        {
+          "text": "Energy Service Company Partner",
+          "href": "https://www.coned.com/en/business-partners/become-a-supply-partner",
+          "target": ""
+        },
+        {
+          "text": "Access Customer Data",
+          "href": "https://www.coned.com/en/business-partners/access-customer-data",
+          "target": ""
+        },
+        {
+          "text": "Vendor Services",
+          "href": "https://www.coned.com/en/business-partners/vendor-services",
+          "target": ""
+        },
+        {
+          "text": "Telecom Application Management (TeAM)",
+          "href": "https://www.coned.com/en/business-partners/telecom-application-management",
+          "target": ""
+        },
+        {
+          "text": "Transmission Planning",
+          "href": "https://www.coned.com/en/business-partners/transmission-planning",
+          "target": ""
+        },
+        {
+          "text": "Hosting Capacity",
+          "href": "https://www.coned.com/en/business-partners/hosting-capacity",
+          "target": ""
+        },
+        {
+          "text": "Business Opportunities",
+          "href": "https://www.coned.com/en/business-partners/business-opportunities",
+          "target": ""
+        },
+        {
+          "text": "Clean Energy Professional Resources",
+          "href": "https://www.coned.com/en/business-partners/clean-energy-professional-resources",
+          "target": ""
+        },
+        {
+          "text": "Annual Reports",
+          "href": "https://investor.conedison.com/financial-information/annual-reports",
+          "target": ""
+        },
+        {
+          "text": "SEC Filing",
+          "href": "https://investor.conedison.com/financial-information/sec-filings",
+          "target": ""
+        },
+        {
+          "text": "Financial Press Releases",
+          "href": "https://investor.conedison.com/press-releases",
+          "target": ""
+        },
+        {
+          "text": "Stock Quotes",
+          "href": "https://investor.conedison.com/stock-information/stock-quote",
+          "target": ""
+        },
+        {
+          "text": "Rates & Tariffs",
+          "href": "https://www.coned.com/en/rates-tariffs/rates",
+          "target": ""
+        },
+        {
+          "text": "Facebook",
+          "href": "https://www.facebook.com/ConEdison",
+          "target": "_blank"
+        },
+        {
+          "text": "LinkedIn",
+          "href": "https://www.linkedin.com/company/con-edison",
+          "target": "_blank"
+        },
+        {
+          "text": "Youtube",
+          "href": "http://www.youtube.com/conedisonny",
+          "target": "_blank"
+        },
+        {
+          "text": "Instagram",
+          "href": "https://www.instagram.com/conedison/",
+          "target": "_blank"
+        },
+        {
+          "text": "Corporate Policies & Practices",
+          "href": "https://www.conedison.com/en/about-us/corporate-policies-practices",
+          "target": ""
+        },
+        {
+          "text": "Privacy Policy and Notice",
+          "href": "https://www.coned.com/en/privacy-policy-and-notice",
+          "target": ""
+        },
+        {
+          "text": "HomeNet",
+          "href": "https://conedison.cloud.com/",
+          "target": "_blank"
+        },
+        {
+          "text": "Share Screen",
+          "href": "javascript:;",
+          "target": ""
+        }
+      ],
+      "images": [],
+      "listItems": [
+        {
+          "title": "Outages",
+          "description": "Outages",
+          "link": {
+            "text": "Report & Track Service Problems",
+            "href": "https://www.coned.com/en/services-and-outages/report-track-service-issue"
+          }
+        },
+        {
+          "title": "Safety",
+          "description": "Safety",
+          "link": {
+            "text": "Gas Safety",
+            "href": "https://www.coned.com/en/safety/energy-safety/gas-safety"
+          }
+        },
+        {
+          "title": "About Us",
+          "description": "About Us",
+          "link": {
+            "text": "Company Information",
+            "href": "https://www.coned.com/en/about-us/company-information"
+          }
+        },
+        {
+          "title": "Community Affairs",
+          "description": "Community Affairs",
+          "link": {
+            "text": "Community Partnerships",
+            "href": "https://www.coned.com/en/community-affairs/strategic-partnerships"
+          }
+        },
+        {
+          "title": "Contact Us",
+          "description": "Contact Us",
+          "link": {
+            "text": "Contact Us",
+            "href": "https://www.coned.com/en/contact-us"
+          }
+        },
+        {
+          "title": "Renters and Homeowners",
+          "description": "Renters and Homeowners",
+          "link": {
+            "text": "Tips & Tools for Lowering Your Energy Bill",
+            "href": "https://www.coned.com/en/save-money/tips-to-lower-your-bill"
+          }
+        },
+        {
+          "title": "Multifamily Building Managers",
+          "description": "Multifamily Building Managers",
+          "link": {
+            "text": "Savings for Multifamily Building Managers",
+            "href": "https://www.coned.com/en/save-money/rebates-incentives-tax-credits/rebates-incentives-for-multifamily-customers"
+          }
+        },
+        {
+          "title": "Small Business & Nonprofit",
+          "description": "Small Business & Nonprofit",
+          "link": {
+            "text": "Savings for Small Business & Nonprofits",
+            "href": "https://www.coned.com/en/save-money/rebates-incentives-tax-credits/small-business"
+          }
+        },
+        {
+          "title": "Commercial & Industrial",
+          "description": "Commercial & Industrial",
+          "link": {
+            "text": "Savings for Business Customers",
+            "href": "https://www.coned.com/en/save-money/rebates-incentives-tax-credits/rebates-incentives-tax-credits-for-commercial-industrial-buildings-customers"
+          }
+        },
+        {
+          "title": "Business Partners",
+          "description": "Business Partners",
+          "link": {
+            "text": "Energy Service Company Partner",
+            "href": "https://www.coned.com/en/business-partners/become-a-supply-partner"
+          }
+        },
+        {
+          "title": "Investors",
+          "description": "Investors",
+          "link": {
+            "text": "Annual Reports",
+            "href": "https://investor.conedison.com/financial-information/annual-reports"
+          }
+        },
+        {
+          "title": "Rates & Tariffs",
+          "description": "Rates & Tariffs",
+          "link": {
+            "text": "Rates & Tariffs",
+            "href": "https://www.coned.com/en/rates-tariffs/rates"
+          }
+        },
+        {
+          "title": "Social",
+          "description": "Social",
+          "badge": "",
+          "link": {
+            "text": "Facebook",
+            "href": "https://www.facebook.com/ConEdison"
+          }
+        }
+      ]
+    },
+    {
+      "position": 5,
+      "tagName": "div",
+      "classHint": "no-translate",
+      "backgroundHint": "dark",
+      "headings": [],
+      "paragraphs": [],
+      "links": [],
+      "images": []
+    },
+    {
+      "position": 6,
+      "tagName": "div",
+      "classHint": "QSISlider SI_bswVFWgnKkjXUUZ_SliderContainer",
+      "backgroundHint": "dark",
+      "headings": [],
+      "paragraphs": [],
+      "links": [],
+      "images": [
+        {
+          "src": "https://pdx1.qualtrics.com/WRQualtricsSiteIntercept/Graphic.php?IM=IM_3z87CqWjuRgvdZz",
+          "alt": "",
+          "type": "img",
+          "width": 27,
+          "height": 100
+        }
+      ]
+    }
+  ]
+}

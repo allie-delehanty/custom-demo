@@ -1,0 +1,279 @@
+client:
+  name: "Con Edison"
+  sourceUrl: "https://www.coned.com/"
+  sourceLanguage: "en"
+  targetLanguage: "en"
+  translationApplied: false
+  extractedAt: "2026-10-08T15:30:08Z"
+  mappedAt: "2026-10-08T15:32:00Z"
+
+sections:
+  - position: 1
+    componentName: "AnnouncementBar"
+    manifestName: "AnnouncementBar"
+    kind: "simple"
+    datasourceItemName: "Con Edison - Announcement Bar"
+    apiAddable: true
+    fields:
+      Message: "Contact Us"
+      BarLink:
+        text: "Contact Us"
+        href: "https://www.coned.com/en/contact-us"
+        target: ""
+      BackgroundColor: "#2A2A2A"
+    children: []
+    imageFields: []
+    matchConfidence: "medium"
+    contentSource: "extractor"
+
+  - position: 2
+    componentName: "NavigationHeader"
+    manifestName: "NavigationHeader"
+    kind: "list"
+    datasourceItemName: "Con Edison - Navigation Header"
+    apiAddable: true
+    fields:
+      CtaLabel: "Log In or Register"
+      CtaLink:
+        text: "Log In or Register"
+        href: "#"
+        target: ""
+    children:
+      - name: "Con Edison - Account and Billing"
+        fields:
+          LinkText: "Account & Billing"
+          LinkUrl:
+            text: "Account & Billing"
+            href: "https://www.coned.com/en/accounts-billing"
+            target: ""
+        imageFields: []
+      - name: "Con Edison - Services and Outages"
+        fields:
+          LinkText: "Services & Outages"
+          LinkUrl:
+            text: "Services & Outages"
+            href: "https://www.coned.com/en/services-and-outages"
+            target: ""
+        imageFields: []
+      - name: "Con Edison - Save Energy and Money"
+        fields:
+          LinkText: "Save Energy & Money"
+          LinkUrl:
+            text: "Save Energy & Money"
+            href: "https://www.coned.com/en/save-money"
+            target: ""
+        imageFields: []
+      - name: "Con Edison - Clean Energy"
+        fields:
+          LinkText: "Clean Energy"
+          LinkUrl:
+            text: "Clean Energy"
+            href: "https://www.coned.com/en/our-energy-future"
+            target: ""
+        imageFields: []
+    imageFields:
+      - field: "BrandLogo"
+        src: "https://www.coned.com/images/logo.svg"
+        alt: "Con Edison logo"
+    matchConfidence: "high"
+    contentSource: "extractor"
+
+  - position: 3
+    componentName: "HeroBanner"
+    manifestName: "HeroBanner"
+    kind: "simple"
+    datasourceItemName: "Con Edison - Hero Banner"
+    apiAddable: true
+    fields:
+      Title: "Focus on What Matters With My Account"
+      Subtitle: "<p>Manage costs, track how you use energy, get personalized tips, and more.</p>"
+      PrimaryLink:
+        text: ""
+        href: ""
+        target: ""
+      SecondaryLink:
+        text: ""
+        href: ""
+        target: ""
+    panels:
+      - title: "Focus on What Matters With My Account"
+        description: "Manage costs, track how you use energy, get personalized tips, and more."
+        image:
+          src: "https://edge-c-dcxprod-web-enfbhbfkb2fghhey.a03.azurefd.net/-/media/images/coned/homepage/images/2026/hero-left-fall.jpg?rev=b2c98812ddb14c0d9823a59269deb6a4"
+          alt: "Man fixing his bike."
+      - title: "Because Con Edison is New York"
+        description: "Investing today to keep New York’s energy reliable, resilient, and affordable for the future."
+        image:
+          src: "https://edge-c-dcxprod-web-enfbhbfkb2fghhey.a03.azurefd.net/-/media/images/coned/homepage/images/2026/hero-right-fall.jpg?rev=33ef2988d7d34a87a74e889eda5227c5"
+          alt: "Con Ed working fixing pipe."
+    children: []
+    imageFields:
+      - field: "HeroImage"
+        src: "https://edge-c-dcxprod-web-enfbhbfkb2fghhey.a03.azurefd.net/-/media/images/coned/homepage/images/2026/hero-left-fall.jpg?rev=b2c98812ddb14c0d9823a59269deb6a4"
+        alt: "Man fixing his bike."
+    matchConfidence: "medium"
+    contentSource: "extractor"
+
+  - position: 4
+    componentName: "ValuePropositionGrid"
+    manifestName: "ValuePropositionGrid"
+    kind: "list"
+    datasourceItemName: "Con Edison - Value Proposition Grid"
+    apiAddable: true
+    fields:
+      Title: ""
+      Description: ""
+    children:
+      - name: "Con Edison - Pay Your Bill"
+        fields:
+          ItemTitle: "PAY YOUR BILL"
+          ItemDescription: ""
+          ItemLink:
+            text: "PAY YOUR BILL"
+            href: "https://www.coned.com/en/accounts-billing/my-account/pay-my-bill"
+            target: ""
+        imageFields: []
+      - name: "Con Edison - Manage Your Account"
+        fields:
+          ItemTitle: "MANAGE YOUR ACCOUNT"
+          ItemDescription: ""
+          ItemLink:
+            text: "MANAGE YOUR ACCOUNT"
+            href: "https://www.coned.com/en/accounts-billing/my-account"
+            target: ""
+        imageFields: []
+      - name: "Con Edison - Start or Stop Service"
+        fields:
+          ItemTitle: "START OR STOP SERVICE"
+          ItemDescription: ""
+          ItemLink:
+            text: "START OR STOP SERVICE"
+            href: "https://www.coned.com/en/services-and-outages/service-management-page"
+            target: ""
+        imageFields: []
+      - name: "Con Edison - Keep the City Running"
+        fields:
+          ItemTitle: "SEE HOW WE KEEP THE CITY RUNNING"
+          ItemDescription: ""
+          ItemLink:
+            text: "SEE HOW WE KEEP THE CITY RUNNING"
+            href: "https://www.coned.com/en/our-energy-future/your-energy"
+            target: ""
+        imageFields: []
+      - name: "Con Edison - Energy Assistance"
+        fields:
+          ItemTitle: "NEW ELIGIBILITY FOR ENERGY ASSISTANCE"
+          ItemDescription: ""
+          ItemLink:
+            text: "NEW ELIGIBILITY FOR ENERGY ASSISTANCE"
+            href: "https://dps.ny.gov/energy-affordability-program"
+            target: ""
+        imageFields: []
+      - name: "Con Edison - Bill Help Options"
+        fields:
+          ItemTitle: "EXPLORE MORE BILL HELP OPTIONS"
+          ItemDescription: ""
+          ItemLink:
+            text: "EXPLORE MORE BILL HELP OPTIONS"
+            href: "https://www.coned.com/en/accounts-billing/payment-plans-assistance"
+            target: ""
+        imageFields: []
+    imageFields: []
+    matchConfidence: "high"
+    contentSource: "extractor"
+
+  - position: 5
+    componentName: "SiteFooter"
+    manifestName: "SiteFooter"
+    kind: "context-only"
+    datasourceItemName: "Con Edison - Site Footer"
+    apiAddable: false
+    fields:
+      BrandLogo: ""
+    children: []
+    imageFields: []
+    matchConfidence: "medium"
+    contentSource: "extractor"
+
+  - position: 6
+    componentName: "PageChrome"
+    manifestName: ""
+    kind: "context-only"
+    datasourceItemName: ""
+    apiAddable: false
+    fields: {}
+    children: []
+    imageFields: []
+    matchConfidence: "low"
+    contentSource: "screenshot"
+
+datasourceItems:
+  - componentName: "AnnouncementBar"
+    itemName: "Con Edison - Announcement Bar"
+    itemId: "{78879E8A-7C54-46E9-A07E-FD4A6B3255B4}"
+    parentFolder: "{FC6F768C-2DD4-49BA-B8AD-43C2E9EDE93D}"
+    fieldsPopulated: ["Message", "BarLink", "BackgroundColor"]
+    imageFieldsPending: []
+    children: []
+  - componentName: "NavigationHeader"
+    itemName: "Con Edison - Navigation Header"
+    itemId: "{6DE4C8A3-A5D0-4531-B26B-298486545168}"
+    parentFolder: "{CB8F7247-8620-45E4-816B-079EF3573C52}"
+    fieldsPopulated: ["CtaLabel", "CtaLink", "BrandLogo"]
+    imageFieldsPending: []
+    children:
+      - name: "Con Edison - Account and Billing"
+        itemId: "{E78F3BC5-0AD7-4BD3-BED8-35D8D01A1063}"
+        fieldsPopulated: ["LinkText", "LinkUrl"]
+      - name: "Con Edison - Services and Outages"
+        itemId: "{C704B36B-ABB7-4EC7-9EDC-A7080437D13D}"
+        fieldsPopulated: ["LinkText", "LinkUrl"]
+      - name: "Con Edison - Save Energy and Money"
+        itemId: "{999AB958-C5CC-4483-A153-3976B2910F6C}"
+        fieldsPopulated: ["LinkText", "LinkUrl"]
+      - name: "Con Edison - Clean Energy"
+        itemId: "{E539E1EE-1D23-44D8-BE9A-CD1DB7A9A454}"
+        fieldsPopulated: ["LinkText", "LinkUrl"]
+  - componentName: "HeroBanner"
+    itemName: "Con Edison - Hero Banner"
+    itemId: "{9BDB3A4C-8C40-40A1-9689-892100788C20}"
+    parentFolder: "{D420057E-A817-40D5-B7CA-6C17FF406534}"
+    fieldsPopulated: ["Title", "Subtitle", "HeroImage"]
+    imageFieldsPending: []
+    children: []
+  - componentName: "ValuePropositionGrid"
+    itemName: "Con Edison - Value Proposition Grid"
+    itemId: "{E783122F-F132-4F23-B204-B52554A2A296}"
+    parentFolder: "{27C9DDE6-030A-4940-9B22-E2EA167BAB6E}"
+    fieldsPopulated: ["Title", "Description"]
+    imageFieldsPending: []
+    children:
+      - name: "Con Edison - Pay Your Bill"
+        itemId: "{BBE85657-96E8-431B-8D6B-AF4298939522}"
+        fieldsPopulated: ["ItemTitle", "ItemLink"]
+      - name: "Con Edison - Manage Your Account"
+        itemId: "{D6A03430-5317-4379-86C7-330C34D05205}"
+        fieldsPopulated: ["ItemTitle", "ItemLink"]
+      - name: "Con Edison - Start or Stop Service"
+        itemId: "{73695C5F-0B17-49C6-AA21-877550647DB0}"
+        fieldsPopulated: ["ItemTitle", "ItemLink"]
+      - name: "Con Edison - Keep the City Running"
+        itemId: "{31A5101B-BE4D-4C66-80FE-DCF5B157B8F7}"
+        fieldsPopulated: ["ItemTitle", "ItemLink"]
+      - name: "Con Edison - Energy Assistance"
+        itemId: "{7CD17819-6503-4824-9E2C-BB3FAC5460C1}"
+        fieldsPopulated: ["ItemTitle", "ItemLink"]
+      - name: "Con Edison - Bill Help Options"
+        itemId: "{5A4450A3-001A-4405-99DB-2C96127113CA}"
+        fieldsPopulated: ["ItemTitle", "ItemLink"]
+
+summary:
+  totalSections: 6
+  sectionsWithContent: 4
+  contextOnlySkipped: 2
+  fieldsPopulated: 22
+  imageFieldsMapped: 2
+  imagesSkipped: 5
+  videosFound: 0
+  translationApplied: false
+  sourceLanguage: "en"

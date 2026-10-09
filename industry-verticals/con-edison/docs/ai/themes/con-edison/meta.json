@@ -1,0 +1,49 @@
+{
+  "title": "Con Edison - Powering New York City and Westchester",
+  "themeColor": null,
+  "msColor": null,
+  "ogTitle": null,
+  "ogDescription": null,
+  "ogImage": null,
+  "ogSiteName": null,
+  "favicon": "https://edge-e-dcxprod-web-bechbkdqagefb9ge.a03.azurefd.net/-/media/images/coned/common/ce_favicon.ico?rev=d285f48647784f98bd8158a749b3ba1e",
+  "googleFontsLinks": [
+    "https://fonts.googleapis.com/",
+    "https://fonts.gstatic.com/",
+    "https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;600;800&family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,600;1,700;1,800&display=swap"
+  ],
+  "fontFaces": [
+    {
+      "family": "coned-icons",
+      "src": "url(\"../fonts/coned-icons.ttf?eorugz\") format(\"truetype\"), url(\"../fonts/coned-icons.woff?eorugz\") format(\"woff\")",
+      "weight": "400"
+    },
+    {
+      "family": "OpenSans-Bold",
+      "src": "url(\"https://acdn-prod-bsdce-ngcx-va.azureedge.net/va/media/OpenSans-Bold.ttf\") format(\"truetype\")",
+      "weight": ""
+    },
+    {
+      "family": "OpenSans-ExtraBold",
+      "src": "url(\"https://acdn-prod-bsdce-ngcx-va.azureedge.net/va/media/OpenSans-ExtraBold.ttf\") format(\"truetype\")",
+      "weight": ""
+    },
+    {
+      "family": "OpenSans-SemiBold",
+      "src": "url(\"https://acdn-prod-bsdce-ngcx-va.azureedge.net/va/media/OpenSans-SemiBold.ttf\") format(\"truetype\")",
+      "weight": ""
+    },
+    {
+      "family": "OpenSans-Regular",
+      "src": "url(\"https://acdn-prod-bsdce-ngcx-va.azureedge.net/va/media/OpenSans-Regular.ttf\") format(\"truetype\")",
+      "weight": ""
+    }
+  ],
+  "logoCandidates": [
+    "https://www.coned.com/images/logo.svg",
+    "https://www.coned.com/images/logo.svg",
+    "https://www.coned.com/images/ajax-loader.gif",
+    "https://www.coned.com/images/logo.svg"
+  ],
+  "heroBgImage": null
+}
